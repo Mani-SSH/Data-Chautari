@@ -29,19 +29,19 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>Dashboard</h1>
+    <div className="max-w-7xl mx-auto px-4 py-5 sm:px-6 lg:px-8">
+      <h1 className="text-3xl font-bold text-center text-blue-600 mb-6">Dashboard</h1>
       {data ? (
-        <div>
-          <h2>{data.message}</h2>
-          <ul>
+        <div className="bg-white shadow-md rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">{data.message}</h2>
+          <ul className="space-y-2">
             {data.data.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index} className="text-xl text-gray-700">{item}</li>
             ))}
           </ul>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p className="text-xl text-gray-500">Loading...</p>
       )}
     </div>
   )
