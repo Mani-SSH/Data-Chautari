@@ -8,9 +8,10 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start-frontend": "vite --port 4000",
-    "start-backend": "cd ../Backend/app && python app.py",
-    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\""
+    "start-backend-windows": "cd ../Backend && call .venv\\Scripts\\activate && python ./app/app.py",
+    "start-backend-macOS": "cd ../Backend && python3 ./app/app.py",
+    "start": "concurrently \"pnpm run dev\" \"pnpm run start-backend-windows\"",
+    "start-all": "concurrently \"pnpm run dev\" \"pnpm run start-backend-macOS\""
   },
   "dependencies": {
     "d3": "^7.9.0",
