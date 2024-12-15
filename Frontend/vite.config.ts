@@ -7,6 +7,13 @@ export default defineConfig({
     'process.env': process.env
   },
   server: {
-    port: Number(process.env.VITE_PORT) || 4000,  // Convert to number or fallback to 3000
-  },
+    port: Number(process.env.VITE_PORT) || 4000,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
+  }
 });

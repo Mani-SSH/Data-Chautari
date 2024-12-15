@@ -14,8 +14,10 @@
     "start-all": "concurrently \"pnpm run dev\" \"pnpm run start-backend-macOS\""
   },
   "dependencies": {
+    "chart.js": "^4.4.7",
     "d3": "^7.9.0",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {

@@ -1,26 +1,22 @@
-// Dashboard.tsx
-import { useEffect, useState } from 'react';
-import ScatterPlot from './scatterplot';
+import React, { useState, useEffect } from 'react';
 import BarChart from './BarChart';
-
-type Data = {
-  message: string;
-  data: { SepalLengthCm: number; SepalWidthCm: number; PetalLengthCm: number; PetalWidthCm: number; Species: string }[];
-};
+import ScatterPlot from './ScatterPlot';
 
 const Dashboard: React.FC = () => {
-  const [data, setData] = useState<Data | null>(null);
+  // State to hold the fetched data
+  const [data, setData] = useState<{ data: any[] } | null>(null);
 
+  // Fetch data when the component mounts
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiUrl = import.meta.env.VITE_API_URL;
-        const response = await fetch(`${apiUrl}/data`);
-
+        // Use the environment variable for the API endpoint
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/data`);
+        
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-
+        
         const result = await response.json();
         setData(result);
       } catch (error) {
