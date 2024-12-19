@@ -23,10 +23,6 @@ ChartJS.register(
 const BarChart = () => {
   const { data, isLoading, error } = useData();
 
-  // useEffect(() => {
-  //   console.log("Inside BarChart, fetched data:", data);
-  // }, [data]);
-
   // Loading and error states
   if (isLoading) return <p className="text-blue-500">Loading chart data...</p>;
   if (error)
@@ -38,28 +34,25 @@ const BarChart = () => {
   }
 
   // Filter and process data
-  const filteredData = data.filter((row) => row["Most Used Language"]?.trim());
-  if (filteredData.length === 0) {
-    return <p className="text-red-500">No valid language data available.</p>;
-  }
-
-  const languageCount = filteredData.reduce(
+  const hireableCount = data.reduce(
     (acc: Record<string, number>, curr) => {
-      const language = curr["Most Used Language"];
-      acc[language] = (acc[language] || 0) + 1;
+      const hireableKey = curr["Hireable"] ? "Hireable" : "Non-Hireable"; // Convert boolean to meaningful strings
+      acc[hireableKey] = (acc[hireableKey] || 0) + 1;
       return acc;
     },
-    {}
+    { Hireable: 0, "Non-Hireable": 0 } // Initialize counts
   );
 
   // Chart.js data and options
   const chartData = {
-    labels: Object.keys(languageCount),
+    labels: Object.keys(hireableCount),
     datasets: [
       {
-        label: "Count of Languages",
-        data: Object.values(languageCount),
-        backgroundColor: "rgba(75, 192, 192, 0.6)",
+        label: "Hireable Status",
+        data: Object.values(hireableCount),
+        backgroundColor: ["rgba(75, 192, 192, 0.6)", "rgba(255, 99, 132, 0.6)"], // Two colors for the bars
+        borderColor: ["rgba(75, 192, 192, 1)", "rgba(255, 99, 132, 1)"], // Border colors
+        borderWidth: 1,
       },
     ],
   };
@@ -68,7 +61,7 @@ const BarChart = () => {
     responsive: true,
     plugins: {
       legend: { position: "top" as const },
-      title: { display: true, text: "Most Used Languages" },
+      title: { display: true, text: "Hireable vs Non-Hireable Users" },
     },
   };
 
