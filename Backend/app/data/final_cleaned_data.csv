@@ -68,7 +68,6 @@ Australia,26,15,JavaScript,8,2008-08-20 16:51:05+00:00,True,Unknown,672289
 Australia,10,63,PHP,10,2008-09-17 07:47:24+00:00,False,Unknown,23354
 Australia,10,18,JavaScript,0,2008-09-17 09:54:29+00:00,False,Unknown,180437
 Australia,7,6,ASP,0,2008-09-19 09:31:17+00:00,False,Unknown,63551
-Australia,2,4,JavaScript,0,2009-04-17 05:18:54+00:00,False,Unknown,1131
 Australia,30,50,Shell,73,2009-03-28 23:56:50+00:00,False,"ubuntu, 3d-models, docker-stack, cli, arm, flight-controller, gcode, artillery-genius, bambu-studio, arduino-nano, dotfiles, dotfiles-linux, voron, bambulab, klipper, flsun-sr, home-server, macos, homelab, hugo-theme, raspberry-pi, esp-home, debian, shell-script, windows, hueforge, linux, virtualisation, duplicate-files, platformio, containers, windows-terminal, macos-setup, dietpi, klipper-configuration, drone, poposdotfiles, corexy, octoprint, ratrig, mks-robin-nano, proxmox, freebsd, uav, klipper-macros, dotfiles-macos, home-assistant, dotfiles-windows, neopixel-ring, stl, hugo-theme-hyde-hyde, docker-compose, dotfiles-popos, docker, home-assistant-config, arduino, firmware, 3d-printer, homelab-setup, neopixel, raspberrypi4, terminal, cli-tool, go, multiwii, flsun, bambu-lab, virtualization, hugo, popos, 3d, 3d-printing, server-config, watchtower",847847
 Australia,16,32,Ruby,63,2008-06-25 00:11:40+00:00,False,Unknown,750634
 Australia,30,15,Ruby,6,2008-12-22 00:34:12+00:00,False,"macos, winehq",441563
@@ -93,7 +92,6 @@ Australia,20,4667,HTML,10257,2015-10-21 05:56:38+00:00,False,Unknown,2530636
 Australia,28,2456,JavaScript,16402,2016-09-26 13:57:04+00:00,True,"dropdown, reactjs, popup, popper, popover, combobox, react, menu, tooltip",1136113
 Australia,30,2308,Jupyter Notebook,30,2017-08-04 05:31:36+00:00,True,probot,2295500
 Australia,30,1803,Python,4667,2015-04-04 23:11:57+00:00,False,"simulink, simulation, tabular-data, slam, array, opencv, web-services-restful, python3, arm-robot, matrix, camera-calibration, borders, bundle-adjustment, essential-matrix, dynamical-systems, markdown, formatting, numpy, stereo, codegen, table, robotics, image-jacobian, threads, optimal-path, motion-planning, adjacency-matrix, columnar, 2d, block-diagram, plotting, stereo-vision, robotic-vision, surf, ansi-art, graphics, undirected-graphs, euler-angles, robotics-simulation, quaternion, robot, a-star-search, matlab-coder, machine-vision, sift, trajectory-generation, directed-graphs, hough, point-feature, segmentation, mobile-robots, rigid-body-dynamics, diagram-form, python, laplacian-matrix, mutexes, matlab, homograpy, graphviz-dot-language, dynamics-simulation, jacobian, blob-features, web-server, html, restructured-text, fundamental-matrix, image-display, 3d, roll-pitch-yaw-angles, image-segmentation, robotics-toolbox, pandas, kalman-filter, ansi-colors, mathematical-morphology, image-search, morphology, visual-servoing, hessian, harris, latex, matlab-toolbox, robot-manipulator, tabular-data-formatter, semaphores, transform, csv, posix, animation, math, dynamics, camera-model, kinematics, robotics-control, computer-vision",1394391
-Australia,1,1682,JavaScript,3,2017-03-08 08:31:28+00:00,True,Unknown,3
 Australia,30,1460,PHP,1467,2016-12-28 04:15:41+00:00,False,"deployment, kumulos, middleware, api, helper, trait, throttle, laravel, content-negotiation, mutiformat, callable, closure, ssh, sdk, json-api, php, response, testing, shell-script, logging, notifications, fake, hacktoberfest",1780638
 Australia,30,1321,JavaScript,123,2016-05-04 23:03:08+00:00,True,"vue-router, fundamentals, composition-api, vue, vuex",67373
 Australia,30,2580,JavaScript,2590,2020-09-10 02:13:01+00:00,False,"tailwind-css, instageramclone, html5, mern-stack-app, google-search-api, react, instagram-clone, mern-crud, projects, nextjs, mern-stack, vanilla-javascript, nextjs14, mern-blog, mern-stack-development, html, google-clone-next, html-css-javascript, html-css-javascript-project, next-auth, mernstack, tmdb-api, mern, css, tailwindcss, mern-project, javascript, mern-boilerplate, tailwind",52956
@@ -167,7 +165,6 @@ Austria,14,770,Python,5108,2018-03-11 09:21:55+00:00,False,"malware, xss-vulnera
 Austria,13,261,Java,22,2021-09-27 07:35:31+00:00,False,"python, phpstorm, android, java, 1v1, phone, intents, gradle, application, polynominal, intent, html, calculator, android-studio, game, php, pycharm, polynomials, app, calculator-application, css, calculator-app",15863
 Austria,30,125,Python,452,2008-03-25 20:12:08+00:00,False,Unknown,918695
 Austria,13,107,JavaScript,13,2008-03-02 09:55:35+00:00,False,Unknown,11265
-Austria,2,27,JavaScript,1,2008-03-02 10:25:30+00:00,False,Unknown,2872
 Austria,8,13,Ruby,16,2008-06-06 04:21:22+00:00,False,Unknown,87409
 Austria,30,125,Shell,508,2009-06-01 11:11:25+00:00,False,Unknown,1512103
 Bangladesh,30,12827,Dart,12033,2018-08-26 07:04:51+00:00,False,"tesla, android, light-theme, ios, shop-app, flutter-shop-app, chat, chat-application, flutter-examples, android-app, flutter, animation, flutter-apps, flutter-ecommerce, flutter-ecommerce-template, ios-app, shopapp, ecommerce, shop, dark-theme",649732
@@ -211,7 +208,6 @@ Belgium,30,3559,Go,168,2012-10-05 09:29:28+00:00,True,"nushell, bash, alias, ali
 Belgium,5,1738,Python,53198,2015-04-20 18:13:45+00:00,False,"voice-cloning, python, tensorflow, deep-learning, pytorch, tts",376301
 Belgium,1,10,PHP,0,2008-06-23 10:31:56+00:00,False,Unknown,74592
 Belgium,4,26,Java,1,2008-12-20 15:38:07+00:00,False,Unknown,2985
-Belgium,1,9,Python,0,2008-04-29 08:36:25+00:00,False,Unknown,152
 Belgium,30,295,JavaScript,30,2008-12-05 09:38:20+00:00,False,Unknown,175823
 Belgium,28,46,C++,111,2008-12-21 21:11:04+00:00,False,Unknown,354622
 Belgium,6,7,Elixir,1,2008-11-13 20:42:24+00:00,False,Unknown,17213
@@ -251,7 +247,6 @@ Brazil,30,1300,C,909,2015-01-17 23:07:56+00:00,True,"first-timers-friendly, cont
 Brazil,30,2351,JavaScript,125,2019-05-17 13:57:37+00:00,False,Unknown,14622
 Brazil,30,916,C++,524,2018-07-21 05:50:00+00:00,True,"cplusplus, cpp, opengl, cpf-generator, vim-example, flappybird, qt5, java, dear-imgui, finance, fonts, config, financial, cplusplus-17, programming-language, cpf-validador, fonts-preferred, game, github-config, cpp17, sdl2, cpp23, binding, scripting-language, gamedev, cpp20, libgdx, ncurses, loterias, sfml-game, gentoo-jump-game, lua, sfml, imgui",118032
 Brazil,30,879,HTML,64,2018-10-28 01:33:35+00:00,True,hacktoberfest,1044676
-Brazil,10,377,JavaScript,148,2022-01-29 21:01:56+00:00,False,"github-config, config",63871
 Brazil,28,171,HTML,7,2023-03-16 14:59:14+00:00,False,"javacript, css5, python, netbeans, github, html5, javascriptanimations, error, comandos, java, vanilla-javascript, git, html, notes, calculator, css3, profile, socketio, csv, flask, animations, css, animation, math, tkinter, conquistas, jquery, study, apache, bootstrap, javascript, listas, filmes",135875
 Brazil,24,10,JavaScript,13,2008-12-19 19:09:01+00:00,True,Unknown,27649
 Brazil,22,1,Ruby,34,2009-04-04 02:37:03+00:00,False,Unknown,132665
@@ -301,7 +296,6 @@ Brazil,30,47,C,125,2009-03-01 20:45:43+00:00,False,"ips, emulator, c, patching, 
 Brazil,20,34,Ruby,33,2009-05-25 01:56:45+00:00,False,"rubyxl, customer-satisfaction-surveys, python3, html5, immunology, ocr-recognition, imbalanced-data, pycaret, cassandra-cluster, cross-validation, immunoinformatics, machine-learning, java, angular, ruby-on-rails-api, ruby-on-rails, single-antigen-beads, chartkick, javascript, scikit-learn, javascript-library, ruby, css3, ionic, hla-eplets, electronjs, email-sender, trading-bot, jquery-mobile, cassandra, ensemble-machine-learning, twain, nodejs, jquery, hla-database, sane, webapp, website, image-scanning, bootstrap4, hla-matching, image-processing, kraken-api, java-applet, tesseract-ocr, transplant, email-notification, imagemagick",67824
 Brazil,1,4,Python,0,2009-05-25 03:35:45+00:00,False,Unknown,5
 Brazil,30,64,Go,2,2009-05-25 03:41:57+00:00,False,Unknown,173148
-Brazil,2,3,JavaScript,0,2009-04-27 04:56:46+00:00,False,Unknown,268
 Brazil,30,16,Lua,433,2009-03-28 23:18:46+00:00,False,"neovim, ddc-vim, nvim-compe, java, tweening-engine, libgdx, nvim-cmp, snippets, neovim-plugin, ddc-source, lua",6747
 Brazil,30,9,Ruby,3,2009-03-29 00:10:57+00:00,False,Unknown,78278
 Brazil,30,16,Lua,433,2009-03-28 23:18:46+00:00,False,"neovim, ddc-vim, nvim-compe, java, tweening-engine, libgdx, nvim-cmp, snippets, neovim-plugin, ddc-source, lua",6747
@@ -376,7 +370,6 @@ Brazil,30,1013,JavaScript,148,2020-11-03 06:22:27+00:00,False,"calculator, calcu
 Brazil,30,1007,TypeScript,52,2020-11-06 00:25:07+00:00,True,"spigot, folder-structure, minecraft, react, weather-app, minecraft-server, pokedex, vs-code, algorithms, typescript, perceptron, vscode, angular, weather, pokedex-api, spigot-plugin, react-redux-toolkit, plugin, neural-network, tailwind",11128
 Brazil,30,967,TypeScript,163,2019-09-23 01:22:06+00:00,True,"internet-banking, imgflip-api, api, nodejs, styled-components, instagram-clone, no-official-website, favicon-generator, nextjs, internetbanking, reactjs, bash-script, font-awesome, typescript, image-magick, portfolio-website, socket-io, nodemon, mongodb, app, inter, webpack, parallax, template, boilerplate, express, instagram, meme-generator, progressive-web-app, javascript, banking-applications",2564463
 Brazil,30,951,JavaScript,121,2019-12-30 17:00:55+00:00,False,"games, greedy-algorithm, nextjs-template, html5, nodejs, database-upload, react, rocketseat, jsx, carousel-component, windows, cs50x, globo, casa-criativa, covid, bootcamp, nextjs, cs50, reactjs, confectionery, electron, carousel-slider, learning, quarantine, pure-react-carousel, database, imperative-programming, html, javascipt, skills, gostack, mvc, calculator, landing-page, daily-coding-problem, google, challenge, css3, c, php, game, pizza, structure, css, buy-pizzas, dedicated, algorithms-and-ai, examples, language-c, cart, library, oop, object-oriented-programming, fundamentals, daily-coding-challenge, review, study, doctors, landingpage, contacts, typeorm, unix-logic, multer, recipe, carousel, daily-coding-routine, javascript, atitude, quantity",141318
-Brazil,30,918,JavaScript,198,2018-03-08 14:52:11+00:00,False,"reverse-engineering, security, mobile-security, mobile-security-testing, hacktoberfest2024, seguranca, seguranca-da-informacao, android, hacktoberfest, apk",728789
 Brazil,18,913,JavaScript,134,2018-03-22 16:38:36+00:00,False,"memory, react-hooks, autocannon, hooks, spring-boot, monitoring, graphql, html5, nodejs, react, java, nextjs",380725
 Brazil,30,911,Python,7,2019-04-25 20:12:04+00:00,True,Unknown,11697913
 Brazil,30,903,JavaScript,106,2020-03-23 04:57:56+00:00,True,Unknown,568648
@@ -672,7 +665,6 @@ Canada,30,865,Python,761,2018-10-13 13:34:14+00:00,False,"rest-api, cisco, ansib
 Canada,26,792,Jupyter Notebook,651,2019-01-13 19:18:46+00:00,True,"python, dsa, datastructures, android, java, leetcode, cnn-keras, leetcode-solutions, tensorflow-lite, algorithms, firebase, html, reinforcement-learning-environments, algorithms-and-data-structures, gcp, genetic-algorithm, jupyter-notebook, xml, leetcode-python, ai-platform, google-cloud, mobile, flask, google-cloud-platform, reinforcement-learning-algorithms, reinforcement-learning, dsa-algorithm, numpy, heroku, machine-learning, computer-vision",61177
 Canada,30,770,JavaScript,1435,2018-06-15 04:32:04+00:00,False,"k8s, gcp, azure, devops, cicd, cka, cncf, azuredevops, docker, terrform, kubernetes-tutorial, aws, googlecloud, kubernetes, azure-devops, agile, cloud, googlecloudplatform",147722
 Canada,30,769,C,141,2019-10-25 16:31:47+00:00,False,"rp2040, builtin-ethernet, webserver-esp32-w5500, credential-manager, communication, config-portal, async, support-arduinojson, stm32f7, async-functions, w5100s, dns-server, lwip-w5100s, lan8720a, ethernet, lwip-ethernet, dhcp-hostname, w5100, esp8266, webserver-esp32-sc-w5500, async-udp, webserver-esp32-w6100, async-dns, nodemcu-esp8266, webserver-esp32-sc-enc, w5x00, web-portal, lwip-lan8720, websever-esp32-sc-w6100, udp, lwip, nodemcu, nucleo-144, lwip-w5100, hostname, w5500, cors, raspberry-pi-pico-w, async-tcp-client, lwip-enc28j60, esp32-c3, wt32-eth01, asynchronous, esp32-s3, tensy41, enc28j60, rp2040w, async-manager, lan8720, async-webserver, async-server, data, http-client, teensy, async-captive-portal, wiznet, dns, lwip-w5500, lwip-w6100, teensy-41, stm32, w6100, staticip, credentials, esp32, lan8742a, cyw43439, async-dns-server, captive-portal, littlefs, esp32-s2, webserver-esp32-enc, qnethernet, async-tcp, nucleo-f767zi, wifi, double-reset-detector, async-http-client",271213
-Canada,1,3453,JavaScript,105,2021-07-31 22:57:44+00:00,False,"github-config, config",2
 Canada,15,1479,JavaScript,66,2023-03-03 16:51:17+00:00,False,"react-native, nodejs, react, jwt-authentication, mern-stack, reactjs, mysql, social, node, mongodb, stackoverflow, css, redux, mongoose, sockets, express, turorial, stack, ecommerce, custom, javascript",256342
 Canada,14,359,TypeScript,64,2022-12-19 17:30:33+00:00,False,Unknown,67996
 Canada,30,221,JavaScript,10,2022-02-21 03:40:07+00:00,True,"express, backend, github-config, medusajs, admin, nodejs, config, javascript",387511
@@ -712,7 +704,6 @@ Canada,30,6,Java,1,2009-01-25 00:14:37+00:00,False,Unknown,1191181
 Canada,7,19,C#,2,2009-01-25 01:10:38+00:00,False,Unknown,25544
 Canada,30,112,Python,156,2009-01-25 03:31:23+00:00,False,Unknown,170818
 Canada,14,16,Perl,58,2008-12-05 03:06:48+00:00,False,Unknown,5661
-Canada,1,5,JavaScript,2,2009-04-09 22:52:46+00:00,False,Unknown,80
 Canada,30,47,C,23,2008-06-06 00:23:25+00:00,False,Unknown,157616
 Canada,30,211,Ruby,53,2008-06-06 01:11:32+00:00,False,Unknown,844145
 Canada,22,12,Ruby,18,2008-09-16 19:51:30+00:00,False,Unknown,130984
@@ -732,7 +723,6 @@ Canada,30,1302,HTML,712,2016-11-27 16:24:32+00:00,True,"cloudrun, aws-api-gatewa
 Canada,30,2686,C,17835,2010-01-06 11:17:20+00:00,False,Unknown,1003212
 Canada,30,39,Ruby,15,2008-12-08 04:20:46+00:00,True,"advent-of-code-2024, elixir",199400
 Canada,30,1437,TypeScript,9327,2020-08-26 13:36:43+00:00,False,"grabcut-segmentation, notebooks, llms, python, computer-science, llm, state-of-the-art, state-of-art-general-segmentation, background-subtraction, 2022, ml, innovation, rag, background, notebook, research, 2021, state-of-the-art-models, iterative-methods, research-paper, language-model, gpt-4, large-language-models, background-image, list, opencv, artificialintelligence, notebook-jupyter, nlp, deeplearning, machinelearning, grabcut, fine-tuning, sota, retrieval-augmented-generation, python3, 2020, deep-learning, opencv2, paper-references, papers, llama, sota-technique, paper, gpt, opencv-python, artificial-intelligence, state-of-art, technology, deep-neural-networks, neural-network, machine-learning, computer-vision, ai",738355
-Canada,1,6,JavaScript,0,2008-11-16 20:03:25+00:00,False,Unknown,31117
 Canada,14,37,PHP,10,2009-03-06 15:32:59+00:00,False,Unknown,93763
 Canada,6,68,Python,0,2009-01-22 06:19:18+00:00,False,Unknown,464565
 Canada,4,7,Java,3,2008-09-21 18:34:42+00:00,False,Unknown,6422
@@ -745,12 +735,10 @@ Canada,4,8,C++,90,2008-09-12 14:32:26+00:00,False,Unknown,85875
 Canada,30,1417,JavaScript,736,2015-11-12 15:48:38+00:00,True,"computer-science, react-native, tdd, css-transitions, lambda-functions, programmer-tool, atom-theme, javascript-es6, adonisjs, computer-science-algorithms, aws-lambda, article, atom, pgx, postgresql, typescript, tutorials, gcp, javascript-tutorial, css-animations, elixir, graphql, google-cloud, testing, mongodb, javascript-tests, google-cloud-platform, atom-editor, tutorial, gqlgen, devtips, javascript, golang",122058
 Canada,30,1075,JavaScript,171,2019-06-16 09:28:25+00:00,True,"reenforcement, python, functional-programming, hashing, tensorflow, data-mining, clock, convolutional-neural-networks, ml, dashboard, music, covid-19, image-processing, audio, code, doodle, clean-code, svg, crawler, coronavirus, artificial-intelligence, elegant, paint, javascript",1276981
 Canada,30,4934,Jupyter Notebook,8349,2016-11-28 04:22:39+00:00,False,"naive-bayes-classifier, pca, linear-regression, kmeans-clustering, knn, naive-bayes, svm, svr, hierarchical-clustering, random-forest, polynomial-regression, xgboost-algorithm, decision-trees, apriori-algorithm, logistic-regression, knn-classification, lda",151949
-Chile,1,31,Ruby,0,2009-03-15 00:47:42+00:00,False,Unknown,557
 Chile,18,22,Ruby,9,2008-06-24 21:13:27+00:00,False,Unknown,99101
 Chile,30,1412,JavaScript,240,2017-05-06 12:47:51+00:00,False,Unknown,43214
 Chile,30,238,JavaScript,291,2022-01-05 23:37:35+00:00,False,"many-to-one, migration, createdatabase, irb, ruby-gem, preserver, ruby-on-rails, puts, devise, database, methods, rubocop-configuration, queries, postgresql, crud, ruby, data-structures, controllers, classes-and-inheritance, tables, objects, postgresql-database, views, diagram, css, json, webpack, models, bundle-install, hash, fetch-api, sql, gems, relational-databases, jest-tests, join, rails-application, many-to-many, rspec-testing, javascript",24531
 Chile,30,18,Ruby,1,2008-10-18 10:30:01+00:00,False,Unknown,433187
-Chile,2,11,Ruby,2,2009-06-05 22:07:49+00:00,False,Unknown,64
 Chile,4,6,Python,11,2009-01-25 01:17:58+00:00,False,"github-config, config",15885
 Chile,30,29,C++,0,2009-01-22 03:13:58+00:00,False,Unknown,1031047
 Chile,10,55,Ruby,2,2009-06-02 20:00:07+00:00,False,Unknown,61736
@@ -810,7 +798,6 @@ China,30,1439,Rust,1558,2012-05-05 00:43:39+00:00,True,"douban, image-retrieval,
 China,30,1370,Java,6661,2012-10-29 14:02:04+00:00,True,"memory-leak, reverse-engineering, android-architecture, android-ui, cross-platform, demo, android-performance, github-config, config, android, hybrid-solution, performance-optimization",1650619
 China,19,1355,Java,3429,2014-04-30 12:09:38+00:00,True,"retrofit2, mvp, converter, router, fastjson, module, framework, android, modularization, retrofit2-fastjson-converter, weather",66556
 China,30,1355,Objective-C,3376,2011-06-26 12:54:30+00:00,True,Unknown,768542
-China,2,1335,JavaScript,1,2011-10-31 15:35:39+00:00,False,Unknown,2276
 China,22,1330,Swift,6036,2015-11-05 02:53:31+00:00,True,"toolkit, react-native, react, mdtable, notification, objective, ios, customizable, rxswift, pull-to-refresh, load-more, swift, data-driven, tableview, eventbus, awesome, objective-c, awesome-list, module, apple, reactive, awesome-rxswift, chinese, appdelegate",356427
 China,30,1312,Java,10038,2012-02-06 06:19:49+00:00,False,Unknown,282909
 China,30,1303,Dart,137,2011-05-25 04:33:40+00:00,False,Unknown,150065
@@ -819,7 +806,6 @@ China,30,1291,JavaScript,144,2012-10-07 19:53:21+00:00,False,Unknown,3861416
 China,22,1289,Java,2413,2015-04-20 07:49:16+00:00,False,Unknown,264013
 China,11,1263,Java,3571,2019-12-20 08:21:35+00:00,False,"websphere-echo, spring-memshell, linux-echo, weblogic-echo, memshell, gadget, shiro-poc, jre8u20, shiro-exp, wildfly-echo, java-deserization, deseriazaiton-echo, webshell, webshell-tool, websphere-memshell, jsp-webshell, deserization, echo, weblogic-memshell, jboss-echo, tomcat-echo, jetty-memshell, rce-echo, jetty-echo, resin-echo, webshell-manager, shiro550, jboss-memshell, tomcat-memshell, spring-echo, shiro, behinder-memshell, shiro721, shiro-exploit",274014
 China,30,1707,C#,36,2012-09-05 02:35:50+00:00,False,Unknown,2756790
-China,10,1677,JavaScript,14828,2016-11-14 05:03:13+00:00,False,"linux, python, c, golang, cpp, network, tcp, java",435913
 China,30,1664,JavaScript,120,2016-10-29 07:15:47+00:00,False,"layout, commomjs, performance, ddd, nodemodule, react, vue, ddd-patterns, design-patterns, module-loader, typescript, blog, vuejs, css, angular, css-layout, dependencies, adminui, admin, javascript",2019314
 China,1,1656,TeX,6139,2010-07-15 12:16:58+00:00,False,"functional-programming, haskell, algorithms",37861
 China,16,1648,Python,424,2014-04-14 07:55:47+00:00,False,Unknown,586087
@@ -846,9 +832,7 @@ China,25,1308,Java,6437,2013-02-21 08:47:55+00:00,True,Unknown,56564
 China,29,12,Shell,1,2009-06-04 07:23:01+00:00,False,"shadowsocks, docker, busybox, alpine, proxy, lightweight",1219735
 China,30,14,Python,2,2009-05-21 08:22:13+00:00,False,Unknown,1780346
 China,17,32,Shell,135,2008-08-06 16:27:54+00:00,False,Unknown,112579
-China,2,6,JavaScript,0,2009-03-02 03:20:39+00:00,False,Unknown,172
 China,30,36,JavaScript,54,2008-12-20 13:25:15+00:00,True,"apollo, starter-kit, webpack, ssr, service-worker, meteor, react, starter-project, graphql, boilerplate, server-side-rendering",84852
-China,2,4,JavaScript,0,2009-03-15 02:24:01+00:00,False,"github-config, config",9
 China,30,19,JavaScript,61,2009-06-14 07:27:30+00:00,True,Unknown,42754
 China,5,9,C,0,2009-03-21 13:21:23+00:00,False,Unknown,1074605
 China,30,445,Rust,2,2009-04-22 08:54:57+00:00,True,"proxy, crates-io, nodejs, pipy, rust, crates",4926116
@@ -1024,7 +1008,6 @@ China,30,1742,Java,6014,2015-11-12 00:33:54+00:00,False,"compress, compresshelpe
 China,12,1740,Python,10243,2016-07-15 16:30:14+00:00,False,"realsr, super-resolution, bsrgan, residual-learning, blind-image-super-resolution, image-degradation, matlab, esrgan, deblurring, regression, generalizability, denoising, matconvnet, single-image-super-resolution, toolbox, degradation-model, flops, demosaicing, scale-factors, image-denoising, pytorch, dncnn, plug-and-play, jpeg-deblocking, keras-tensorflow, color-demosaicking, noise-levels, convolutional-neural-network, pytorch-implmention, deep-learning, usrnet, sisr, bicubic-kernels, gaussian-kernel, image-deblurring, srmd, swinir, blind-image-denoising, real-world-image-denoising, cnn, image-restoration, dpsr, non-blind, blur-kernels, unfolding-algorithm, end-to-end-learning, ffdnet, real-image-super-resolution, practical-image-denoising, srresnet, deep-model, motion-kernel, blurry-images, image-inpainting",1102945
 China,30,1686,C#,32072,2015-11-10 13:48:54+00:00,True,"paste, simulate-login, screenshot, nav, desktop-pet, pc, clipboard, windows, live2d, timer, cookie, ugly-code, portable, paste-as-file, patch, bootstrap3, js, qq, revokemsg, tool, weibo, sina, shortcut, three-tier-architecture, static-site, blog, visual-analytics, revoke, game, bookmark, hex-editor, weibo-sso-login, pet, navigation, economic-features, vue3, mirai, css, pcr-team, tim, pcr, online-battle, pasteintofiles, wechat",351797
 China,30,1679,JavaScript,516,2015-07-03 03:42:47+00:00,True,Unknown,286073
-China,10,1677,JavaScript,14829,2016-11-14 05:03:13+00:00,False,"linux, python, c, golang, cpp, network, tcp, java",435913
 China,30,1664,JavaScript,120,2016-10-29 07:15:47+00:00,False,"layout, commomjs, performance, ddd, nodemodule, react, vue, ddd-patterns, design-patterns, module-loader, typescript, blog, vuejs, css, angular, css-layout, dependencies, adminui, admin, javascript",2019314
 China,30,1655,C++,910,2015-04-01 09:18:29+00:00,False,Unknown,705718
 China,30,1623,JavaScript,866,2017-05-21 02:26:52+00:00,True,"umi, dify, react-hooks, flowbite, anime, react, v6-dooring, h5, editor, frontend, dashboard, axios, reactjs, flow-based-programming, visual-studio-code, form, gif-animation, h5-dooring, typescript, dashboard-templates, node, canvas, lowcode, dooring, flowmix, reactflow, css3, h5-editor, chrome, imgur-album, chrome-extension, vue-flow, form-builder, dumi, img, page-builder, format, apify, crawler, react-flow, dom-to-image, puppeteer, flow, vueflow, javascript, dom, umi3",99619
@@ -1088,7 +1071,6 @@ China,30,1273,Python,1516,2018-01-28 02:00:09+00:00,False,Unknown,418001
 China,11,1263,Java,3571,2019-12-20 08:21:35+00:00,False,"websphere-echo, spring-memshell, linux-echo, weblogic-echo, memshell, gadget, shiro-poc, jre8u20, shiro-exp, wildfly-echo, java-deserization, deseriazaiton-echo, webshell, webshell-tool, websphere-memshell, jsp-webshell, deserization, echo, weblogic-memshell, jboss-echo, tomcat-echo, jetty-memshell, rce-echo, jetty-echo, resin-echo, webshell-manager, shiro550, jboss-memshell, tomcat-memshell, spring-echo, shiro, behinder-memshell, shiro721, shiro-exploit",274014
 China,30,1253,Java,653,2018-04-07 15:12:05+00:00,False,"weblogic, s2-059, cobaltstrike-plugins, adfind, cve, nacos, attack, penetration-tests, cve-2019-0230, cve-2020-11113, cve-2017-3506, cve-2019-17571, cve-2017-10271, apache-kylin, cobaltstrike, cve-2020-10673, vulnerable, fasterxml-jackson-databind, aggressor, blockchain-technology, blockchainsecurity, jackson, jackson-databind, cve-2020-14195, cve-2020-13937, rce, blockchain, bypassav, blockchain-security, cve-2019-12814, apt-guide",94553
 China,30,1224,Kotlin,1403,2020-03-18 03:14:00+00:00,False,"android, netease, music, kotlin",2006132
-China,20,1189,JavaScript,6007,2019-03-03 07:50:39+00:00,False,"acml, cvpr-paper, iccv, slam, neural-networks, cvpr2019, natural-language-processing, cvpr, object-detection, algorithms, aaai, notes, video, phd, cvpr2018, deep-learning, papers, offer, detection, cvpr2020, artificial-intelligence, cvpr2022, segmentation, interview, machine-learning, eccv, computer-vision, ai",103189
 China,30,1153,Python,6372,2019-09-24 03:14:02+00:00,False,Unknown,1558054
 China,30,1081,JavaScript,125,2018-06-06 15:42:00+00:00,True,"marketplace, education, lms",53259
 China,7,1037,C++,2145,2018-06-30 08:01:41+00:00,False,Unknown,480272
@@ -1139,7 +1121,6 @@ China,30,1234,Go,555,2019-07-06 00:36:32+00:00,False,Unknown,979640
 China,7,2624,C++,10612,2013-03-18 02:53:18+00:00,False,Unknown,3082332
 China,12,2575,Java,18165,2016-05-07 14:49:39+00:00,False,"quill, thymeleaf, oauth2, docker, html5, fastdfs, nacos, mybatisplus, sentinel, vue, swagger2, springcloud-gateway, java, element-plus, axios, swagger, feign, vue-router, quartz, vue-element-admin, elk, layui, jwt, bootstrap-table, springboot, element-admin, element, hplus, seata, velocity, vite2, vue-admin, vue-element, css3, elementplus, hutool, zipkin, layer, skywalking, vue3, element-ui, vite, activiti, vue-cli, springboot-admin, vue3-admin, pagehelper, druid, jquery, springcloud, springsecurity, springcloud-alibaba, admin, shiro, elasticsearch, vuex, mybatis, bootstrap, spring",61322
 China,30,1817,Go,420,2016-05-02 17:32:44+00:00,False,"lfs, baidu, baidu-login, tieba, git-lfs, go, golang",42183
-China,1,977,JavaScript,26752,2020-11-24 02:56:35+00:00,False,Unknown,520
 China,8,1662,Python,202,2015-07-10 01:37:39+00:00,False,"leetcode, python, bert-keras, algorithms, keras-bert, bert, keras, online-judge",259474
 China,30,1393,JavaScript,480,2011-11-09 06:32:56+00:00,False,"dbms, gitalk, gitbook-plugin, teaching, amtb, comment, busuanzi, course, analytics, gitbook",301610
 China,14,1730,Python,1553,2022-08-21 14:24:49+00:00,False,"huawei-shopping, python, homepage, huawei-homepage, object-oriented-programming-language, web, interpreted-language, scrapy, imagemagic, chinese-translation, database, sinicization, image-classification, image-hashing, easyhttp, programming-language, blog, image-processing, c, ocr, dockerdesktop, search-engine, image-hash, huawei, crawler, spider, pypi, relational-databases, libeasyhttp, stove, lib, web-homework",238199
@@ -1168,15 +1149,12 @@ China,30,854,TypeScript,72,2020-12-26 01:28:20+00:00,False,"antd-table, hook, xl
 China,30,1532,Swift,6520,2022-12-26 00:01:06+00:00,False,"kfd, macdirtycow, ios",424103
 China,14,1361,Python,13995,2018-01-23 13:50:12+00:00,True,"jobs, hacker, wi-fi, security, ssr, readbook, windows-update, human-resource-managment, docker, ip, m1, mirrors, latex, nigate, hacker-style-js, hr, intel, convert, ipfs, vpn, self-introduction, linux, ntfs, university, ip-calculator, gfw, ban-ip, network, pua, job-interviews, mind, notes, jekyll, ssh, social, ruby, shadowsocks, ti, calculator, https, analysis, social-sciences, blog, deep-web, jsonresume, macos, fq-book, cnki, rake, osxfuse, github-actions-ci, ip-blocking, chatgpt, subnet-calculator, helpdesk, automation, clawer, digital-certificate, proxy, spiders, ntfs-3g, resume, chinese, interview, education, tunnel, it, about-me, tcp, rst, faker, arm",501350
 China,30,21,JavaScript,1,2009-03-14 05:05:13+00:00,False,Unknown,868740
-China,2,3776,JavaScript,36196,2018-07-30 09:37:00+00:00,False,"zookeeper, system, java8, jvm, mysql, interview, redis, rocketmq, java",422
 China,12,3496,JavaScript,10612,2016-03-24 10:46:50+00:00,False,"blog, react, vue, html, css, javascript, advance",286518
 China,30,1738,JavaScript,6930,2011-10-22 09:57:06+00:00,True,"source, jquery-weui, github-config, gobang, config, gomoku, wechat, weui, diving-into-webpack, webpack, javascript, ai",2105202
 China,12,3496,JavaScript,10612,2016-03-24 10:46:50+00:00,False,"blog, react, vue, html, css, javascript, advance",286518
 China,30,2511,Java,11207,2015-02-10 05:25:31+00:00,False,"spring-boot-demo, threads, thymeleaf, spring-boot-3-0-0, adminlte, springmvc, ssm-demo, vue, 13, java, bbs, springboot-demo, swagger, springboot-learning, thread-pool, springboot-sample, spring-cloud-alibaba, microservice, mysql, mysql-database, nginx, jqgrid, layui, springboot3, threadsafe, springboot, java-8, spring-boot-examples, blog, maven, adminlte3, restful, dubbo-demo, spring-boot-project, dubbo-2-6-1, spring-boot-example, restful-api, docker-compose, easyui, spring-boot2, vue3, mybatis-plus, spring-mvc, thread, springboot-mybatis, spring-boot-3, springboot2, lombok, java8, druid, spring-boot, javablog, dubbo, concurrency, layui-admin, layui-ui, redis, mybatis, spring-boot-thymeleaf, spring, spring-cloud, spring6, cluster",680040
-China,2,3776,JavaScript,36196,2018-07-30 09:37:00+00:00,False,"zookeeper, system, java8, jvm, mysql, interview, redis, rocketmq, java",422
 China,18,11,Perl,29,2009-04-20 01:58:01+00:00,True,Unknown,20957
 China,30,4744,JavaScript,4429,2015-10-22 11:21:07+00:00,False,"rabbitmq, sql, springcloud, algorithms, jvm, mysql, java, interview, redis, springboot, spring, mvc",569755
-China,2,1049,JavaScript,184,2020-12-11 17:55:58+00:00,False,"arm64, m1-macbook-air, maven, udacity, macos, algorithms, aarch64, m1-chips, educative, algoexpert, apple-silicon, system-design, coding, java",31
 China,30,1580,Java,16072,2016-10-27 09:03:52+00:00,True,"gson, jiecaovideoplayer, andoird, recyclerview, guide, android, json, java",96979
 China,30,1564,C++,1115,2017-05-04 11:09:34+00:00,False,"detect-barcodes, damo-yolo, irregular-boundaries-rectangling, python, super-resolution, local-feature-matching, cpp, 3d-face-reconstruction, multi-person-head-pose-estimation, centernet, onnxruntime, clip, open-world-detection, slam, dbnet, feature-matching, detect-twenty-thousand-classes, head-pose-estimation, object-tracking, opencv-dnn, image-registration, low-light-image-enhancement, crowdcounting, opencv, image-text-retrieval, face-recognition, animegan, face-detection, face-align, face-restoration, face-landmark-detection, rotation-correction, image-dehaze, deep-learning, codeformer, awesome, light, portrait-correction, 3dmm, tps, detic, keypoint-detection, multimodal-large-language-models, keypoint-matching, face-mesh, text-detection, bytetrack, image-stitching, yolox, image-deraining",404472
 China,23,1621,JavaScript,4671,2015-08-27 08:45:53+00:00,True,"word, pdf, thread, blog, computer, github-issues, github-pages, chinese, concurrency, books, gatsby, pronunciation, dictionary, java",19063845
@@ -1210,8 +1188,6 @@ China,30,1316,C++,11449,2016-01-10 09:04:24+00:00,True,Unknown,2821331
 China,30,1426,JavaScript,1971,2015-07-11 03:40:31+00:00,True,"ebooks, ebook, agoraio",64805
 China,30,3475,PHP,6191,2015-01-29 15:25:34+00:00,True,Unknown,628795
 China,30,3475,PHP,6191,2015-01-29 15:25:34+00:00,True,Unknown,628795
-China,5,231,JavaScript,5,2024-04-30 00:40:19+00:00,False,"github-config, config",95
-China,5,231,JavaScript,5,2024-04-30 00:40:19+00:00,False,"github-config, config",95
 China,13,191,TypeScript,3371,2009-05-08 14:47:58+00:00,False,Unknown,59481
 China,30,17,Perl,19,2009-05-19 00:08:22+00:00,False,Unknown,64656
 China,30,2272,Java,26,2015-11-19 06:29:34+00:00,True,Unknown,927813
@@ -1261,7 +1237,6 @@ China,21,786,TypeScript,3039,2021-02-16 20:20:40+00:00,True,"github, portfolio, 
 China,30,42,Ruby,0,2009-04-22 21:38:40+00:00,False,Unknown,84337
 China,30,3972,R,1620,2015-09-29 05:45:47+00:00,True,"kegg, go, geo, limma",1058509
 China,30,1210,Java,2858,2016-04-10 07:48:28+00:00,False,"similarity, guava, orm, async, tiny, junit-test, log, junit, opencc, segment, tools, performance-metrics, performance-analysis, traceid, hight-performance, jdbc, springboot, wps, autolog, social, jdk, jca, csv-java, jdbc-driver, metaverse, monitor, apache-common, commons, ex, vr, pinyin-segmentation, springboot2, gpt, jetty, markdown, easyexcel, proxy, jar, toolset, spring, rate-limiting, memcached, hutooll, jmeter, ai, poi-tool, autowired, performance, guava-cache, mock, reverse-proxy, javax-mail, office, parallel-programming, submit, han, xr, algorithms, ibatis, inject, nginx, java-web, mock-data, trie-tree, jekyll, http, data-factory, code, ocr, trie, excel, awesome, test, excel-oom, avatar, jvm-sandbox, asynchronous, java-utils, poi, github-pages, redis, rate-limiter, mybatis, annotation, nlp, pinyin4j, tomcat, doc-generate, perf, limiter, dfa, jpa, easypoi, data-struct, leetcode, web, handwriting, tool, web-server, resubmission, java7, database, servlet, high-performance, data, common, chat, mvc, blog, aop, war, auto-summary, rate-limit, jdk7, tiny-pinyin, limit, mail, kit, guice, tongyinzi, logging, compile-time-annotation, auto-logging, mock-test, pinyin-data, doc, async-spring, blockchain, javax, java-data-builder, word-correction, hibernate, github, pinyin, ioc, wps-office, cache, autologger, java, performance-testing, algorithm, awesome-java, java-doc, hibernate-orm, maven-repository, data-prepare, csv-export, di, email, parallel, ehcache, basic, jboss, netty, ast, extra, hutool, csv-import, csv, junit5, basic-tool, coin, toc, junit4, chatgpt, md, bitcoin, lombok, keyword, pinyin-analysis, study, spring-boot, asm, chinese, java-annotations, apache, csv-reader, simple-tranditional",178755
-China,1,3,JavaScript,1,2009-04-27 02:38:53+00:00,False,Unknown,1579
 China,16,1922,Java,14315,2016-03-12 10:58:35+00:00,True,"fairy, dependency-manager, chromium-environment, project-dependency, android-architecture, interview-questions, launcher, tv-launcher, ios, unity3d, game, gradle, chrome, leanback-launcher, interview, module-dependency, android, chromium",428623
 China,30,5813,Python,3488,2013-02-20 11:44:27+00:00,True,Unknown,306657
 China,6,17,Python,218,2008-12-17 22:47:53+00:00,False,"python3, chef-cookbook, twitter-video, red-teaming, pentesting, ruby, twitter, offensive-security, chef, red-team, red-teamers",3900
@@ -1380,7 +1355,6 @@ Denmark,8,53,JavaScript,12,2008-06-27 08:00:11+00:00,False,Unknown,11020
 Denmark,30,67,JavaScript,123,2008-06-27 08:37:49+00:00,False,Unknown,7759
 Denmark,1,6,Ruby,1,2008-03-10 18:00:12+00:00,False,Unknown,108
 Denmark,30,3139,JavaScript,135,2012-10-01 21:40:46+00:00,False,"boilerplate, rust, generate, bootstrap, codegen",21208
-Denmark,1,7,JavaScript,0,2009-01-25 04:25:55+00:00,False,Unknown,34090
 Denmark,30,1244,C#,7147,2017-06-12 10:48:02+00:00,False,Unknown,33705
 Denmark,12,183,JavaScript,5,2021-03-12 13:23:49+00:00,False,"reactjs, github-config, javascript, config, css, jaavascript",32779
 Ecuador,30,1375,Shell,1216,2020-02-16 18:21:17+00:00,False,Unknown,84253
@@ -1407,7 +1381,6 @@ Egypt,1,7,Python,0,2008-09-12 15:14:17+00:00,False,Unknown,568
 Egypt,30,386,Python,135,2021-07-07 00:19:15+00:00,True,"websocket, pymemcache, python, channels, api, scss, gettext, rest-api, js, cms, django-application, staticfiles, stripe, i18n, html, social-authentication, stripe-payments, blog, python3, social-login, django, djoser, memcached, css, payment-gateway, roadmap, real-time, django-cms, django-project, templates, session, translation, ajax, django-rest-framework, django-blog, javascript",1180114
 Egypt,2,171,HTML,223,2021-09-15 21:57:28+00:00,False,Unknown,377
 Ethiopia,13,2843,Shell,104,2023-02-19 19:32:07+00:00,False,Unknown,31933
-Ethiopia,14,2175,Python,115,2022-12-15 20:54:39+00:00,False,Unknown,532816
 Ethiopia,30,501,Python,7,2022-10-22 21:09:00+00:00,False,Unknown,440590
 Ethiopia,15,1530,Dart,2651,2016-07-08 07:07:30+00:00,True,Unknown,32895
 Ethiopia,30,4091,PHP,4113,2009-03-26 10:58:12+00:00,False,"coronavirus, carbon-reduction, climate-crisis, footprint-calculators, food-waste, carbon-footprint, climate-change, awesome, climate, carbon-emissions, awesome-list, climate-action, climatechange, covid, renewable-energy",335661
@@ -1424,7 +1397,6 @@ Ethiopia,30,2153,C,3219,2016-06-15 05:47:10+00:00,True,"metasploit, cooolis-ms",
 Ethiopia,30,576,JavaScript,50,2022-08-04 13:46:35+00:00,False,Unknown,8268
 Ethiopia,30,7543,Python,17398,2019-11-06 18:22:33+00:00,False,Unknown,3055514
 Ethiopia,20,1172,Python,7384,2019-10-13 11:14:15+00:00,False,"aes-key, unreal-engine-utilities, python, fortnitebr, unreal-engine, fortnite-bot, unreal-engine-5, easy-to-use, fortnitebot, fortnite-br, fortnitepy, ue4, fortnite-season, fortnite, game, unreal-engine-4, ezfn, bot, reverse-engineering, lupusleaks, shootergame",1832141
-Ethiopia,2,884,Python,17,2021-05-19 00:56:50+00:00,False,"github-config, config",1
 Finland,30,5981,JavaScript,153,2009-06-01 00:57:58+00:00,False,Unknown,1272331
 Finland,30,5812,HTML,742,2017-04-29 08:48:25+00:00,False,Unknown,56572
 Finland,30,1307,JavaScript,907,2009-01-20 15:11:09+00:00,True,Unknown,734694
@@ -1438,11 +1410,9 @@ Finland,11,4401,Java,92301,2011-01-25 09:32:44+00:00,False,"class-diagram, snipp
 Finland,30,5812,HTML,742,2017-04-29 08:48:25+00:00,False,Unknown,56572
 Finland,6,2248,C#,32841,2015-10-01 20:47:33+00:00,False,"convchain, programming, wfc, algorithm, algorithms, language, mathematics, blog, probabilistic-programming, texture-synthesis, procedural-generation, math, gamedev, csharp, mcmc, markovjunior, cellular-automata, voxel, art, machine-learning",199857
 Finland,30,3095,Jupyter Notebook,7301,2020-09-29 10:29:00+00:00,False,"data-science, interview-questions, python, computer-science, statistics, deep-learning, datascience, llm, numpy, pandas, machine-learning, computer-vision, ai",631900
-Finland,1,1742,JavaScript,54,2018-11-19 03:37:15+00:00,False,Unknown,399
 Finland,30,1659,JavaScript,130,2018-06-16 10:12:03+00:00,True,Unknown,81730
 Finland,30,1523,Python,5462,2018-07-03 09:43:25+00:00,False,Unknown,511159
 Finland,30,1051,JavaScript,401,2020-09-15 00:32:04+00:00,True,"openai, chatgpt, chatgpt3, vscode-snippets, vscode-extension-pack, extension, vscode-plugin, gpt, tools, website, nextjs, vscode, vscode-extension, docs, vsix, typescript, javascript, ai",192547
-Finland,10,223,JavaScript,12,2024-05-12 04:00:33+00:00,True,Unknown,30810
 Finland,30,28,JavaScript,0,2009-04-18 13:55:31+00:00,False,"utility, hacktoberfest, routing",1387048
 Finland,14,7,Elixir,25,2008-04-04 19:14:18+00:00,False,Unknown,55819
 Finland,12,14,Ruby,39,2008-09-12 13:57:05+00:00,False,Unknown,13242
@@ -1450,7 +1420,6 @@ Finland,30,29,JavaScript,30,2009-03-22 20:25:38+00:00,False,azure-devops,40451
 Finland,30,17,Ruby,15,2008-09-18 07:56:28+00:00,False,"caching, password-generator, build-tool, security-tools, ci, npm, redis, dependencies, security, finnish",35022
 Finland,30,66,JavaScript,6,2008-12-05 21:33:42+00:00,False,"resource-sharing, ill, alma, libraries",228631
 Finland,30,62,C,8,2008-10-30 19:37:46+00:00,False,Unknown,287005
-Finland,1,3,JavaScript,1,2009-06-21 10:35:51+00:00,False,Unknown,76
 Finland,21,13,Erlang,2,2008-04-08 04:37:52+00:00,False,Unknown,45395
 Finland,3,27,HTML,0,2008-03-10 17:35:29+00:00,True,Unknown,48177
 Finland,30,1321,HTML,520,2011-07-26 14:13:14+00:00,False,Unknown,2092826
@@ -1615,7 +1584,6 @@ Germany,30,1305,C#,752,2012-02-20 14:26:08+00:00,False,Unknown,109045
 Germany,25,16,Ruby,11,2009-01-15 12:08:55+00:00,False,Unknown,132904
 Germany,5,6,Python,8,2009-01-15 13:34:20+00:00,False,Unknown,2348
 Germany,17,11,JavaScript,1,2009-01-15 14:13:41+00:00,False,Unknown,53915
-Germany,2,4,JavaScript,2,2009-04-16 19:36:53+00:00,False,Unknown,1236
 Germany,11,12,PHP,33,2009-05-21 09:05:09+00:00,False,"blog-engine, middleware, psr-7",99833
 Germany,30,650,PHP,533,2008-12-11 16:33:44+00:00,False,"skeleton-template, geocoding, autocompletion, cakephp-plugin, typehinting, rss, php, cakephp, captcha, feed, geocoder, annotations, cakephp-application, data-transfer, decimal, ide-helper, precision, geocoder-provider, support-annotations, ajax, transfer-objects",62859
 Germany,27,21,JavaScript,97,2008-06-23 10:52:56+00:00,False,"svelte, nodejs, typescript, storybook, hmr, stencil, graphql",1272507
@@ -1725,7 +1693,6 @@ Germany,30,1854,TypeScript,60,2018-09-30 18:50:30+00:00,True,"beer, clustering, 
 Germany,30,1306,Python,823,2018-12-04 09:52:59+00:00,False,"mobility, camera, battery-electric-vehicles, driving-cycles, sensor, fleet, lithion-ion, logistics, stationary-energy-storage, road-freight-transport, fahrstil, battery-pack-diagnostics, incremental-capacity-analysis, sensor-coverage, vehicle-concept, object-detection, state-estimation, radar, autonomous-driving, angle-estimation, lithium-ion, racing, climate, depth-estimation, autonomous-vehicles, driving-style, battery-aging, lithium-ion-battery, trucks, side-slip, vehicle-dynamics, transformer, battery-thermal-management-system, sensor-fusion, kalman-filter, av, unscented-kalman-filter, perception, fahrzyklen, optimization, techno-economic-design, segmentation, coverage, extended-kalman-filter, gnss, sensor-setup, differential-voltage-analysis, bev",1788761
 Germany,30,1263,TeX,40,2018-10-21 13:46:26+00:00,False,Unknown,3922416
 Germany,7,1155,Python,12534,2020-06-04 22:20:30+00:00,False,"platformer2d, pyaudio, osm, dpi-scaling, python, macos-app, games, satelite-images, windows, python-ui, arduino, audio-analysis, platformer-game, gui, platformer, raspberry-pi, tkinter-widgets, windows-11, tkinter-python, highdpi, eyeblink-detection, livestream, aruco, music, guitar-tuner, dlib, modern, multiwii, drone, openstreetmap, customtkinter, eye-tracking, interactive, opencv, videostream, tkinter-gui, ui-design, modern-ui, quadcopter, game-development, tile-rendering, macos, python3, game, positions, tuner, user-interface, googlemaps, positioning, tkintermapview, guitar, map, frontend-app, tkinter, aruco-markers, dark-mode, pygame, py2app, chromatic-tuner, numpy, tilemap, game-2d, machine-learning, custom, gui-application, ui, keras, dark-theme",410761
-Germany,14,1079,JavaScript,1735,2020-01-22 13:06:45+00:00,True,"webapps, googlecompetition, udemy, problemsolving, educationalgames, casestudies, desktopapps, interviewpractice, datascience, datastructures, edx, mobileapps, datascienceindustries, interviewprepration, jobinterview, projects, dashboard, elearning, leetcode, codeforces, kaggle, udacity, algorithms, educative, consoleapps, career, codeacademy, googlekickstart, powerbi, interviewquestions, tableau, dataanalysis, deeplearning, machinelearning, interviewtips, coursera, powerpoint, atcoder, excel, gameproject, uva, datacamp, khanacademy, educationalprojects, youtube, topcoder, freecodecamp, coaching, mentoring, career-guide, sql, hackerearth, googlesheets, career-development, hackerrank, interview, competitiveprogramming, googlecodejam, elearningplatforms",294850
 Germany,30,952,C++,2187,2020-03-24 10:09:40+00:00,False,"eeprom-programmer, atmega8a, project, diy, attiny202, atmega, transistor-tester, sensor, ups, moisture, rotary-encoder, radio, segment, ultrasonic, inductor, attiny412, hall-sensor, logic-probe, capacity, game, display, attiny212, cr2032, retro-computers, pcb, rda5808, i2c, protection, tinyavr, attiny13, attiny13a, rf, usb, hc-sr04, 28c64b, diode, hall-effect-sensor, atmega8, lifepo4, adum4160, ir-remote, capacitor, mosfet, capacitive-touch, avr, tv, lipo, oled, soldering-station, tle4935l, tachometer, adum3160, capacitive, arduino, station, raspberry-pi, 28c256, mp3, remote, dice, tsop4838, uninterruptible-power-supply, moisture-sensor, c64, tuner, candle, nec, component-tester, battery, qwiic, attiny10, max7219, rpm, hall, li-ion, lmv321, soldering, t12, nightlight, isolator, fm, capacitive-touch-sensor, rda5807, atmega328p, audio, supercapacitor, hamster, attiny402, led, supercap, attiny, dfplayer, ir, resistor, solar, tester, neopixel",82574
 Germany,30,911,Java,55,2020-12-17 17:27:16+00:00,True,"algorithms, deep-learning, convolutional-neural-networks, machine-learning, ai",105401
 Germany,30,881,JavaScript,228,2020-03-08 12:07:10+00:00,False,"typescript, javascript, pathgenerator",64742
@@ -1736,10 +1703,8 @@ Germany,11,610,JavaScript,50,2023-04-03 01:14:19+00:00,True,"design, simple, rea
 Germany,5,561,C++,4611,2021-09-16 14:18:54+00:00,False,"benchmark, bandwidth, simulation, fluid-simulation, interactive-visualization, gpu-programming, computational-fluid-dynamics, nvidia-cuda, benchmarking, scientific-computing, fluid-dynamics, flops, tool, tools, nvidia-gpu, cuda, lattice-boltzmann, vector-processor, raytracing, vectorization, cfd, nvidia, gpu-computing, high-performance-computing, sycl, gpgpu-computing, gpu, fluid-solver, ptx-utils, profiler, hpc, ptx, gpgpu, roofline-model, opencl, physics, scientific-visualization, lbm, gpu-acceleration",22508
 Germany,6,508,Shell,7377,2022-04-25 06:24:36+00:00,False,"malware, blocklist, tracking, hosts, ads, domains, pi-hole, adguard, dns, telemetry, adblock, scam, phishing, threat-intelligence-feeds, privacy, metrics, blacklist, fake, coins, filterlist",11738471
 Germany,27,434,TypeScript,104,2023-11-04 12:05:47+00:00,True,"github-config, config",2530713
-Germany,12,395,JavaScript,22,2023-12-10 21:53:46+00:00,False,Unknown,1667959
 Germany,5,367,Python,549,2021-02-28 14:11:51+00:00,False,Unknown,15712
 Germany,20,234,JavaScript,285,2021-09-06 21:22:54+00:00,True,"python, clone, javascript, useeffect-hook, cplusplus, react, password-safety, lifecycle-components, java, nextjs, framer-motion, kotlin, strong-password, reactjs, macosx, shoppingcart, git, class-components, swift, typescript-react, config, html, mac-clone, functional-components, jest, typescript, strong-password-generator, landing-page, reddit-clone, rust, sass, macos, github-config, c, password-strength, perl, php, framermotion, state-management, css, nextra, csharp, tailwindcss, ecommerce, spacetravel, aerospace-engineering, golang",705993
-Germany,1,224,JavaScript,0,2021-03-21 20:25:29+00:00,False,Unknown,3
 Germany,1,277,MATLAB,39,2021-04-15 19:35:03+00:00,False,Unknown,18180
 Germany,24,173,HTML,26,2023-09-17 16:09:48+00:00,False,Unknown,75101
 Germany,30,29,Ruby,11,2008-10-18 09:28:14+00:00,False,Unknown,303705
@@ -1893,10 +1858,8 @@ Hungary,30,24,Python,269,2009-03-19 19:19:45+00:00,False,"user-management, testi
 Iceland,30,38,JavaScript,116,2009-05-20 18:47:56+00:00,False,Unknown,2677526
 Iceland,19,8,JavaScript,0,2009-03-10 10:33:23+00:00,False,Unknown,490019
 Iceland,30,805,PHP,10,2020-02-24 11:59:11+00:00,False,Unknown,305334
-Iceland,1,359,Python,1,2023-07-24 21:38:27+00:00,False,"github-config, config",19
 Iceland,30,23,Python,5,2008-06-26 12:44:06+00:00,False,Unknown,567021
 Iceland,20,21,Python,20,2008-12-17 07:37:57+00:00,True,Unknown,1182765
-Iceland,1,277,Python,0,2023-12-18 02:04:57+00:00,False,"github-config, config",3
 Iceland,30,1232,Python,2138,2016-12-17 09:37:05+00:00,False,"python, react-native, repository, browser-extension, android, django-framework, facebook-account, facebook-bruteforce, linux, sudo, hacking, attacker, sublime-text-3, facebook, zsh, brute-force-attacks, chrome-extension, cryptography, utilities, ubuntu, theme, firefox-extension, studio, phishing, bash, safari-extension, kali-linux, browser, linux-password, ethical, javascript",328361
 Iceland,30,2396,TypeScript,164,2018-07-15 13:52:30+00:00,True,"generator, blog, git, conventional-changelog, bump-version, ssg, react, tags, typescript, nextjs",587041
 Iceland,11,616,Shell,12587,2021-02-17 11:38:06+00:00,False,"status-bar, anime, wallpaper, windows, steamdeck, posix-sh, termux, fzf, cli, rofi, dmenu, linux, sxiv, html, syncplay, json-parser, scraping, sed, ueberzug, json, posix, youtube, webscraping, pup, calcurse, shell, dwm, quotes, mac, terminal",17130
@@ -1914,7 +1877,6 @@ India,30,574,JavaScript,70,2021-09-20 07:42:03+00:00,False,"open-source, git, gi
 India,30,3572,Python,262,2022-02-14 12:53:12+00:00,True,"websocket, project, python, grpc-server, stream, kafka, html5, react, go, realtime, kafka-streams, message-queue, web, reactjs, grpc, backend, airflow, web-development, html-css-js, kafka-producer, python-3, socket, html, crypto, html-css, data-scraping, html-css-javascript, apache-airflow, dag, node, chat, html-css-javascript-project, kafka-consumer, css3, go-stream, python3, bootsrap5, css, grpc-client, bootstrap4, express, grpc-go, message-broker, data-engineering, website, encryption, apache, bootstrap, javascript, golang",6534495
 India,11,14,JavaScript,39,2009-03-15 00:53:23+00:00,False,Unknown,4668
 India,30,51,Ruby,13,2009-05-05 14:38:42+00:00,False,"ruby, gpt, repair, gpt-3, gpt-4, cli-app, json, openai, gem, flickr, llama, llama3, llms, collage-maker, llama2",442411
-India,1,13,JavaScript,0,2008-10-18 03:05:08+00:00,False,Unknown,25378
 India,9,58,JavaScript,6,2009-04-27 04:43:18+00:00,False,Unknown,16597
 India,15,50,Go,46,2009-01-03 02:00:03+00:00,True,"webapi, datauri, docker, api, json, data-url, postgres, dataurl, data-uri, http, golang",471663
 India,30,17,Ruby,50,2008-12-18 05:43:04+00:00,False,Unknown,935014
@@ -1995,8 +1957,6 @@ India,30,405,JavaScript,20,2022-02-06 14:01:35+00:00,False,"backend-api, bcrypt,
 India,30,240,JavaScript,191,2021-04-01 14:46:47+00:00,True,"bullmq, google-sheets, open-source, chatbot, ping-pong, line-follower, github, arduino, nodejs, react, nodemcu, gui, hacktoberfest2023, sqlite, realtime, mit, iot, reactjs, adafruit-io, sqlite-database, git, mysql, affiliates, redis-cache, expense-tracker, websockets, vitejs, hacktoberfest2022, scripts, single-page-app, turtle, tkinter-gui, ui-design, socket-io, embedded-c, python3, figma, 8051, humidity-sensor, json, hacktoberfest-accepted, expressjs, apk, esp8266, openai, chatroom-server, boilerplate, google-apps-script, real-time-sync, aia, hands-on, workshop, tinkercad, catalogue, job-queue, iot-projects, android-application, full-stack, redis, redis-cloud, hacktoberfest, multi-page-application",1013740
 India,30,1443,Swift,776,2016-06-13 08:30:04+00:00,False,"swiftui, networking, ios, open-source, transitions, hacktoberfest2020, uikit, swift, animations, animation, hacktoberfest, hacktoberfest2021",427468
 India,7,224,Java,13,2022-05-15 04:48:37+00:00,True,"about-me-github, github, html5, about, java, portfolio, mysql-database, html, java-8, jdbc-dao, html-css-javascript, portfolio-website, css3, jdbc-driver, spring-data-jpa, css, spring-boot, about-me, resume",380331
-India,1,4,JavaScript,2,2008-10-18 06:58:22+00:00,False,Unknown,104
-India,1,4,JavaScript,2,2008-10-18 06:58:22+00:00,False,Unknown,104
 India,30,8691,JavaScript,588,2012-10-03 15:11:48+00:00,True,"boilerplate-react, reactjs, web-development, react, babel, webpack, javascript",271564
 India,8,522,Rust,2736,2023-08-07 09:11:15+00:00,False,"privacy, ethereum, zk-snarks, zksnarks",632128
 India,16,177,Java,17,2022-06-14 07:42:56+00:00,False,"hibernate, spring-security, github-config, spring-boot, jpa, html5, jdbc, mysql, spring-data-jpa, config, jparepository, css, bootstrap, spring, javascript, spring-mvc, java, jwt-token",12356
@@ -2100,7 +2060,6 @@ India,30,4939,Java,1852,2016-02-27 03:15:29+00:00,False,"facebook, soundcloud-ap
 India,30,4849,TypeScript,1086,2016-08-15 06:32:50+00:00,True,"springboot2, angular7, bootstap, spring-boot, developer-guide, angular6, mysql, java-8, angular, spring, java",451077
 India,30,4731,Python,1172,2016-11-20 03:51:46+00:00,True,"devops-tools, jenkins, devops, linux, python, terraform, docker, grafana, kubernetes, prometheus",63773
 India,25,4656,PowerShell,20386,2016-10-30 19:33:54+00:00,False,"ctf-difficulty, penetration-testing, oscp-journey, vulnhub, privilege-escalation, oscp, oscp-prep, ctf-players, ctf-writeups, ctf, cheatsheet, ctf-challenges, hack, hacking",734103
-India,30,4178,JavaScript,153,2016-06-16 05:02:32+00:00,False,Unknown,2127926
 India,30,3892,JavaScript,88,2017-06-28 06:32:41+00:00,True,Unknown,36541
 India,11,3465,JavaScript,1064,2015-06-10 04:36:48+00:00,True,Unknown,16022965
 India,17,3101,Python,51411,2017-02-11 15:27:48+00:00,True,"allinonehackingtool, hacker, ctf-tools, linux, xss-attacks, password-attack, web-attack, xss-detection, hacking, wireless-attack, besthackingtool, steganography, ddos-attack-tool",3013002
@@ -2242,7 +2201,6 @@ India,17,175,Java,17,2022-06-02 13:50:42+00:00,False,"corejava, jdbc-driver, spr
 India,30,173,Java,16,2022-04-14 09:08:30+00:00,False,"hibernate, github, vs-code, spring-boot, jdbc, mysql, mysql-database, spring-tool-suite, spring, java",117539
 India,24,240,JavaScript,33,2022-04-15 04:33:27+00:00,False,"reacticon, redux-thunk, nodejs, nextjs, reactjs, reacticons, html, chakra-ui, router, typescript, css3, json-api, chakraui, mongodb, css, redux, express, reactions, tailwindcss, javascript",82581
 India,25,238,Python,1701,2023-01-17 11:31:05+00:00,False,Unknown,11121
-India,1,237,JavaScript,0,2022-11-13 19:21:56+00:00,True,Unknown,1
 India,8,234,Java,19,2022-04-14 09:10:57+00:00,True,"tech-stacks, covid19-india, html5, sts, covid19-vaccination, projects, java, rest-api, hibernate-jpa, java-backend, portfolio, resume-website, mysql, database-management, covidproof-app, bootstrap5, covid-19, css3, jdbc-driver, spring-boot, crime-management-system, console-application, spring-tool-suite, about-me, javascript, crime-management, swagger-ui",6451
 India,30,233,JavaScript,31,2022-05-16 11:37:17+00:00,False,"blog, moongose, responsive, html5, nodejs, vercel, react, html, chakra-ui, atlas, css, mongodb, redux, javascript, ecommerce-website",199713
 India,13,228,Java,4,2022-05-20 10:41:54+00:00,False,"hibernate, maven, js, api, spring-boot, springdata-jpa, css, jdbc, mysql, html, html-css, javascript, java",8588
@@ -2268,7 +2226,6 @@ India,30,172,JavaScript,9,2022-02-09 17:12:47+00:00,False,"github-config, config
 India,19,172,Java,4,2022-05-21 19:16:54+00:00,False,"postman, html-5, html5, lld, java, hibernate-orm, maven-pom, css-3, jdbc, mysql, mysql-database, bootst, without-framework, maven, css3, spring-framework, spring-data-jpa, oops-in-java, maven-pom-xml, validation, sql, lombok, spring-boot, javascript, swagger-ui",77661
 India,30,171,ShaderLab,61,2021-11-18 17:21:12+00:00,True,Unknown,80546
 India,30,170,CSS,8,2022-06-26 07:31:47+00:00,False,Unknown,4023
-India,30,168,JavaScript,2,2021-05-24 10:51:13+00:00,False,Unknown,568256
 India,30,167,JavaScript,45,2022-09-01 15:16:14+00:00,False,"redux-thunk, html5, styled-components, react, reactjs, react-router-dom, vercel, chakra-ui, css3, sass, cors, render, cyclic, mongodb, redux, mongoose, express, javascript, swagger-ui",50406
 India,30,167,HCL,40,2022-07-11 05:49:20+00:00,True,Unknown,118209
 India,9,166,Python,161,2022-09-16 06:28:15+00:00,False,"bot, pyrogram, telegram-index, index, telegram-bot",30015
@@ -2358,8 +2315,6 @@ India,28,377,HTML,848,2021-04-01 12:16:33+00:00,False,"css-flexbox, cheatsheet, 
 India,30,166,JavaScript,9,2022-03-11 09:13:40+00:00,False,"deployment, middleware, api, cloudinary, responsive, nodejs, html5, react, react-icons, oracle-database, nextjs, rest-api, context-api, reactjs, react-router-dom, mysql, chakra-ui, html, mui, crousel, typescript, talwindcss, css3, cors, redux-toolkit, render, mongodb, css, redux, json-server, expressjs, material-ui, mongoose, node-js, express, interview-questions, npm, sql, tailwindcss, readme, chkra-ui, react-grid-layout, fakeapi, javascript, resume",80141
 India,30,1334,JavaScript,6,2019-07-25 16:19:41+00:00,True,aws,5691295
 India,30,171,JavaScript,10,2022-05-14 07:04:45+00:00,False,"reactjs, portfolio-website, github-config, portfolio, website, front-end, config, chakra-ui, education, html, css, webdevelopment, javascript",46207
-India,1,225,JavaScript,0,2023-07-08 16:39:12+00:00,False,Unknown,1
-India,1,225,JavaScript,0,2023-07-08 16:39:12+00:00,False,Unknown,1
 India,13,234,Java,13,2022-06-14 07:16:02+00:00,False,"resttemplate, jpa, jwt-authentication, netlify, java, hibernate-jpa, git, role-b, vsc, jdbc, mysql, mysql-database, html, java-8, springboot, sts4, css, validation, spring-security, sql, lombok, spring-boot, javascript, sprinb-boot-3",202905
 India,30,406,JavaScript,236,2023-12-12 10:29:41+00:00,False,Unknown,1615338
 India,17,504,JavaScript,58,2023-08-20 04:08:02+00:00,False,"opencv-python, gesture-recognition, github-config, gesture, mediapipe, system-control, config, gesturex",56757
@@ -2402,11 +2357,9 @@ Indonesia,10,234,Python,50,2021-08-03 17:10:10+00:00,False,"python, cython",3676
 Indonesia,22,226,CSS,46,2022-02-28 12:10:10+00:00,False,"folders, folder-management, python, python3, folder, python-script, folder-structure, zip, archives, rar",274439
 Indonesia,30,227,JavaScript,38,2021-12-24 03:39:59+00:00,True,"achievement, stateful-components, studi-independen, postman, react-hooks, nodejs, reusable-components, react, starstruck, automation-test, property-validation, galaxy-brain, formik-yup, github-achievements, resend, saas, supabase, nextjs, rest-api, hapijs, axios, saas-boilerplate, yolo, notes-app, reactjs, react-router, pull-shark, chakra-icons, react-router-dom, profile-readme, shadcn-ui, pair-extraordinaire, dom-manipulation, flexbox, event-ticket-management, html, controlled-components, web-performance, component-lifecycle, mobile-first, profile, accessibility, badge, chakraui, quickdraw, drizzle-orm, kampus-merdeka, react-context, dicoding, json-server, redux, clean-code, css, react-query, webstorage, progressive-web-app, readme, javascript, lemon-squeezy",30013
 Indonesia,30,270,Swift,12,2021-03-05 02:16:36+00:00,False,"python, nodejs, vue, laravel, netlify, nextjs, rest-api, hapijs, js, course, face-detection, vuejs, flutter, next, vscode, json, flutter-apps, slicing-design-to-code, tailwindcss, art, javascript, tailwind, ai",110285
-Indonesia,2,170,JavaScript,0,2021-09-14 03:37:48+00:00,False,"github-config, config",67448
 Indonesia,30,17,JavaScript,1,2009-05-26 19:18:35+00:00,True,Unknown,747246
 Indonesia,22,26,Go,6,2008-07-18 07:07:48+00:00,False,Unknown,713576
 Indonesia,2,12,PHP,2,2009-02-05 02:41:14+00:00,True,Unknown,145
-Indonesia,1,5,JavaScript,0,2009-05-19 09:18:54+00:00,False,Unknown,2
 Indonesia,11,1143,Python,2735,2018-07-17 02:39:04+00:00,False,"kali-linux-tools, directory-scan, open-source, python-dorking, directory-scanner, installer-tools, tool-termux, termux, bing-dorking, new-tools, darkfly-tool, pentest, web-developer, termux-tools, aoxdeface-tools, linux, best-installer-tools, google-dork, linux-hacking-tools, hack-facebook, facebook-update-status, hacking, wss, html, pentesting, facebook-hacking-tools, termux-hacking, deface-website, deface, coding, pentesting-tools, new-hacking-tools, facebook-pentest-tool, tools-2019, web-directory-search, tools-termux, linux-tools, css, web-template, sql-injection-vulnerability, inux-tools, dirattack, sql-injection, new-deface-tools, web-sql-search, termux-tool, jquery, tools-installer, web-theme, website, tools-hacking, admin-finder, deface-tools, 530-tools, sql-injection-vulnerable, beyawak, sql-injection-scan, javascript, new-termux-tools",23374
 Indonesia,30,997,Python,23,2019-05-19 05:53:32+00:00,True,Unknown,239371
 Indonesia,26,228,PHP,134,2021-10-21 10:02:07+00:00,False,security,566422
@@ -2425,7 +2378,6 @@ Iran,12,554,Python,473,2021-02-02 12:19:03+00:00,False,"resize-images, python, a
 Iran,23,472,C#,125,2021-08-26 14:28:37+00:00,True,"automated, management-system, python, githubtools, github, follow-bot, cli",268071
 Iran,30,375,C#,67,2021-09-26 10:17:12+00:00,False,"generic-repository-pattern-mongodb, api, mongodb-driver, event-sourcing, dotnet-library, push-notifications, lpic, dotenetcore, event-bus, adapter-pattern, gitcommand, email-sender, file, linux, creational-design-patterns, generic-repository-core, gitcommands, linux-shell, structral-design-patterns, crawler-python, dotnet-channels, jwt, lpic1, dataaccesslayer, dockercommands, smtp, dotnetcore, python3, strategy-pattern, global-exception-handling, github-config, http-service, sentry, lpic-2, generic-repository, notification-service, mongo, caching, unitofwork, pyhton, dataaccess, pushnotifications, banking-applications, linuxcheatsheet, caching-memory, middleware, singleton-pattern, docker-commands, repository, csharp-code, git-cheatsheets, queue, dotnet6, scrapers, dotnet-core, full-text-search, jwt-auth, git, smtp-mail, crawling-python, email-notification, httpclient, distributed-cache, docker-cheetsheet, ef-core, git-commands, mediator-pattern, gitcomand, scraper, generic-repositories, serilog, pushnotification, git-command, outbox-pattern, restful, eventbus, scraper-python, banking, docker-compose, payment, cleanarchitecture, jwt-middleware, global-error-handling, emails, machine-learning-algorithms, payments, rest-client, elasticsearch, redis, machine-learning, sms, rabbitmq, docker-learn, python, lpic101, files, docker, middleware-pipeline, mongo-db, builder-pattern, http-services, jwt-bearer-tokens, rabbit-mq, linuxcommand, mediator, entity-framework-core, microservice, nosql-databases, lpic-1, restfull-api, auth, middlewares, unitofwork-pattern, proxy-pattern, bridge-pattern, redis-stack, jwt-authorization, banking-api, repository-pattern, file-upload, restful-api, lpic-2-study, docker-image, lpic2, memory-cache, crawler, dockercommad, http-requests, event-driven, sql-server, docker-cheatsheet, microservices, redis-database, factory-pattern, internal-memory-queue, crawling, genericrepository, elastic, git-cheatsheet, nosql-database, creational-patterns, queues, linuxcommands, decorator-pattern, cache, linux-cheatsheet, mongo-driver, jwt-authentication, mongodb-database, authentication, rest-api, design-patterns, sms-api, nosql, linux-command, rest, email, generic-repository-pattern, redis-cache, dotnet, file-manager, authorization, unit-of-work-pattern, config, git-cheat-sheet, linux-kernel, gitcheatsheet, api-rest, httpclientfactory, audit-log, mongodb, csharp-library, payment-gateway, jwt-token, error-handling, command-line, domain-event, linux-cheating, microservices-architecture, docker-command, csharp, design-pattern, linux-commands, notifications, events, domain-events, banking-system, clean-architecture",111715
 Iran,30,260,Python,194,2021-01-07 20:07:42+00:00,True,"digital-image-processing, cli-app, api, bitcoin-api, machine-to-assembly, cplusplus, timer, pil, yasin-rezvani, oop-principles, tic-tac-toe, cli, fontawesome, signal-analysis, computer, file, mano-assembler, dncnn, polynomial-processor, computer-mano, saver, register, rezvani, game, bulk, downloader, tkinter, image-enhancement, artificial-intelligence, assembly-language-converter, assembly-to-machine, datetime, numpy, neural-network, bootstrap, rename-files, javascript, smooth-scrolling, cryptocurrency, polynomial, cpp, command-line-interface, yasin-rezvani-github, convolutional-neural-networks, neural-networks, matplotlib, covid19, github-profile, pyzbar, fft, pytorch, polynomial-subtraction, mathematics, function-approximation, tkinter-library, calculator, polynomial-operations, covid-19, pytorch-cnn, yasin, profile, image-processing, audio-processing, polynomial-manipulation, mage-filtering, 2players, css, time, management, machine-learning-algorithms, bs4, mano-computer-architecture, jquery, information, deep-neural-networks, bs4-requests, data-visualization, machine-learning, graphical-user-interface, cli-gui-assembler, image-recognition, python, os, fourier-series, tensorflow, beautifulsoup, btc, noise-reduction, digital-signal-processing, gui, account, oop-in-java, price, password, carousel-slider, restaurant, font-awesome, password-generator, html, fft-filters, assembler-cli-gui, keras-tensorflow, data-structures, guess, maurice-mano-tools, popper-js, cnn-model, c, user, barcode, coronavirus, machine-code-converter, management-system, real-time, cnn, simple-project, countdown, tkinter-graphic-interface, openweathermap, tic-tac-toe-game, polynomial-multiplication, digital, digitalclock, github, requests, clock, denoising, qrcode-scanner, java, audio-signal-processing, fourier-transform, pytorch-implementation, mathematical-modelling, prettytable, register-logging, generator, tkinter-gui, guess-number-game, autoencoder, polynomial-reversal, deep-learning, restaurant-management, manger, calculator-application, animation, weather-api, webscraping, signal-processing, random, object-oriented-programming, oop, computional-mathematics, qrcode, qrcode-generator, bitcoin-price, beautifultable, computer-vision",206409
-Iran,3,171,Python,3,2023-05-12 19:13:43+00:00,False,Unknown,152410
 Iran,30,2744,JavaScript,132,2024-04-02 07:02:58+00:00,False,Unknown,212614
 Iran,12,1005,Jupyter Notebook,79,2023-01-22 21:22:38+00:00,False,"crawling, gui, data-science, pdf, algorithm, seminar, scraping, favorite, me, powerpoint, car, quote, welcome, workshop, web-mining, contact, linear-algebra, phyton, website, fum, machine-learning, about-me",128219
 Iran,30,813,Go,148,2020-10-29 19:33:51+00:00,True,"websocket, os, channels, fmt, go-modules, docker, sequel, react, jsx, http-server, go, cli, design-patterns, bmi-calculator, reactjs, documentation, grpc, sql-driver, postgresql, html, protobuf, http2, data, io, http, calculator, data-structures, sass, gocui, uuid, flutter, docker-compose, test, css, time, fiber, redux, sql, gorilla, envoyproxy, templates, envoy, javascript, golang",183598
@@ -2459,10 +2411,8 @@ Israel,30,15,Ruby,12,2009-03-28 21:38:54+00:00,False,Unknown,120044
 Israel,30,15,Ruby,12,2009-03-28 21:38:54+00:00,False,Unknown,120044
 Israel,30,4570,JavaScript,125614,2014-08-27 18:01:47+00:00,True,"integration-testing, mutation, es6, api, performance, test-driven-development, chai, nodejs, react, e2e-tests, swagger, chaos-engineering, best-practices, promises, microservices, microservice, rest, style-guide, jest, styleguide, unittest, chaos-testing, testing, test, clean-code, ci, angular, expressjs, testing-framework, mutation-testing, asynchronous, express, npm, cicd, eslint, nodejs-development, contract-testing, e2e, types, node-js, chaos-monkey, mocha, javascript, clean-architecture",369177
 Israel,16,2246,C#,5116,2018-05-18 12:07:59+00:00,False,"dotnet-core, assertion, validation, fluent, contract, software-architecture, asp-net-core, exception, guard, dotnet, assert, web-application, clean-architecture, clause, argument",84349
-Israel,1,6,Ruby,0,2009-06-02 09:04:46+00:00,False,Unknown,3510
 Israel,30,36,Go,2,2008-04-21 23:02:09+00:00,False,Unknown,1809966
 Israel,30,85,C#,145,2009-04-25 18:43:29+00:00,False,"dadops, puns, fun",130340
-Israel,1,1219,Ruby,12952,2019-05-30 14:30:53+00:00,True,Unknown,1498801
 Israel,30,5224,JavaScript,3794,2014-04-26 12:38:55+00:00,False,"ng-pipes, js, nested-properties, json, deep-keys, decoder, performance, nested-keys, filter, json-parser, angular, go, javascript, angular-filters",515379
 Israel,30,3,Ruby,625,2008-10-13 18:34:00+00:00,False,Unknown,44286
 Italy,30,389,C#,73,2022-05-06 13:47:50+00:00,False,Unknown,82792
@@ -2520,12 +2470,10 @@ Italy,29,55,VimL,92,2009-06-01 11:09:36+00:00,True,Unknown,325286
 Italy,30,48,Ruby,30,2008-07-03 09:55:07+00:00,False,Unknown,1004696
 Italy,30,9,Ruby,0,2008-12-05 21:26:06+00:00,False,Unknown,1155304
 Italy,30,11,Ruby,36,2008-05-12 21:14:52+00:00,False,Unknown,216696
-Italy,2,4,JavaScript,3,2008-04-23 17:09:28+00:00,False,Unknown,51
 Italy,24,20,Perl,42,2009-05-19 09:23:34+00:00,False,Unknown,10791
 Italy,30,2867,Python,3330,2017-01-09 13:37:23+00:00,False,"sql, gathering-data, sqlmap, tool, osint, information, osint-tool, injection, hacking, email, osint-python, gathering, osint-resources",1755231
 Italy,24,40,Ruby,28,2008-02-07 23:24:03+00:00,False,Unknown,343674
 Italy,30,2520,Java,3382,2015-04-04 17:26:08+00:00,True,"camera, room, persistance, vault, rxjava2, android, livedata, dependency-injection, viewmodel, kotlin, callblocker, button, instagram-api, applock, architecture, dagger, tablayout, tabs, video, filecrypt, dagger2, customview, animation, applocker, callblock, mvvm, architectural, browser, sample-mvvm, sortedlist",112604
-Italy,1,364,JavaScript,1,2024-01-06 02:56:52+00:00,False,"github-config, config",23
 Italy,21,15,C,12,2008-09-05 12:46:00+00:00,False,Unknown,632529
 Italy,30,17,JavaScript,1,2008-07-02 18:50:23+00:00,False,Unknown,69144
 Italy,26,15,JavaScript,204,2009-05-18 06:36:24+00:00,False,"nuxt, hacktoberfest, vue, social, postgresql, postgres, delicious, nodejs, bookmarks, vuetify, hacktoberfest2022, socket-io",71102
@@ -2569,13 +2517,10 @@ Japan,1,4,PHP,1,2008-11-28 14:06:24+00:00,False,Unknown,2035
 Japan,16,27,Ruby,8,2008-05-23 07:51:40+00:00,False,Unknown,29820
 Japan,12,9,Perl,3,2008-05-23 10:13:53+00:00,False,Unknown,60052
 Japan,16,43,Ruby,15,2008-12-18 06:47:57+00:00,False,Unknown,53084
-Japan,3,6,JavaScript,7,2009-04-17 03:16:34+00:00,False,Unknown,144
 Japan,30,17,Scala,29,2008-11-24 14:16:30+00:00,True,Unknown,533226
 Japan,30,35,JavaScript,6,2008-05-20 20:20:59+00:00,True,Unknown,204248
 Japan,6,14,JavaScript,1,2008-05-20 20:28:43+00:00,False,Unknown,475
-Japan,1,5,JavaScript,2,2008-12-22 01:55:52+00:00,False,Unknown,48
 Japan,30,25,Lua,44,2008-05-21 02:28:29+00:00,False,"bzmod, localization, factorio-mod",202109
-Japan,1,4,JavaScript,2,2008-11-11 00:11:14+00:00,False,Unknown,48
 Japan,30,537,Python,349,2008-09-18 04:42:23+00:00,True,Unknown,311848
 Japan,25,55,Perl,30,2009-01-26 10:18:21+00:00,False,Unknown,15043
 Japan,26,33,PHP,13,2009-01-26 11:24:36+00:00,False,Unknown,288319
@@ -2616,7 +2561,6 @@ Japan,30,1611,Python,125,2017-10-29 08:43:32+00:00,False,"python, docker, jetson
 Japan,30,1423,C++,2256,2017-08-25 10:20:11+00:00,False,"lidar, camera, ros, calibration, python, mobile-robot, icp, cpp, multithreading, registration, point-cloud, ros2, cuda, person-following-robot, vgicp, gicp, person-identification, pcl, gpu, nid, scan-matching",760766
 Japan,16,5635,Python,13762,2018-12-26 14:25:19+00:00,False,"games, python, gui-window, pysimplegui, datavisualization, gui, gui-programming, python-gui, pyside2, wxpython, beginner-friendly, tkinter-gui, systemtray, user-interface, gui-framework, qt-gui, tkinter, qt, remi, tkinter-python",140103
 Japan,30,4157,Python,17167,2018-08-12 07:50:37+00:00,False,"dotnetnuke, cve-2019-0604, k8cscan, subdomain-scanner, exploit, tools, ladon-poc, hacking, ftpscan, 0day, pentest-tool, lcx, cve-2019-11043, vulscan, tunnel, crack, hexo-blog, bypass, badusb, downexec, portforward, pentest, brute-force, cobalt-strike, ipc, mysql, backdoor, hacktools, k8tool, metasploit, exp, pentesting-networks, hacking-tool, wmi, smbscan, mssql, banner, php-fpm, security, ppt, green-theme, powershell, kali, ladon, sshscan, password, lanscanner, ipscanner, getshell, netscan, cve-2019-0708, database, oracle, sharepoint, blog, portscan, portscanner, apt, ms17010, webscan, scan, rdp, phpstudy, k8blog, 3389, rce, msf, tennsy, mysqlscan, privilege-escalation, poc, security-tools, it-theme, porttran, cisco, fashion-theme, ftp, hexo-theme, bannerscan, jboss, osscan, security-scanner, fresh-theme, aggressor-scripts, ngnix, detection, smb, bruteforce, scanner, hack, subdomain",1553658
-Japan,12,2936,JavaScript,271,2020-07-28 11:07:32+00:00,False,Unknown,4643928
 Japan,30,1736,CSS,960,2020-06-26 01:39:01+00:00,False,"mern-stack, css-animations, reactjs, express, nodejs, react, html, mongodb, css, animation, expressjs, material-ui, reactrouter6",120763
 Japan,30,1711,Dart,1810,2018-03-10 13:16:19+00:00,False,Unknown,61855
 Japan,30,1479,JavaScript,208,2018-12-14 00:59:23+00:00,True,"electron-12, armcord, itunes, windows8-1, windows, chromiumos, anonymous, linux, thoriumos, ptp, music-player, atom-editor, hyperspace, compiler-optimization, beaker-browser, webgl, website, apple-musickit, discord-rpc, beakerbrowser, hyper-url, dat-protocol, hyper-terminal, nodejs, chromium, apple-music, electron, avx, windows8app, hypercore, windows7, open-source, dat-url, thorium, decentralized, ide, dat, web-browser, text-editor, atom, code-editor, node, apple-music-electron, beaker, distributed, pwa, thorium-browser, legacy, compiler-optimizations, electron-22, instagram, discord, themes, hyperdrive, browser, webview, peer-to-peer, atom-community, windows-7, github, electron2, html5, discord-rich-presence, chromium-extension, avx-instructions, music, windows8, windows7-8, active, macos, atomio, electron-app, apple-music-ui, site, discord-js, apple, atom-package",1583887
@@ -2655,7 +2599,6 @@ Japan,30,10,Jupyter Notebook,1,2009-01-25 03:26:23+00:00,False,Unknown,497746
 Japan,29,29,JavaScript,57,2008-12-05 02:40:51+00:00,False,"python, etl, sed, awk, dag",6755867
 Japan,30,537,Python,349,2008-09-18 04:42:23+00:00,True,Unknown,311848
 Japan,30,82,Python,237,2008-06-06 04:15:22+00:00,False,Unknown,604282
-Japan,2,7,JavaScript,2,2009-01-22 05:50:35+00:00,False,Unknown,154153
 Japan,30,38,TypeScript,13,2009-01-22 07:24:55+00:00,False,"legaltech, deno, webaudio",358587
 Japan,30,131,Swift,29,2009-01-22 07:25:02+00:00,False,Unknown,22055
 Japan,24,131,Emacs Lisp,476,2009-02-17 02:44:59+00:00,False,Unknown,1290824
@@ -2705,7 +2648,6 @@ Kenya,30,1460,HTML,16,2020-02-03 10:28:42+00:00,True,"css3, git, font-awesome, h
 Kenya,30,1263,Python,52,2018-06-25 18:39:08+00:00,False,"oops-in-java, python-client, bayesian-optimization, shell, python, apachekafka, c, python3, covid19-tracker, inheritance, multithreading, database, django, pytorch, json, javascript, powershell, java",523767
 Kenya,30,1151,JavaScript,103,2020-02-25 05:52:17+00:00,False,"reactjs, tailwind-css, css3, eslint, github, html-css-javascript, responsive, api-rest, html5, html, web-scraping, css, redux, javascript, ruby",156408
 Kenya,30,1052,JavaScript,75,2018-09-13 00:43:55+00:00,True,"marketing, design, studio, python, astro, api, laptop-battery, unfollowers, website, software-development, unfollow, development, community, charge, followers",1238585
-Kenya,30,977,JavaScript,99,2019-11-18 10:59:15+00:00,True,Unknown,230613
 Kenya,30,865,Jupyter Notebook,407,2019-05-28 20:04:45+00:00,True,"programming, python, data-analysis, docker, datascience, react, fastapi, nextjs, software-engineering, headless-cms, coding, front-end-development, storyblok, code, python3, django, webdevelopment, flask, clean-code, data-engineering, beyonic, javascript",108255
 Kenya,30,816,HTML,1600,2020-04-19 07:06:44+00:00,True,"beginner-project, open-source, python, github, goodforbeginners, license, ascii-art, python-script, html, hacktoberfest2022, html-css-javascript, front-end-development, webdevelopment, css, webscrapping, hacktoberfest-accepted, student-vscode, collaborate, mit-license, hacktoberfest, javascript",3471762
 Kenya,30,778,C++,198,2018-12-11 16:35:22+00:00,False,"python, countries, clone, api, nimble, github, settings, arduino, esp32, following, irremote, android, ble, remote-control, protocol, computer, network, infrared, apn, universal, php, python3, firmware, ota, apn-list, followers, apn-config, mcc, ir, ota-update, cloner, hacktoberfest, mnc, automation, bleak",163921
@@ -2731,7 +2673,6 @@ Latvia,25,26,Ruby,72,2008-11-12 19:20:08+00:00,False,Unknown,179259
 Latvia,1,9,Ruby,2,2008-07-03 10:41:42+00:00,False,Unknown,748
 Lebanon,30,2419,JavaScript,1795,2017-04-12 13:19:52+00:00,False,"notion, devto, notion-blog, nodejs, hashnode, cli, pokemon, hashnode-blog, hexbot, npm-cli, cross-posting, typescript, jekyll, medium, ruby, awesome-resources, blog, blogging, sass, medium-api, chrome, color, awesome, chrome-extension, awesome-list, tutorial, awesome-lists, package, noopschallenge, notion-api, writing, npm, hacktoberfest, javascript, writing-tool",392991
 Lithuania,30,7346,PHP,733,2015-10-27 11:27:30+00:00,True,Unknown,58595
-Lithuania,2,34,Python,0,2008-03-25 20:00:23+00:00,False,Unknown,73317
 Lithuania,30,191,Ruby,38,2009-04-05 15:09:18+00:00,False,Unknown,1489794
 Lithuania,30,2478,Python,2123,2016-11-30 16:00:07+00:00,False,"awesome-hacking, brute-force, cheetah-gui, password, fast, cracker, webshell-password-cracker, cheetah, webshell",1288725
 Lithuania,30,1324,Go,5918,2018-08-20 14:25:22+00:00,False,"notion, technology, chess, wasted, terminal, todo, time, confetti, cli",183936
@@ -2748,9 +2689,7 @@ Lithuania,30,1268,Python,4905,2020-07-20 16:30:14+00:00,True,"nlp-model, hugging
 Lithuania,30,880,Java,183,2019-11-24 20:22:58+00:00,False,Unknown,214664
 Malawi,30,776,JavaScript,110,2019-02-28 08:22:52+00:00,True,Unknown,2106417
 Malaysia,20,1760,Jupyter Notebook,9037,2016-06-08 03:09:58+00:00,False,"rabbitmq, strategy-agent, seq2seq, stock-prediction-models, python, curve-lane-detection, tensorflow, chatbot, kafka, pytest-flask, docker, correlation, multi-lane, learning-agents, monte-carlo, rnn, convolutional-neural-networks, evolution-strategies, multi-perceptron, monte-carlo-markov-chain, pyflink, iot, trading-bot, lstm-sequence, yolo, leisure, devops, preprocessing, airflow, lstm, kibana, hackathon, dcgan, pyspark, stock-market, celery, driving-cars, lane-smoothing, plate-detection, attention-seq2seq, flask-hadoop, deep-learning-stock, recurrent-neural-networks, rnn-scratch, scikit, deep-learning, gradient-descent, docker-compose, deep-learning-scratch, flask, encoder, flask-gunicorn-elk, lane-detection, machine-learning-algorithms, cnn, feed-forward-scratch, cnn-scratch, mcmc, locust, feed-forward, luigi-crawler-sentiment, stock-price-forecasting, stock-price-prediction, road-segment, stock-market-monte-carlo, neural-network, machine-learning, multi-lane-angle, flask-kafka, flask-elastic-search",914548
-Malaysia,30,1315,JavaScript,1,2018-11-10 17:14:13+00:00,False,Unknown,7716949
 Malaysia,30,1442,JavaScript,683,2017-11-30 03:12:20+00:00,False,"visualizer, color-deficiencies, tweening, html-css-javascript, color-blindness-simulation, lua, vue, vuetify, module, rainmeter, javascript, material-design",202699
-Malaysia,30,1315,JavaScript,1,2018-11-10 17:14:13+00:00,False,Unknown,7716949
 Malaysia,30,786,JavaScript,612,2020-06-16 04:03:08+00:00,False,Unknown,293297
 Malaysia,30,925,Jupyter Notebook,2066,2021-03-24 06:29:47+00:00,False,"big-data-analytics, big-data-processing, data-processing, modin, python, beautifulsoup, git-cheatsheet, generative-ai, github, web-scraping-python, malaysia-case-study, generative-ai-tools, prompts-template, data-science, academic-paper, phd-project, bing-ai, selenium-python, software-engineering, git, web-development, vaex, scrapy, humata, big-data-architecture, aws-certification, html, obsidian-vault, systematic-literature-review, phd-thesis, books, ai-tools, dask, pyscript, copilot, asp-net, php, python3, software-development, rasuah, litmaps, high-performance-computing, sql-server-database, django, awesome, obsidian, zotero-plugin, big-data, css, pandas, project-management, chatgpt, phd-thesis-template, ray, gemini, obsidian-md, artificial-intelligence, co-pilot, dataset, django-project, daily-life, numpy, malaysia, resources, literature-review, javascript, penerbit-utm-press",3238350
 Malaysia,28,8,JavaScript,53,2009-06-10 02:07:14+00:00,False,Unknown,30201
@@ -2844,7 +2783,6 @@ Mexico,30,947,TypeScript,594,2018-10-31 07:45:45+00:00,False,"langchain-js, antd
 Mexico,12,853,Python,11447,2018-11-13 15:22:48+00:00,False,"code, statistical-learning-method, machine-learning-algorithms",4512726
 Mexico,30,225,C++,896,2022-01-25 00:37:18+00:00,False,"drivers, github-config, windows, config, kernel",161999
 Mexico,19,86,Go,4735,2009-05-03 18:26:28+00:00,False,Unknown,31327
-Mexico,1,7,JavaScript,1,2009-05-03 19:15:06+00:00,False,Unknown,48
 Mexico,14,21,Ruby,1,2009-05-03 19:19:14+00:00,True,Unknown,9078
 Mexico,20,28,PLSQL,10,2008-10-30 01:56:11+00:00,False,"pep, python, plsql, exadata, config, sql, zabbix, mysql, shell-script, nagios, github-config, oracle",91760
 Mexico,30,67,JavaScript,34,2008-04-08 20:27:33+00:00,True,"vlc, controller, hardware, arduino",13549
@@ -2856,7 +2794,6 @@ Mexico,30,497,JavaScript,20,2008-07-27 00:17:58+00:00,False,Unknown,72730
 Mexico,30,12,Go,6,2008-07-20 06:25:44+00:00,False,Unknown,343697
 Mexico,9,16,Ruby,1,2008-04-23 14:04:03+00:00,True,Unknown,35440
 Mexico,2,3,Ruby,0,2009-06-05 20:58:58+00:00,False,Unknown,197
-Mexico,2,5,JavaScript,0,2008-06-28 15:25:01+00:00,False,Unknown,76
 Mexico,17,5,ActionScript,2,2009-06-17 00:09:10+00:00,True,Unknown,652240
 Mexico,30,3230,HTML,1626,2015-02-21 20:57:12+00:00,True,Unknown,367081
 Mexico,30,3230,HTML,1626,2015-02-21 20:57:12+00:00,True,Unknown,367081
@@ -2864,7 +2801,6 @@ Mexico,1,9,PHP,3,2008-12-30 02:24:11+00:00,False,Unknown,619
 Morocco,30,1121,Python,114,2019-08-31 16:12:15+00:00,True,Unknown,241608
 Morocco,3,8,VimL,1,2009-06-14 07:33:59+00:00,True,Unknown,31155
 Morocco,30,23,Python,6,2009-04-22 09:04:27+00:00,True,Unknown,120584
-Morocco,30,2212,Python,62,2015-05-27 04:33:31+00:00,False,Unknown,464884
 Morocco,30,1233,JavaScript,173,2020-04-11 22:13:54+00:00,False,"github-actions, threejs, low-level, fablab, moroccan, nodejs, tree-structure, p5-js, assembly, jspdf, zikojs, morocco, micro, html, three, creative-coding, microcontroller, mips, socket-io, c, greenlab, awesome, mars, awesome-list, css, json, expressjs, morocco-country, processingjs, morocco-regions, xlsx, processing, asm, high-level, microprocessor, javascript, automation",760979
 Morocco,30,1130,C,150,2019-09-15 20:18:48+00:00,True,Unknown,332225
 Morocco,25,1118,PHP,424,2019-02-13 17:54:55+00:00,True,"scanner-web, python, open-source, twig, airbnb, first-game, maroc, dirb, php7, symbnb, e-commerce, current-time, mysql, hacking, html, shopping, pentesting, dirbuster, symfony5, generation, penetration-testing, webmap, execution, python3, php, doctrine, gobuster, e-commerce-project, discord-bot, symfony4, css, time, nmap, report, bot, automation, symfony, bruteforce, hacking-tool, nikto, csharp, discord, wordlist, bootstrap, tailwind, dirsearch",289806
@@ -2877,8 +2813,6 @@ Morocco,20,166,Java,9,2021-10-16 14:44:04+00:00,False,Unknown,158610
 Morocco,30,176,Jupyter Notebook,167,2021-02-23 13:13:49+00:00,True,"android-dl, kotlin-application, shell-scripts, meals-app-flutter, anime-quotes, tensorflow, github, streamlit, kotlin, dictionary, note-app, java, djikstra-algorithm, realtime-detection, all-in-one-video-downloader, dictionary-words, pyspark, application, config, firebase, anime-quote-generator, notes, flutter-app, djikstra, android-app, dataanalysis, toast-notifications, graph, youtube-downloader, web-application, image-processing, flutter-toast, todoapp, github-config, meals, absence-management, downlaoder, andorid-app, exchange-rates, decryption, flutter, notifications, app, pca-analysis, big-data, absence-app, facedetection, static-app, all-in-one, currency-converter, video-downloader, anime-quotes-generator, package, flutterpackage, youtube-dl, classification, encryption, toast, spark, android-application, news-app, readme, github-readme-profile, image-preprocessing, flutter-package, about-me, hacktoberfest, pca, graph-theory, currency-exchange-rates",316965
 Mozambique,30,169,Python,23,2021-01-17 10:51:45+00:00,True,"html5, scss, rocketseat, frontend, js, nlw, pyhton3, html, swiper-js, landing-page, blog, css3, scroolview, python3, google-fonts, css, json, nlw-6, hacktoberfest, javascript, css-animation, ai",369789
 Myanmar,11,10,Ruby,6,2008-06-27 08:26:58+00:00,False,Unknown,16267
-Myanmar,2,230,JavaScript,1,2023-12-17 00:30:46+00:00,False,Unknown,34
-Myanmar,2,230,JavaScript,1,2023-12-17 00:30:46+00:00,False,Unknown,34
 Myanmar,30,8,C#,0,2008-06-23 11:25:38+00:00,False,Unknown,1857675
 Myanmar,30,3367,JavaScript,734,2010-07-21 04:35:49+00:00,False,"design-patterns, oop, php, deep-learning, neural-network, javascript, nlp",215109
 Myanmar,4,10,JavaScript,5,2009-04-07 17:04:18+00:00,False,Unknown,7481
@@ -2886,7 +2820,6 @@ Myanmar,22,6496,Lua,483,2008-02-23 21:14:45+00:00,False,Unknown,52670
 Myanmar,26,5,Java,0,2008-10-13 19:07:00+00:00,False,"html, androidviewpager, asynchronous, php, android, mysql-server, aws-lambda, api-client, pubnub, client-server, synchronous, javascript, android-application, json, java",516583
 Nepal,30,14331,CSS,413,2022-12-26 10:57:07+00:00,False,Unknown,68658
 Nepal,30,11003,Dart,259,2021-05-20 08:05:09+00:00,True,Unknown,549483
-Nepal,1,14575,CSS,79,2019-02-13 05:33:07+00:00,False,Unknown,13
 Nepal,21,2697,Python,1027,2019-12-16 15:24:46+00:00,True,"torrent-search-api, configuration-files, mac-changer, youtube-comment, windows-keylogger, tiktok-telegram, python, seedr-cc-bot, seedr-python, linux-mac-changer, seedr-cc-api, jekyll-theme-chirpy, ncell-api-wrapper, birthday-wish-terminal, youtube-first-comment, mac-address-changer, telegram-bot, seedr, rarbg, torrent-bot, torrent-downloader, piratebay, torrents, dots, telegram-torrent-bot, torrent-search, portfolio, ncell-app, eztv, youtube-channel, jekyll, macchanger, ncell, tiktok, seedr-bot, blog, giscus, python-birthday-wish, tiktok-downloader, tiktokbot, python3, ncellapp, telegram, 1337x-to, vbs, ettv, configuration, youtube, 1337x, tiktok-scraper, happy-birthday, keylogger, linux-keylogger, hemantapkh, first-comment-com, ncell-api, seedr-cc, telegram-torrent, github-pages, nyaa-si, keylogger-python, torlock, yts, readme, ncellbot, seedr-api-python, axiata, hacktoberfest, seedr-api, 1337x-api, torrent-galaxy",33332
 Nepal,30,2141,CSS,289,2019-12-28 15:02:39+00:00,False,Unknown,356418
 Nepal,30,2121,JavaScript,72,2020-06-27 06:21:11+00:00,False,Unknown,130402
@@ -2894,7 +2827,6 @@ Nepal,30,1474,JavaScript,103,2019-10-18 08:14:07+00:00,False,Unknown,78422
 Nepal,30,1133,HTML,167,2018-06-10 15:57:31+00:00,False,Unknown,288559
 Nepal,30,1118,Jupyter Notebook,930,2020-01-20 12:41:20+00:00,True,"tensorboard, image-augmentation, gan, python, lstm-neural-networks, tensorflow, datascience, randomforestregressor, convolutional-neural-networks, inceptionv3-network, datavisualization, regression, image-detection, neural-networks, convolution-layer, sequence-to-sequence, machine-learning, yolov3, natural-language-processing, learning, scikit-learn, decision-trees, programing-language, computervision, autonomous-driving, randomforest, image-classification, pytorch, decision-tree, loss-functions, discriminator, face-recognition, keras-tensorflow, emotion-recognition, trax, deeplearning, covid-19, dataanalysis, machinelearning, generator, python3, c, kaggle-competition, relu, deep-learning, bitcoin-cryptocurrency-market, recommendation-system, pandas, skimage, imagenet-classifier, gridsearchcv, fastai, text-classification, cnn, randomizedsearchcv, classification, kneighborsclassifier, data-visualization, numpy, pokemon-dataset, data-manipulation, transformers-models, nlp",217624
 Nepal,30,11002,Dart,259,2021-05-20 08:05:09+00:00,True,Unknown,549483
-Nepal,2,1797,CSS,9,2023-05-06 14:26:57+00:00,False,Unknown,3048
 Nepal,22,2869,Python,15059,2018-02-11 05:27:56+00:00,False,"api, directory-search, attiny85, nasa-astronomy-picture, exploit, pwnedornot, headers, cve-2019-11447, hacking, cutephp, heimdall, openplc, shell-scripting, whois, python3, geolocation, tplink, pentest-tool, shell, cutenews, digispark-scripts, system-information, reconnaissance, kali-linux, javascript-crawler, traceroute, reverse-shell, web-reconnaissance, cve, nasa-api, osint, accuracy, open-source-intelligence, pentesting-tools, blogging, cve-2020-9375, webpentest, fast, nasa-apod, web-penetration-testing, username, tips-and-tricks, heimdall-theme, tomcat, security, image-recognition, nasa-astronomy-picture-of-the-day, python, toolkit, ctf, port-scanning, tool, upnp, blog, war, ubuntu, ethereum, shell-script, crawler, ssl-certificate, changer, rce, blockchain, chromecast, framework, latitude, exploitation, tp-link, nasa-space, hacked-emails, subdomain-enumeration, dns-enumeration, cybersecurity, metasploit-framework, pentesting, altitude, mitigation, passwords, thewhiteh4t, longitude, nasa, haveibeenpwned, gamma, digispark, hack, apache, goerli, automation",25623
 Netherlands,30,1820,Python,47,2015-10-09 10:15:55+00:00,True,"xml-parsing, shell, python, xml, scss, html, xslt, javascript, odoo",206056
 Netherlands,1,1134,C#,13,2019-10-11 07:41:32+00:00,False,"winforms, clipboard-management, clipboard, windows, notifyicon, clipboard-assistant, dotnet, dotnet-framework, c-sharp, windows-notification",7353
@@ -3034,7 +2966,6 @@ Nigeria,30,1023,Python,223,2020-08-03 00:44:31+00:00,False,Unknown,288057
 Nigeria,30,783,HTML,16,2020-03-11 11:17:02+00:00,True,"beginners, open-source",1018238
 Nigeria,30,1200,Python,472,2022-06-09 12:27:37+00:00,False,"application-status-tracking, html5, flask-web, flask-sqlalchemy, user-dashboard, mysql-database, postgresql, flask-application, flask-login, css3, python3, blog-post, flask, admin-dashboard, contact-us, course-management, jquery, bootstrap, javascript",376266
 Nigeria,30,953,Python,295,2022-05-10 02:30:25+00:00,False,"shell, python, c, compiler, gcc-complier, django, debugging, html, betty-style",36981
-Nigeria,1,576,Python,0,2021-01-20 17:44:16+00:00,False,Unknown,2913
 Nigeria,30,440,Python,127,2022-02-09 22:44:29+00:00,False,"malloc-free, shell, recursion, c, hash-tables, monty, simple-shell, sorting-algorithms, printf, pointers-in-c, linked-list",35033
 Nigeria,30,382,Java,27,2021-11-22 07:54:09+00:00,False,Unknown,52552
 Nigeria,9,358,Shell,11,2023-01-17 10:18:36+00:00,False,Unknown,843
@@ -3103,7 +3034,6 @@ Pakistan,30,1090,Dart,1331,2018-10-02 16:31:46+00:00,False,"alert-app, bfs, pyth
 Pakistan,27,1086,Dart,463,2020-12-31 13:54:36+00:00,False,Unknown,156428
 Pakistan,30,819,JavaScript,30,2018-03-23 17:29:27+00:00,True,hacktoberfest,272451
 Pakistan,30,784,JavaScript,158,2018-09-06 17:32:23+00:00,True,"bookshelves, reactnative, flashcard-application, react, myreads-project",965032
-Pakistan,2,1025,JavaScript,17,2021-12-11 09:03:49+00:00,False,Unknown,7540
 Pakistan,30,914,TypeScript,460,2022-03-23 09:51:22+00:00,True,"bingai, api, data-analysis, coding-challenge, staking, cli, midjourney, vercel, ethereum-blockchain, challenge, ux, bun, analytics, adobe-photoshop, claude, tsc, ai-sdk, tailwindcss, bitcoin-analytics, javascript, cryptocurrency, langchain-typescript, base, nodejs, prompt-engineering, practice, nextjs, calculator, 30daysofcode, research-and-development, curated-list, css, solidity-dapps, inquirer, defi, smart-contracts, giaic, cicd, github-pages, quizzes, ui, github-actions, nfts, foundry, prompt, revision, bmi-calculator, shadcn-ui, on-chain-analysis, profile-readme, database, html, chakra-ui, typescript, step-by-step, aircode, nft, ui-design, blockchain-technology, bard, solidity, resend-email, web3, ux-design, discord, blockchain, huggingface, 100daysofpe, 30daysof30projects, github, chatbot, react, quiz, bookmarks, software-engineering, web-development, 100daysofcode, dapps, decentralization, config, drizzle, adobe-illustrator, sdk, figma, langchain, openai, chatgpt, bitcoin, prompting, ethereum-contract, miniprojects, readme, openai-api, research-tool",11542
 Pakistan,30,546,C++,326,2022-07-07 14:10:33+00:00,True,"ade7953, ade7753, cs5530, cmake, arduino, esp32, magnetic, angle, raspberry-pi, rotary-encoder, accelerometer, analog-to-digital-converter, attiny85, adc-module, cs1238, energymeter, linux, altium-designer, megnetic-encoder, as5048, spi, energy-consumption, make, ade7758, pcb-layout, cs1237, load-cell, adxl345, ads1015, auto-make, c, yasir-shahzad, arduino-library, mastermind, pcb-design, load-cell-amplifier, ubuntu, module, radian-angle, encoder, adc-amplifier, esp8266, development-board, arduino-project, ads1115, makefile, energy-monitor, weight, pcb-footprints, pcb, atm90e36, i2c, altium",244575
 Pakistan,13,411,HTML,24,2022-03-07 07:24:52+00:00,False,"css3, github-config, html5, config, assignment",44368
@@ -3112,7 +3042,6 @@ Pakistan,7,357,JavaScript,46,2023-05-23 13:31:02+00:00,False,"food-delivery-appl
 Pakistan,30,354,C++,46,2021-09-17 21:15:26+00:00,True,"asp, github-codespaces, python, collaboration, github, odbc-driver, cisco-packet-tracer, laravel, azuredatastudio, data-science, matplotlib, sorting-algorithms, network, config, learn, html, communityexchange, mvc, functions, networking, asp-net, python3, php, github-config, pandas, css, oop, student-vscode, collaborate, asp-net-core, data-visualization, hacktoberfest, javascript",168946
 Pakistan,17,230,JavaScript,0,2021-06-08 11:00:52+00:00,False,Unknown,108866
 Pakistan,30,170,C++,96,2021-09-05 16:00:14+00:00,False,Unknown,35514
-Pakistan,1,3,JavaScript,0,2009-06-02 08:28:46+00:00,True,Unknown,20
 Pakistan,11,1093,HTML,23,2023-11-29 13:42:33+00:00,True,Unknown,2625
 Pakistan,30,227,JavaScript,345,2023-12-20 05:08:36+00:00,False,Unknown,12893
 Palestine,26,1651,JavaScript,1165,2014-07-01 15:20:21+00:00,True,"css, navigation, html, headers",786237
@@ -3135,9 +3064,7 @@ Philippines,30,795,HTML,48,2020-07-01 12:12:46+00:00,True,"competition, codewars
 Philippines,29,781,HTML,51,2020-10-19 06:42:56+00:00,False,"css3, tailwindui, headlessui, github-profile, html5, scss, mdx, personal-branding, javascript, java, nextjs",557843
 Philippines,8,1058,CSS,20,2021-12-07 19:30:04+00:00,False,"userscript, fediverse, kbin, userstyles, decentralization, foss, css",408218
 Philippines,30,1003,CSS,216,2021-08-27 00:19:32+00:00,True,"design, python, api, expo, react-native, javascript, nodejs, html5, react, educational-project, android, frontendmentor-challenge, es6-javascript, frontend, frontend-mentor, web-dev, web, web-development, create-react-app, jwt, html, html-css, html-css-javascript, front-end-development, android-app, web-design, challenge, css3, frontendmentor, django, mobile, css, json, hacktoberfest-accepted, back-end-de, mobile-development, food-app, back-end, front-end, android-application, education, hacktoberfest, mobile-app",6523565
-Philippines,7,370,JavaScript,24,2022-09-27 04:02:59+00:00,False,"github-config, config",1102
 Philippines,5,234,Python,5,2023-05-06 17:13:32+00:00,True,"machine-learning, blog, multi-class-svm, python3, k-means-clustering, mdx, typescript, xgboost-classifier, xgboost, k-nearest-neighbors, nextjs",1311398
-Philippines,30,172,JavaScript,52,2021-10-22 01:05:05+00:00,False,Unknown,106225
 Philippines,30,165,JavaScript,24,2022-07-05 23:45:00+00:00,False,Unknown,232057
 Philippines,2,5,Ruby,0,2009-04-04 19:45:43+00:00,False,Unknown,86358
 Philippines,19,15,HTML,1,2009-06-10 02:12:16+00:00,False,"javascript, cheatsheet",256336
@@ -3156,8 +3083,6 @@ Poland,30,2450,JavaScript,27115,2013-04-08 13:56:34+00:00,False,"ember-addon, em
 Poland,30,2403,JavaScript,368,2011-11-05 12:20:07+00:00,False,"babel-plugin, eslint-config, snapshot, typescript, eslint, styled-components, jest-snapshots, jest, linaria, bundler, babel, hacktoberfest, fixtures",3312951
 Poland,30,19,JavaScript,20,2009-05-15 13:15:15+00:00,False,"deno, reactive-programming, spring-boot, rxjava, spring-cloud, typescript, eureka-server",262194
 Poland,9,3,Ruby,3,2009-05-15 13:40:37+00:00,False,Unknown,232059
-Poland,2,4,Ruby,0,2009-05-07 16:46:36+00:00,True,Unknown,4143
-Poland,1,3,Ruby,1,2009-06-25 13:24:59+00:00,False,Unknown,48
 Poland,8,13,Python,1,2009-04-19 11:36:16+00:00,False,Unknown,38790
 Poland,10,16,Ruby,13,2008-12-18 09:09:29+00:00,False,Unknown,53139
 Poland,30,25,Python,4,2008-12-18 09:17:26+00:00,False,Unknown,1769293
@@ -3194,7 +3119,6 @@ Poland,11,30,Ruby,19,2008-03-10 16:18:19+00:00,True,Unknown,3883
 Poland,27,74,Common Lisp,366,2008-03-10 16:48:54+00:00,False,Unknown,576556
 Poland,3,3,JavaScript,0,2009-04-27 18:44:48+00:00,False,Unknown,69306
 Poland,30,67,Python,28,2009-04-05 12:33:00+00:00,True,Unknown,1366406
-Poland,2,224,Ruby,7,2024-08-19 08:50:00+00:00,False,"github-config, config",65
 Poland,30,43,Python,5,2008-09-21 19:47:11+00:00,False,Unknown,730160
 Poland,9,4,Python,4,2009-04-03 21:05:46+00:00,False,Unknown,3973534
 Poland,30,6637,C,15674,2012-12-13 15:37:46+00:00,True,"nvim, neovim, tasks, neovim-plugin, gdb, vim8, cmake, adb, ant, pandoc, vim-plugin, go, neovim-plugins, dispatch, linux, asyncrun, make, asynctasks, vim-plugins, msbuild, vim, awesome, cheatsheet, rake, asynchronous, neomake, bash, nano, build, terminal",495885
@@ -3388,7 +3312,6 @@ South Africa,30,9,PHP,20,2008-09-21 21:31:11+00:00,True,Unknown,305754
 South Africa,28,10,Shell,0,2008-09-17 07:26:59+00:00,True,Unknown,879638
 South Africa,30,2,PHP,140,2008-12-22 00:25:57+00:00,False,"craft-plugin, craft3, craftcms, craftcms-plugin, craft-field, craftc, craftcms3, money, craft, craftcommerce2",17860
 South Africa,30,193,PHP,1,2008-09-18 07:16:44+00:00,True,Unknown,1296704
-South Africa,1,16,JavaScript,0,2008-11-12 19:30:43+00:00,False,Unknown,1
 South Africa,30,29259,Python,2127,2009-08-26 21:17:47+00:00,False,"k8s, litecoin, python, bakefile, k8s-operator, api, ancestry, dockerfile, html5, heroku-buildpacks, btc, geneology, colors, operator, gedcom-files, js, ripple, homebrew-tap, bruce, cdn, make, gedcom, html, eth, dna, shell-scripting, promethease, genome, invoke, rake, kubernetes, css, buildpacks, ethereum, colorama, shell-script, for-humans, paas-framework, human-genome, textui, cdnjs, shell, bash, builds, bitcoin, kennethreitz, text, makefile, bake, herokuish, 23andme",239818
 South Africa,10,3466,Go,1934,2011-08-20 20:09:30+00:00,True,"library, env, environment, config, unmarshal, configuration, go, struct, golang",211579
 South Africa,30,3176,C++,830,2010-07-28 18:27:15+00:00,False,Unknown,64817
@@ -3442,7 +3365,6 @@ South Korea,30,4028,Rust,207,2017-07-05 21:38:44+00:00,True,Unknown,518539
 South Korea,12,3445,Python,38130,2015-11-05 01:52:32+00:00,False,"tensorflow, unsupervised-learning, mnist, neural-networks, semi-supervised-gan, pytorch, cycle-gan, mscoco-image-dataset, cvpr2018, image-to-image-translation, stargan, svhn, image-captioning, deep-learning, pytorch-tutorial, domain-transfer, image-generation, generative-models, attention-mechanism, show-attend-and-tell",228082
 South Korea,30,1927,Python,1735,2017-03-27 12:34:45+00:00,True,"tensorflow, densenet, densenet-tensorflow",547545
 South Korea,30,1409,Python,291,2017-02-25 13:59:57+00:00,True,"tensornets, vgg19, alexnet, tensorflow, deep-learning, react, convolutional-neural-networks, cifar-10, transfer-learning, frontend-app",5932355
-South Korea,2,4,Python,0,2009-03-12 04:40:19+00:00,False,Unknown,2859
 Spain,30,49,Ruby,22,2009-05-21 08:23:19+00:00,False,"learning, golang, udemy-course, go",42684
 Spain,30,5389,Kotlin,9035,2012-08-19 10:55:29+00:00,False,"architecture-components, android-architecture, mvvm, android-development, clean-code, kotlin-android, clean-architecture, coroutines-android, coroutines, android, kotlin",38527
 Spain,30,2002,Python,3242,2015-05-02 23:22:55+00:00,True,Unknown,166843
@@ -3467,7 +3389,6 @@ Spain,30,264,JavaScript,76,2008-10-22 14:36:30+00:00,True,"photography, cli, uti
 Spain,30,44,JavaScript,15,2008-11-11 15:04:59+00:00,False,Unknown,618848
 Spain,2,6,JavaScript,2,2008-06-23 08:54:41+00:00,False,Unknown,1604
 Spain,22,19,Ruby,5,2008-06-23 09:38:08+00:00,False,Unknown,185724
-Spain,1,5,JavaScript,0,2009-02-12 14:56:49+00:00,False,Unknown,19238
 Spain,10,5,TypeScript,0,2008-12-18 11:49:29+00:00,False,Unknown,88799
 Spain,7,13,JavaScript,3,2009-02-10 19:14:46+00:00,False,Unknown,187219
 Spain,3,6,PHP,0,2009-02-08 17:09:22+00:00,True,Unknown,60
@@ -3487,7 +3408,6 @@ Spain,30,1956,Python,554,2016-12-20 11:02:41+00:00,False,"burpsuite, dotfiles, p
 Spain,7,1777,PHP,15,2015-11-02 12:16:33+00:00,False,"recaptcha-verification, recaptcha, google, api, php, form, ankorstore, marketplace-api, marketplace",9126
 Spain,28,1602,Python,14,2015-02-19 00:13:54+00:00,False,"python, keyword-spotting, convolutional-neural-networks, practice, java, algorithms, pytorch, competitive-programming, data-structures, machinelearning, challenge, deep-learning, musical-instrument, examples, hashcode, handwritten-text-recognition, classification, programming-challenges, machine-learning",1065639
 Spain,30,3222,JavaScript,2474,2019-08-18 15:23:40+00:00,False,"spectrwm, neovim, python, openbox, docker, nodejs, datastructures, react, dotfiles, arch-linux, mern-stack, xmonad, database, qtile, tiling-window-manager, rust, sass, alacritty, docker-compose, mongodb, express, sql, dwm, relational-databases, jquery, alacritty-config, nerd-fonts, alacritty-theme-changer, javascript, alacritty-theme, mergesort",53342
-Spain,4,1818,JavaScript,68,2018-02-12 12:06:32+00:00,True,Unknown,362
 Spain,30,850,TypeScript,344,2018-09-13 15:56:14+00:00,False,Unknown,76359
 Spain,27,787,Python,16196,2019-07-20 14:20:21+00:00,False,"xaml, elevenclock, winget, python, customize, windows11, widgets, package-manager, windows, tinker, mica, clock, unigetui, qt5, windows-11, cli, customizable, dev-home, date, pyside2, wxpython, modern, config, updates, chocolatey, taskbar, pyqt6, pip, win32api, taskbar-clock, seconds, github-config, win32mica, 11, scoop, wingetui, pyqt, pyqt5, time, system, customization, legacy, tkinter, qt, package, system-tray, npm, windows-10, dotnet-tool",1750553
 Spain,30,244,JavaScript,40,2021-10-13 12:12:14+00:00,False,"mern-stack, pacel, webpage, parcel, timer, trelllo, scss, mysql, react, html, css, typescript, redux, javascript, kotlin",418203
@@ -3559,7 +3479,6 @@ Sweden,11,11,Nix,2,2008-04-08 20:34:49+00:00,False,Unknown,3129712
 Sweden,16,33,Python,1,2008-06-10 00:48:11+00:00,False,Unknown,314609
 Sweden,30,35,Rust,50,2009-05-18 07:09:34+00:00,False,"command-line, google-api, rust",558002
 Sweden,3,14,Python,124,2009-05-08 13:49:39+00:00,False,Unknown,46471
-Sweden,1,4,JavaScript,2,2008-11-16 17:37:00+00:00,False,Unknown,48
 Sweden,30,12,Go,0,2009-04-03 21:19:26+00:00,False,hacktoberfest,490332
 Sweden,30,152,Erlang,291,2008-04-08 16:35:36+00:00,False,Unknown,11669
 Sweden,7,3,C,7,2009-06-01 12:19:48+00:00,False,Unknown,82534
@@ -3648,7 +3567,6 @@ Taiwan,30,256,C,2,2009-03-10 11:18:26+00:00,True,Unknown,1024430
 Taiwan,18,21,JavaScript,19,2009-04-18 14:06:04+00:00,True,"upptime, status-page, uptime-monitor",963636
 Taiwan,1,6,HTML,0,2008-06-24 18:03:02+00:00,False,Unknown,1
 Taiwan,30,60,Python,271,2009-05-08 13:39:53+00:00,False,Unknown,1530978
-Taiwan,2,10,Python,0,2009-05-22 13:39:53+00:00,False,Unknown,6259
 Taiwan,30,63,JavaScript,39,2009-02-05 03:27:41+00:00,False,"clojure, beginner",236173
 Tanzania,6,556,HTML,26,2023-05-02 10:14:30+00:00,False,"github-config, config",46659
 Tanzania,29,389,JavaScript,720,2022-12-05 14:43:09+00:00,False,"discord-js-v14, gpt-3, gpt-35-turbo, discord, nodejs, discord-bot, discord-js",98056
@@ -3658,7 +3576,6 @@ Tanzania,30,233,Python,26,2021-05-26 09:05:10+00:00,False,Unknown,1918809
 Tasmania,20,8,C,13,2008-07-27 03:59:45+00:00,False,"parser-combinators, racket",301934
 Thailand,30,64,HTML,21,2009-05-11 15:04:32+00:00,True,"hugo-module, booka, bootstrap5-config, browserslist-config, markdownlint-config, hugo-theme, website, hugo-site, dnb-hugo, hugo-theme-component, hugo, prettier-config, hugo-components, eslint-config",373638
 Thailand,30,4009,TypeScript,833,2014-01-23 12:42:43+00:00,True,"element-plus, awesome-lists, eslint-config, best-practices, eslint, vuejs, sxzz, flat, config, awesome, lists, vue, template, eslint-flat-config",28501
-Thailand,1,4,TypeScript,1,2009-06-25 13:01:47+00:00,False,Unknown,76
 Thailand,6,5,HTML,0,2009-01-19 02:03:13+00:00,True,Unknown,2129
 Thailand,30,885,Java,11,2008-09-18 04:52:01+00:00,True,datascience,612235
 Thailand,30,4009,TypeScript,833,2014-01-23 12:42:43+00:00,True,"element-plus, awesome-lists, eslint-config, best-practices, eslint, vuejs, sxzz, flat, config, awesome, lists, vue, template, eslint-flat-config",28501
@@ -3679,10 +3596,8 @@ Thailand,30,3377,Rust,35,2008-03-02 09:58:31+00:00,False,Unknown,451770
 Tobago,11,1607,Jupyter Notebook,33,2020-09-13 04:54:31+00:00,False,"github-config, portfolio, config, html, css, spartanlasergun, javascript",513826
 Tunisia,25,2517,CSS,109,2016-03-23 09:03:03+00:00,True,"deepl, translation, translate-api, translate, translator",193688
 Tunisia,30,1540,C++,234,2013-12-20 02:13:13+00:00,True,"security, python, security-tools, kitsune, security-audit, iot, cms-exploiter, security-automation, cms-exploits, rockstar, cheat, security-scanner, anticheat, security-vulnerability, 0day, rockstargames, cybersec, nids, supervised-machine-learning",1007481
-Tunisia,2,1753,C++,34,2019-02-03 10:44:55+00:00,True,Unknown,19
 Tunisia,30,1236,TypeScript,70,2017-09-04 01:38:49+00:00,True,"firebase-database, stackbit, angular8, python, covid-2019, cplusplus, react-native, todolist-application, arduino, ionic-camera, ionic-framework, following, ionic-chat, ionic4, social-network, docker, chat-room, gatsby, django-framework, lcd-display, chatting-app, django-rest-framework, chatapp, continuous-integration, continuous-deployment, devops, git, meet, social-media, ionicons, bandora, coronavirus-tracking, django-application, chatroom, ssg, firebase, follower-count, lcd128x64, movies-app, typescript, movies, door-lock-flask, social, chat, chat-application, django-template, ionic, covid-19, docker-container, angular7, todoapp, jamstack, cordova-camera-plugin, firebase-realtime-database, static, todolist, firebase-auth, django, flask, angular, lcd, coronavirus, iot-platform, lcd-controller, django-project, iot-application, headless, boostrap4, ionic-apps, continous-deployment, followers",465249
 Tunisia,30,2224,Java,518,2018-06-12 11:57:27+00:00,True,"orm, mail-service, jasmine, h2-database, android, email-sender, angular-validators, jdbc, jwt, springboot, spring-data-jpa, django, prometheus, microprofile, spring-security, spring-data-elasticsearch, h2, sonarqube, npm, javascript, spring-cloud, testcontainers, resillience, nodejs, grafana, filebeat-elasticsearch, quarkus, panache, gradle, mysql, nginx, twilio-api, karma, models, api-call, jsp, embedded-database, sql, express, monolithic, elk-stack, production-grade-spring, message-broker, elasticsearch, redis, python, jpa, docker, discovery-service, logstash, context-api, microservice, servlet, typescript, elasticstack, http-client, node, spring-cache, cache-storage, resteasy, consumer, config-server, express-js, big-data, sleuth, event-driven, node-js, elastic, smallrye, kafka, crud-generator, java, rest-api, zipkin-sleuth, kibana, nosql, volley, elk, distributed-tracing, production, android-studio, jakarta, zipkin, mongodb, kubernetes, resilience4j, angular, api-gateway, mongodb-atlas, filebeat, spring-boot, angular-forms, ecommerce, mongodb-database",66473
-Tunisia,2,1753,C++,34,2019-02-03 10:44:55+00:00,True,Unknown,19
 Turkey,30,1238,JavaScript,1794,2019-10-06 18:02:45+00:00,False,"project, botostart, javascript",44118
 Turkey,30,52,Ruby,23,2008-04-08 20:45:26+00:00,False,Unknown,1461665
 Turkey,24,186,Java,21,2022-11-19 11:14:49+00:00,False,Unknown,59212
@@ -3883,7 +3798,6 @@ United Kingdom,30,62,Perl,144,2009-04-16 19:36:14+00:00,False,Unknown,34133
 United Kingdom,14,6,JavaScript,1,2009-06-04 08:29:07+00:00,False,Unknown,5641539
 United Kingdom,30,54,JavaScript,15,2009-03-17 19:28:11+00:00,False,"mobx-state-tree, vitest, template, bun, citations, typescript, mobx, active",444387
 United Kingdom,15,9,Rust,22,2009-03-17 20:17:00+00:00,False,"f5networks, guests-attendance, bigip, irule, ascii-art, kegger, ansiart, attendance-management-system, ansi-color, wedding-invitation, downloader, ansi-art, rust, invitation-manager, demo, reddit-api, validator, ansi, parser, cp437, rsvp, terraform, sauce, wallpapers, wedding-rsvp, wallpaper",14379
-United Kingdom,1,5,JavaScript,2,2008-10-22 12:53:05+00:00,False,Unknown,401197
 United Kingdom,30,28,JavaScript,5,2008-10-22 14:16:41+00:00,True,Unknown,1281270
 United Kingdom,30,62,Python,43,2008-11-11 14:59:20+00:00,False,Unknown,271297
 United Kingdom,30,90,Rust,30,2008-11-11 15:10:02+00:00,True,"chart, mermaid, objecthash, nushell, flowchart, jupyter, query, addressbase, dagre, blot, elm, playground, hash, redaction, sha256, nginx, zola, reason, rust, dora-metrics, diagram, lua, sqlite, game, sha3, ambiciosa, uml, digraph, cloudflare, jwt, cache, tool, electron, seachess, advent-of-code, bucklescript-bindings, parser, graph, nushell-script, reasonml, elasticsearch, docker, graph-layout, notebook, bucklescript, blake2, multihash, octave, sha2, sha1, elixir",78637
@@ -4007,7 +3921,6 @@ United Kingdom,27,4,JavaScript,65,2009-02-09 15:08:35+00:00,False,Unknown,36342
 United Kingdom,5,5,PHP,0,2009-06-02 09:19:04+00:00,False,Unknown,2513
 United Kingdom,1,5,Ruby,1,2009-02-09 23:12:13+00:00,False,Unknown,5222
 United Kingdom,2,6,Go,235,2008-10-22 21:58:59+00:00,False,Unknown,1795
-United Kingdom,2,13,JavaScript,0,2008-10-29 23:29:49+00:00,False,"github-config, config",9
 United Kingdom,9,6,PHP,33,2008-10-30 00:29:13+00:00,True,Unknown,73235
 United Kingdom,30,236,Python,34,2008-02-09 22:33:01+00:00,False,"crystal-lang, git, github, git-hook, precommit-hooks",218112
 United Kingdom,30,10,Ruby,61,2009-03-10 10:32:34+00:00,False,"csv, current-account, credit-union, digital-marketplace, banking, ruby, uk, deckset, presentation, jekyll, money, scraper, wiki, wasm, cooperative, cotech",138859
@@ -4053,13 +3966,10 @@ United Kingdom,17,6,JavaScript,11,2008-11-05 11:54:03+00:00,True,Unknown,52644
 United Kingdom,30,167,JavaScript,24,2008-11-05 13:21:13+00:00,False,"kubernetes, 3dprinting, prometheus",247147
 United Kingdom,19,13,Python,77,2008-12-05 20:51:52+00:00,True,Unknown,70951
 United Kingdom,30,138,Shell,34,2009-04-22 21:59:52+00:00,False,"dnssec, preproc, gof, coccinelle, objects, shell, c-plus-plus, syntax, vim, utils, bash, database, mirror, php, config, rc, highlight, manager, git, test, plugin, cd, backup, cli, graphical, nvim, sql, script, js, commit, scipts, sample, website, file, text, javascript, howto, graphviz, tools, diff, dns, c, cpp, scripts, schema, dot, pattern, partition",77230
-United Kingdom,1,4,JavaScript,2,2008-09-16 21:01:53+00:00,False,Unknown,48
 United Kingdom,30,45,Ruby,15,2008-09-16 21:32:57+00:00,True,Unknown,40000
 United Kingdom,30,79,Python,72,2009-06-21 10:58:54+00:00,False,Unknown,222365
 United Kingdom,18,17,PHP,19,2009-06-27 17:28:47+00:00,False,Unknown,9427
 United Kingdom,30,16,Ruby,9,2008-05-06 18:25:53+00:00,True,Unknown,219029
-United Kingdom,2,34,JavaScript,0,2008-09-05 13:15:44+00:00,False,Unknown,1
-United Kingdom,6,31,JavaScript,13,2008-09-05 14:11:17+00:00,False,Unknown,177581
 United Kingdom,30,120,Elixir,355,2008-09-05 16:28:04+00:00,False,"etcd, liveview, kv-store, phoenix, acme, elixir, consul, reverse-proxy, go, letsencrypt",10812
 United Kingdom,30,27,Ruby,34,2008-05-12 21:29:22+00:00,False,"headless, static, git, jekyll, jamstack, ssg, stackbit",25434
 United Kingdom,30,128,Python,32,2009-03-24 21:55:50+00:00,False,Unknown,4924580
@@ -4116,7 +4026,6 @@ United States,30,869,Go,2,2008-09-05 13:02:45+00:00,False,Unknown,708120
 United States,9,44,HTML,1,2008-11-24 14:47:52+00:00,True,"bash, soap-client, soap-api, dotfiles, soap, ruby-gem",6155
 United States,30,2309,JavaScript,59,2016-09-27 00:50:02+00:00,True,"metaverse, artificial-intelligence, cloud-engineering",316985
 United States,30,2773,JavaScript,431,2010-03-27 18:04:23+00:00,False,Unknown,40429
-United States,2,6,JavaScript,0,2008-04-15 08:53:41+00:00,False,Unknown,88
 United States,30,31,JavaScript,13,2009-02-26 16:43:28+00:00,False,"eleventy, giscus, blog, aws, nodejs",985408
 United States,30,125,HTML,15,2008-03-25 19:50:54+00:00,False,Unknown,215931
 United States,30,3926,Ruby,1831,2009-06-20 02:47:18+00:00,False,Unknown,73841
@@ -4152,7 +4061,6 @@ United States,6,5,Python,3,2009-03-14 05:43:23+00:00,True,Unknown,157815
 United States,20,24,Ruby,1,2009-03-12 05:41:22+00:00,False,Unknown,64807
 United States,30,60,Ruby,37,2008-09-12 14:55:39+00:00,True,"bluejeans, zoom, chrome-extension",507265
 United States,30,119,JavaScript,18,2008-12-05 00:35:08+00:00,False,"markdown, clojure, pandoc, plantuml, mapnik",246211
-United States,1,2,JavaScript,1,2009-04-04 04:50:04+00:00,False,Unknown,92
 United States,30,4467,JavaScript,6185,2009-04-03 03:34:57+00:00,False,Unknown,218995
 United States,30,4467,JavaScript,6185,2009-04-03 03:34:57+00:00,False,Unknown,218995
 United States,4,12,Python,7,2008-11-12 21:16:37+00:00,True,Unknown,356
@@ -4191,7 +4099,6 @@ United States,30,2653,TypeScript,3321,2015-07-04 01:26:53+00:00,True,"scroll, jq
 United States,15,1492,Jupyter Notebook,1291,2016-06-01 19:47:59+00:00,False,Unknown,915233
 United States,30,102,JavaScript,14,2008-06-26 10:23:12+00:00,True,Unknown,427689
 United States,30,93,Go,17,2008-06-30 23:08:22+00:00,False,Unknown,1856936
-United States,1,9,JavaScript,0,2009-02-17 11:16:12+00:00,False,Unknown,4
 United States,30,46,JavaScript,10,2008-12-17 21:08:19+00:00,False,Unknown,316040
 United States,30,48,Ruby,36,2008-12-05 01:10:35+00:00,False,Unknown,288989
 United States,24,585,Python,89,2008-10-30 21:05:57+00:00,False,Unknown,128700
@@ -4234,7 +4141,6 @@ United States,24,24,R,71,2009-06-10 02:47:25+00:00,False,"venn-diagram, sashimi,
 United States,7,5,Ruby,8,2009-02-26 16:04:41+00:00,False,Unknown,1945
 United States,28,1275,Shell,737,2017-07-03 20:15:00+00:00,True,"rstudio, vitae, reproducability, nordic, latex, r, elder-futhark-runes, student, curl, cli, command-line-app, futhark, workflow, linux, rstats, learning, bryan-jenks, r-workflow, studying, sh, curiculum-vitae, businesscard, yaml, analysis, vba, academic, command-line-business-card, futhark-runes, business-card, rune, obsidian, runes, posix, linguistics, command-line, cran, academia, data-driven-cv, shell, bash, command-line-tool, flashcards, study, viking, terminal, hacktoberfest, obsidian-md, resume, cv",141010
 United States,30,133,Ruby,732,2008-02-08 00:12:26+00:00,True,"google-analytics, reporting, api, analytics, google, ruby",2205962
-United States,2,4,JavaScript,4,2009-02-27 14:13:18+00:00,False,Unknown,160
 United States,3,13,Vim script,4,2009-06-04 19:36:24+00:00,False,Unknown,3513
 United States,20,7,Ruby,51,2008-10-13 16:57:32+00:00,False,Unknown,6413
 United States,9,15,Ruby,7,2009-03-15 00:15:58+00:00,False,Unknown,6607
@@ -4326,7 +4232,6 @@ United States,6,12,Ruby,0,2009-04-18 14:52:32+00:00,False,Unknown,8687
 United States,30,2778,Julia,1049,2018-01-18 19:36:30+00:00,False,chatgpt,416300
 United States,30,1455,JavaScript,36,2012-12-30 05:22:47+00:00,True,"web-audio, web-audio-api, vuejs, vue, vuetify, typescript, javascript, material-design",3013463
 United States,30,30,Ruby,81,2008-07-16 19:32:53+00:00,False,Unknown,63975
-United States,1,4,JavaScript,0,2009-06-16 23:30:34+00:00,False,Unknown,6268
 United States,2,7,Python,2,2009-03-17 19:48:07+00:00,False,Unknown,4392
 United States,20,26,Rust,24,2008-08-20 15:28:01+00:00,False,"learning-rust, emulator, logfiles, cli, metadata, cron, euler, timestamp-microservice, time, learning-by-doing, chip8, stdin, timestamp, rust, chip-8, project-euler, csv",41242
 United States,30,1555,JavaScript,385,2017-03-15 00:19:29+00:00,False,"theme, atom, styles",647023
@@ -4334,7 +4239,6 @@ United States,30,140,Java,77,2009-01-25 03:55:24+00:00,False,"awesome-list, star
 United States,30,1899,Python,822,2019-05-27 04:55:15+00:00,False,"python-ml-starter, api-nodejs, api, flask-restx, django-templates, adminlte, fastapi, laravel, openai-python, python-ai-starter, adminator, bootstrap5, ai-for-databases, django-api, free-dashboard, ai-template, django, flask, flask-api-sample, sqlite-to-ai, appseed, node-starter-kit, free-api, deployment, ai-starter, nodejs, fastapi-starter-kit, ai-ml-starter, node-template, opensource-nodejs-api, admin-dashboard, openai-sqlite, full-stack, django-rest-framework, nodejs-starter-template, flask-restapi, node-api-base, ml-starter, open-source, node-api, nodejs-server, admins-project, free-dash, oss-nestjs-api, typescript, dashboard-templates, nodejs-api, definition, nodejs-starter-kit, appseed-sample, python-api, nestjs-backend, typeorm, admin-panel, node-js, django-api-oauth, api-server, fastapi-starter-template, api-node, reactjs, open-source-api, django-oauth, django-api-server, fastapi-starter, django-api-framework, flask-api, admins, dashboards, node-application, python-django-api, admin-template, node-oauth, api-rest, flask-template, django-api-sample, ml-template, node-starter, node-api-server",199384
 United States,20,1362,JavaScript,55,2019-08-06 19:33:23+00:00,False,Unknown,473120
 United States,9,8,Assembly,1,2008-09-12 16:08:14+00:00,False,Unknown,2606
-United States,1,4,JavaScript,1,2009-05-20 18:48:46+00:00,False,Unknown,76
 United States,12,7,PHP,10,2008-06-24 20:51:19+00:00,False,Unknown,6808
 United States,11,39,Go,0,2008-05-06 18:07:16+00:00,False,Unknown,119515
 United States,6,34,HTML,2,2008-09-16 19:50:20+00:00,False,Unknown,42367
@@ -4380,11 +4284,9 @@ United States,30,3024,Python,2683,2015-10-13 04:29:58+00:00,False,"tensor, githu
 United States,28,224,Python,51,2021-08-27 15:20:38+00:00,False,Unknown,129903
 United States,16,23,Ruby,12,2008-12-05 00:16:58+00:00,False,Unknown,264041
 United States,5,22,PHP,17,2008-11-13 19:53:02+00:00,False,Unknown,1772
-United States,1,7,JavaScript,2,2008-07-02 15:35:54+00:00,False,Unknown,56
 United States,30,1380,C++,935,2018-06-13 23:08:03+00:00,False,"esp8266, litpcc, arduino, digispark, duckyscript",73824
 United States,30,1380,C++,935,2018-06-13 23:08:03+00:00,False,"esp8266, litpcc, arduino, digispark, duckyscript",73824
 United States,30,10,Java,4,2009-03-12 05:21:32+00:00,False,Unknown,1320803
-United States,4,917,JavaScript,396,2023-01-26 04:52:49+00:00,False,"zabbix, web, maven, linux, shell, git, oracle, docker, mysql, nginx, mybatis, spring, java",177673
 United States,18,1538,JavaScript,115,2022-09-27 08:28:27+00:00,False,Unknown,114662
 United States,30,5292,Python,519,2012-12-19 00:25:37+00:00,False,"awesome-lists, charities, altruism, awesome-list, effective-altruism, charity",589017
 United States,30,5292,Python,519,2012-12-19 00:25:37+00:00,False,"awesome-lists, charities, altruism, awesome-list, effective-altruism, charity",589017
@@ -4553,7 +4455,6 @@ United States,4,3,Java,0,2009-04-16 18:37:11+00:00,False,Unknown,3531
 United States,4,1163,JavaScript,15,2009-04-16 18:38:13+00:00,False,Unknown,62264
 United States,11,16,Solidity,1,2009-04-16 19:07:55+00:00,False,"cryptocurrency, p2p, cryptography, scala, bitcoin",349541
 United States,30,35,Go,16,2009-04-16 19:14:23+00:00,True,Unknown,12075
-United States,3,5,JavaScript,2,2009-04-16 19:23:02+00:00,False,"github-config, config",48
 United States,11,6,Arduino,12,2009-04-16 19:31:47+00:00,False,Unknown,14309
 United States,30,222,Ruby,46,2008-06-04 15:40:29+00:00,False,Unknown,359795
 United States,3,10,Java,0,2008-06-04 15:51:30+00:00,True,Unknown,24897
@@ -4566,9 +4467,7 @@ United States,15,4,Ruby,0,2008-06-04 18:26:31+00:00,False,Unknown,42528
 United States,30,315,Python,107,2009-06-04 07:48:22+00:00,False,Unknown,91966
 United States,30,207,Python,397,2009-01-21 00:56:02+00:00,False,"github, aws-lambda, terraform, git, slack-api, google-cloud-run, coauthor, flask, zip, slack, python",605109
 United States,30,257,Python,139,2009-01-21 00:57:47+00:00,False,Unknown,3289588
-United States,1,4,JavaScript,1,2009-01-21 01:03:30+00:00,False,Unknown,48
 United States,19,12,Java,19,2009-01-21 01:08:22+00:00,False,Unknown,85173
-United States,1,4,JavaScript,0,2009-01-21 01:11:05+00:00,False,Unknown,488
 United States,30,119,JavaScript,22,2009-01-21 01:30:23+00:00,True,Unknown,612956
 United States,17,18,Python,241,2009-03-17 19:21:47+00:00,False,Unknown,26188
 United States,9,6,Python,8,2009-03-17 20:40:36+00:00,False,Unknown,218498
@@ -4656,7 +4555,6 @@ United States,22,18,JavaScript,5,2009-06-12 20:30:19+00:00,False,Unknown,70810
 United States,30,22,TypeScript,5,2009-06-12 20:48:56+00:00,False,Unknown,673714
 United States,29,22,Scala,7,2009-06-12 20:55:51+00:00,False,Unknown,826727
 United States,12,226,JavaScript,2,2009-06-12 20:57:46+00:00,True,Unknown,257729
-United States,1,5,JavaScript,0,2009-06-12 21:09:26+00:00,False,Unknown,18168
 United States,19,26,Objective-C,246,2009-06-12 21:20:59+00:00,False,Unknown,103661
 United States,30,52,Python,16,2009-06-12 21:31:10+00:00,False,Unknown,2531335
 United States,16,38,Python,24,2009-06-12 21:41:47+00:00,False,Unknown,342076
@@ -4685,7 +4583,6 @@ United States,8,14,Ruby,42,2009-02-08 17:17:42+00:00,False,Unknown,3123
 United States,7,20,Ruby,9,2009-02-08 17:18:06+00:00,False,Unknown,4260
 United States,2,15,Ruby,2,2009-02-08 17:45:12+00:00,False,Unknown,126
 United States,30,752,Rust,107,2009-02-08 18:08:31+00:00,False,"advent-of-code-2019, whale-emoji, peach-emoji, 20020",99362
-United States,1,4,JavaScript,0,2009-02-08 18:34:28+00:00,True,Unknown,1
 United States,30,21,Perl,39,2009-02-08 18:42:13+00:00,False,Unknown,50864
 United States,25,20,Ruby,11,2009-02-08 18:45:05+00:00,False,Unknown,454773
 United States,11,12,Emacs Lisp,32,2009-05-25 02:39:59+00:00,False,Unknown,22333
@@ -4724,7 +4621,6 @@ United States,30,22,JavaScript,34,2008-08-20 14:38:15+00:00,False,Unknown,334617
 United States,30,462,JavaScript,41,2008-08-20 17:47:31+00:00,False,Unknown,69270
 United States,30,173,Ruby,696,2008-08-20 18:07:26+00:00,False,Unknown,313760
 United States,19,19,VimL,24,2008-08-20 18:28:24+00:00,False,Unknown,17420
-United States,1,18,JavaScript,0,2008-08-20 18:38:21+00:00,False,Unknown,328075
 United States,17,17,JavaScript,0,2008-08-20 19:04:12+00:00,False,Unknown,98096
 United States,30,17,Clojure,11,2008-08-20 19:20:46+00:00,False,Unknown,296668
 United States,30,19,ActionScript,49,2008-11-28 15:19:21+00:00,False,Unknown,297881
@@ -4952,7 +4848,6 @@ United States,4,9344,Jupyter Notebook,30448,2013-05-07 23:26:09+00:00,False,"pro
 United States,30,8894,JavaScript,1362,2014-08-16 00:22:27+00:00,True,Unknown,236930
 United States,30,8775,Ruby,16039,2008-05-18 05:00:12+00:00,False,"machine-learning, decision-tree, rubyml, ruby",53829
 United States,30,8757,Dart,13118,2014-09-22 02:35:58+00:00,False,"stream, react, angulardart, bloc, reactjs, data-class, presentation-slides, typescript, flutter-examples, dartlang, flutter, react-components, npm-package, state-management, dart-web, rxjs, dart-package, struct, library, dart-library, concurrency, fluttereurope, flutter-package, dart, macros",268042
-United States,30,8439,JavaScript,3,2014-01-29 15:58:22+00:00,True,Unknown,1862288
 United States,30,8277,Jupyter Notebook,7660,2014-01-26 22:29:01+00:00,False,"python, clustering, data-analysis, naive-bayes, logistic-regression, data-science, natural-language-processing, model-evaluation, scikit-learn, decision-trees, vizualisation, course, regular-expressions, data-cleaning, linear-regression, jupyter-notebook, pandas, tutorial, ensemble-learning, data-visualization, web-scraping, machine-learning",343805
 United States,30,8252,Go,2584,2009-11-28 14:59:59+00:00,True,"cloudrun, cloud-iap, iap, terraform, google-cloud-run, cloud-run",364805
 United States,30,8223,Java,8839,2009-04-15 04:08:21+00:00,False,Unknown,369120
@@ -5214,7 +5109,6 @@ United States,30,2155,Swift,1167,2018-11-11 18:51:20+00:00,False,"loading-animat
 United States,30,2021,C++,1161,2019-02-09 02:48:18+00:00,True,Unknown,48683
 United States,14,1965,Ruby,3,2018-03-03 16:08:40+00:00,False,Unknown,291740
 United States,30,1934,JavaScript,199,2020-09-20 15:28:28+00:00,False,"child, component, communication, react, 2d, java, web, grid-travel, card, backend, front, fibonacci-number, typescript, in, 3d, sass, profile, reactive-form, anguler14, img, css, angular, parent, tailwindcss, memorization-algorithmic, javascript",153786
-United States,30,1834,JavaScript,17,2019-09-19 21:16:32+00:00,False,Unknown,1138690
 United States,30,1723,Python,327,2018-11-19 05:28:17+00:00,False,"computer-science, fpga, ansible-role, android, kotlin, linux, airflow, flume-agent, cpu, flink-streaming, domain-specific-language, datastreaming, multilayer-perceptron-network, airflow-plugin, game-development, graph-algorithms, android-library, etl-automation, awesome-list, business-analytics, streams, etl-pipeline, ansible-playbooks, interview-questions, awesome-angular, amx, binary-search-tree, conda-environment, ansible-roles, javascript, almalinux, androidstudio, anaconda-installer, ansible-modules, angular-cli, data-science, android-ui, leetcode-solutions, flink-stream-processing, algorithms, conda-packages, agile-development, graphics, binary-search, cloud, awesome-resources, airflow-operators, tilematrixset, interview-preparation, awesome-android-ui, alpine-package, awesome, anaconda-environment, 3d-graphics, android-development, ansible-collection, alpine-image, cassandra-database, machine-learning, accelerator, python, airflow-dags, instruction-set-architecture, datastructures, flume-source-plugin, interview-practice, arrow, leetcode, ansible-playbook, devops, cassandra-cql, database, enterprise, flume-sink-plugin, adobe, flink-kafka, data-structures, google, ansible-inventory, conda, distributed, agile-methodologies, big-data, flume, cloud-computing, awesome-lists, business-intelligence, data-engineering, awesome-android, 3d-models, data-structures-and-algorithms, resources, agile, cassandra-cluster, hadoop, dsa, cassandra, intel, java, software-engineering, ansible, airflow-docker, beam, angularjs, flink, advancedmatrixextensions, agile-integration, awesome-readme, android-studio, deep-learning, ansible-galaxy, multilayer-perceptron, containers, kubernetes, angular, stream-processing, streaming, kotlin-android, anaconda, apache, cassandra-driver, alpine-linux",290865
 United States,30,1706,TypeScript,1467,2019-06-11 16:07:55+00:00,False,Unknown,323243
 United States,15,1544,C#,6252,2018-05-17 10:07:24+00:00,False,Unknown,154048
@@ -5265,16 +5159,13 @@ United States,13,424,Python,23,2024-08-08 15:21:13+00:00,False,Unknown,57910
 United States,30,417,Jupyter Notebook,43,2022-04-20 01:13:24+00:00,False,Unknown,40486
 United States,30,399,TypeScript,1127,2021-02-15 02:50:29+00:00,True,"notion, blog, markdown, highlighting, text-editor, personal-website, portfolio, dynamic-programming, highlight, react, plugin, obsidian-md, netlify, obsidian-plugin, nextjs",628871
 United States,30,392,Python,172,2021-01-02 19:41:47+00:00,False,"python, api, feature-extraction, datascience, connect4, database-systems, dimensional-analysis, kmeans-clustering-algorithm, data-science, web-dev, kmeans-clustering, ftp, alogrithms, database, feature-selection, tcp, networking, nlp, linear-regression, game, algorithm-challenges, json, data-analytics, webscraping, sockets, machine-learning-algorithms, dataset, beardb, dimensionality-reduction, data-visualization, machine-learning, tokenizer, ai",608520
-United States,2,402,JavaScript,8,2023-01-28 21:22:52+00:00,False,Unknown,2099380
 United States,30,392,Python,172,2021-01-02 19:41:47+00:00,False,"python, api, feature-extraction, datascience, connect4, database-systems, dimensional-analysis, kmeans-clustering-algorithm, data-science, web-dev, kmeans-clustering, ftp, alogrithms, database, feature-selection, tcp, networking, nlp, linear-regression, game, algorithm-challenges, json, data-analytics, webscraping, sockets, machine-learning-algorithms, dataset, beardb, dimensionality-reduction, data-visualization, machine-learning, tokenizer, ai",608520
 United States,4,184,JavaScript,35,2021-01-25 15:14:44+00:00,False,Unknown,629
 United States,4,175,JavaScript,13,2023-02-15 08:17:19+00:00,True,"mern, ecommerce, mui, bootstrap, meodydev",20242
 United States,26,244,Jupyter Notebook,182,2022-09-06 16:09:03+00:00,False,"github-actions, deployment, python, api, version-control, chatbot, generative-ai, modelserving, docker, snowflake, streamlit, sklearn, ai-systems, google-gemini-ai, aws-ec2, xgboost, finetuning-large-language-models, churn-prediction, vector-database, extract-transform-load, azure, natural-language-processing, mlflow, fintech, semantic-search, datawarehousing, githubactions, pyspark, dialogflow, azuredatabricks, openai-embeddings, large-language-models, clustering-algorithm, dagshub, ecr-repositories, peft, experiment-tracking, model, machinelearning, web-development-portfolio, jupyter-notebook, retrieval-augmented-generation, mlops, datamodeling, aws, docker-image, ci-cd, end-to-end-pipeline, data-analytics, risk-management, endtoendpipeline, artificial-intelligence, google-analytics, cicd, llama2, resume-screening, kubernetes-deployment, data-visualization, text-to-sql, microsoft-azure, machine-learning, text-processing, qlora, model-management",87013
 United States,24,242,Swift,477,2022-08-04 22:21:22+00:00,True,"swiftui, networking, mvvm, ios, swift, firebase-auth, swiftdata, firebase, coredata, weather-api, ios17",199760
 United States,30,227,Rust,27,2021-10-02 05:23:55+00:00,False,Unknown,5241365
-United States,1,274,JavaScript,0,2024-06-14 09:11:45+00:00,False,Unknown,9
 United States,3,272,JavaScript,4,2023-05-03 10:08:05+00:00,False,"github-config, config",470
-United States,30,171,JavaScript,33,2021-12-18 09:03:31+00:00,True,Unknown,1411578
 United States,30,195,Swift,117,2008-10-14 03:38:32+00:00,False,Unknown,144962
 United States,30,28,C,92,2008-10-14 04:57:54+00:00,False,Unknown,86531
 United States,30,25,Go,254,2008-10-14 07:11:30+00:00,False,"golang, macos, security, example, markdown, render, browser, linux, notes, template, go",209035
@@ -5287,7 +5178,6 @@ United States,30,90,PHP,9,2009-03-14 05:39:37+00:00,False,Unknown,542786
 United States,10,18,HTML,10,2009-03-14 05:41:16+00:00,False,Unknown,28807
 United States,30,30,Ruby,38,2009-03-14 07:10:56+00:00,False,Unknown,30969
 United States,1,8,Ruby,0,2009-02-09 14:15:21+00:00,False,Unknown,177
-United States,1,15,JavaScript,0,2009-02-09 14:37:31+00:00,False,Unknown,33
 United States,30,47,PHP,434,2009-02-09 15:19:19+00:00,False,"retry, php, rapid-prototyping, oai-pmh-client, guzzle-middleware, http, oai-pmh, middleware, guzzle, twig, scss",16784
 United States,30,75,Ruby,468,2009-06-02 07:47:23+00:00,True,Unknown,129322
 United States,20,10,Shell,4,2009-06-02 09:54:41+00:00,False,Unknown,680088
@@ -5341,7 +5231,6 @@ United States,30,88,Ruby,29,2008-02-09 19:51:44+00:00,False,Unknown,2309832
 United States,30,867,Ruby,156,2008-02-11 06:28:43+00:00,False,Unknown,72786
 United States,30,134,Ruby,72,2008-02-11 18:44:09+00:00,True,Unknown,47134
 United States,30,112,Python,356,2008-02-11 18:52:20+00:00,False,"text-search, google-appengine",539310
-United States,1,11,JavaScript,7,2008-02-11 20:55:14+00:00,False,Unknown,96
 United States,30,863,JavaScript,555,2008-02-11 22:03:14+00:00,False,"templates, es6-javascript, template, nodejs, javascript, template-language",35921
 United States,30,2262,TypeScript,60,2008-02-11 22:53:32+00:00,False,Unknown,595280
 United States,11,32,Ruby,155,2008-02-12 00:40:49+00:00,False,Unknown,2569
@@ -5377,7 +5266,6 @@ United States,9,78,C++,78,2009-06-04 19:37:34+00:00,False,"low-level-programming
 United States,30,189,Julia,28,2009-06-04 20:07:52+00:00,False,"static-site, cloudflare-pages, cloudflare-pages-functions",152224
 United States,30,16,JavaScript,2,2009-06-04 20:35:49+00:00,True,Unknown,19527
 United States,18,3,JavaScript,4,2009-06-04 20:52:27+00:00,False,Unknown,24389
-United States,1,3,JavaScript,1,2009-06-04 20:53:44+00:00,False,Unknown,48
 United States,30,24,JavaScript,7,2008-11-23 15:33:27+00:00,False,"cookiecutter-template, cookiecutter-parcel",58695
 United States,30,71,Go,82,2008-11-23 17:41:29+00:00,False,"opengl-es, golang, performance-analysis, safari, gpg4win, gpg, release, ctags, gnupg, ue4, unreal-engine-4, unreal-engine, delicious, plugin, grep-like, ripgrep, sift, python, appengine, inputmanager, measurements, certificate-authority, ios, ue4cli, osx, input, display, video, grep, macos, pylint, example-code, raspberry-pi, examples, application, hash, fnv, findstr",937924
 United States,30,2504,Python,1852,2008-11-23 18:25:28+00:00,False,Unknown,380007
@@ -5432,7 +5320,6 @@ United States,30,49,Ruby,5,2008-12-13 23:57:02+00:00,False,Unknown,394310
 United States,30,187,Objective-C,748,2008-12-14 01:35:32+00:00,True,Unknown,263511
 United States,30,22,Ruby,13,2008-12-14 01:43:00+00:00,False,Unknown,144970
 United States,8,13,Go,0,2008-06-24 16:00:17+00:00,False,Unknown,18700
-United States,3,27,JavaScript,0,2008-06-24 16:10:38+00:00,False,Unknown,1854
 United States,7,17,PHP,0,2008-06-24 16:17:35+00:00,False,Unknown,76648
 United States,16,19,JavaScript,7,2008-06-24 16:55:38+00:00,False,Unknown,47251
 United States,22,21,Python,47,2008-06-24 17:53:33+00:00,False,Unknown,820318
@@ -5468,7 +5355,6 @@ United States,12,17,Java,6,2008-06-11 02:38:41+00:00,False,Unknown,1916369
 United States,12,48,Objective-C,171,2008-06-11 07:41:18+00:00,False,"locking-strategies, swift, locking",16767
 United States,3,6,PLSQL,0,2009-05-22 12:52:35+00:00,True,Unknown,17777
 United States,19,19,JavaScript,56,2009-05-22 13:07:45+00:00,False,dotfiles,11006
-United States,1,4,JavaScript,1,2009-05-22 13:53:43+00:00,False,Unknown,48
 United States,30,62,JavaScript,232,2009-02-17 13:45:55+00:00,True,Unknown,26127
 United States,2,12,Makefile,0,2009-02-17 14:18:11+00:00,True,Unknown,15
 United States,8,12,Ruby,0,2008-11-16 18:23:21+00:00,False,Unknown,296134
@@ -5505,7 +5391,6 @@ United States,30,39,C,70,2008-04-04 17:45:16+00:00,False,"oauth-redirect-server,
 United States,5,9,CoffeeScript,0,2008-04-04 18:01:08+00:00,False,Unknown,1988
 United States,30,258,JavaScript,163,2008-04-04 18:25:41+00:00,False,Unknown,241348
 United States,7,4,C,2,2008-04-04 18:36:15+00:00,False,Unknown,3120
-United States,3,5,JavaScript,0,2008-04-04 18:45:18+00:00,False,Unknown,590
 United States,26,8,Ruby,22,2008-04-04 19:31:43+00:00,False,Unknown,135572
 United States,23,512,Ruby,9198,2008-04-04 19:43:48+00:00,False,Unknown,26680
 United States,9,15,CSS,1,2008-04-04 19:46:46+00:00,False,Unknown,59155
@@ -5528,16 +5413,13 @@ United States,1,4,C++,1,2009-03-12 04:10:52+00:00,False,Unknown,278942
 United States,18,2,Objective-C,824,2009-03-12 04:26:50+00:00,False,Unknown,1429547
 United States,1,8,Python,0,2009-03-12 04:27:04+00:00,False,Unknown,6
 United States,10,5,Java,2,2009-03-12 04:38:11+00:00,True,Unknown,236359
-United States,1,10,JavaScript,1,2009-03-12 05:24:24+00:00,False,Unknown,48
 United States,30,369,Python,24,2009-01-14 17:02:15+00:00,False,Unknown,963968
 United States,11,5,Python,1,2009-01-14 17:51:32+00:00,False,Unknown,486412
 United States,30,16,JavaScript,6,2009-01-14 18:09:31+00:00,False,Unknown,15991865
 United States,1,5,JavaScript,1,2009-01-14 18:21:23+00:00,False,Unknown,76029
 United States,4,3,C++,5,2009-03-06 14:48:57+00:00,False,Unknown,6422
 United States,27,9,JavaScript,4,2009-03-06 14:50:58+00:00,False,Unknown,140061
-United States,1,4,JavaScript,1,2009-03-06 15:35:05+00:00,False,Unknown,92
 United States,13,14,Java,4,2009-03-06 15:53:55+00:00,False,Unknown,179905
-United States,1,15,JavaScript,1,2008-07-03 05:37:56+00:00,False,Unknown,53
 United States,4,44,C,2,2008-07-03 08:21:42+00:00,False,Unknown,645877
 United States,6,10,R,3,2008-07-03 08:42:36+00:00,False,Unknown,13341
 United States,30,185,Objective-C,103,2008-07-18 02:26:01+00:00,False,"ikeahack, esphome, ikea, home-assistant, vindriktning",45685
@@ -5558,7 +5440,6 @@ United States,2,11,Ruby,0,2008-09-12 15:40:04+00:00,False,Unknown,146
 United States,6,7,Ruby,3,2008-09-12 16:23:41+00:00,False,Unknown,23062
 United States,24,39,JavaScript,278,2008-09-12 17:50:27+00:00,True,Unknown,370201
 United States,15,18,C#,5,2009-06-16 22:24:53+00:00,False,Unknown,108055
-United States,5,49,JavaScript,3,2009-06-16 23:29:30+00:00,True,Unknown,12591
 United States,14,5,JavaScript,0,2009-06-16 23:40:24+00:00,False,Unknown,607158
 United States,30,19,Ruby,9,2009-04-04 02:23:44+00:00,False,Unknown,189393
 United States,30,51,Ruby,101,2009-04-04 02:35:18+00:00,False,Unknown,86054
@@ -5611,10 +5492,8 @@ United States,2,0,JavaScript,0,2008-12-05 20:04:46+00:00,True,Unknown,98
 United States,1,6,Java,0,2008-12-05 20:50:36+00:00,False,Unknown,4463
 United States,12,11,Python,5,2008-12-05 21:38:20+00:00,False,"music, drummachines, tr-08, roland, manuals, documentation",70445
 United States,2,4,PHP,2,2008-12-05 21:41:53+00:00,True,Unknown,432
-United States,2,6,JavaScript,0,2009-04-22 21:22:34+00:00,False,Unknown,68
 United States,30,0,JavaScript,12,2009-04-22 21:42:22+00:00,False,Unknown,484277
 United States,9,4,HTML,0,2009-04-22 21:58:10+00:00,False,Unknown,519701
-United States,1,4,JavaScript,3,2009-04-22 22:00:31+00:00,False,Unknown,48
 United States,14,63,Ruby,23,2008-06-05 22:56:29+00:00,False,Unknown,889535
 United States,30,31,Ruby,119,2008-06-05 23:09:15+00:00,False,Unknown,42692
 United States,28,22,Ruby,27,2008-06-06 02:29:33+00:00,False,Unknown,53988
@@ -5651,7 +5530,6 @@ United States,30,69,JavaScript,16,2008-09-16 22:40:05+00:00,False,Unknown,472499
 United States,17,16,JavaScript,21,2008-09-16 22:46:25+00:00,False,Unknown,147073
 United States,4,5,JavaScript,2,2008-09-16 23:23:48+00:00,False,Unknown,1985
 United States,30,25,JavaScript,9,2008-09-16 23:34:07+00:00,False,Unknown,217766
-United States,1,6,JavaScript,0,2009-06-27 16:32:57+00:00,False,Unknown,1417
 United States,30,20,Python,24,2009-06-27 18:29:42+00:00,True,Unknown,58248
 United States,30,41,Ruby,22,2009-06-27 19:12:15+00:00,False,Unknown,95939
 United States,30,485,Elixir,5,2008-07-26 22:24:48+00:00,False,Unknown,156748
@@ -5731,7 +5609,6 @@ United States,30,96,JavaScript,18,2009-05-19 08:41:24+00:00,False,"advent-of-cod
 United States,1,4,C,0,2009-01-12 12:55:03+00:00,False,Unknown,216
 United States,4,33,Go,15,2009-01-12 14:23:33+00:00,False,"raspberry-pi, theme, zsh",974
 United States,3,9,Go,0,2009-06-02 18:23:06+00:00,False,Unknown,442
-United States,1,6,JavaScript,0,2009-06-02 18:38:58+00:00,False,Unknown,56
 United States,28,12,JavaScript,3,2009-06-02 19:08:06+00:00,True,Unknown,443665
 United States,30,40,Ruby,135,2009-06-02 19:36:29+00:00,True,Unknown,35760
 United States,30,51,Rust,19,2009-02-20 17:26:09+00:00,False,Unknown,782542
@@ -5776,7 +5653,6 @@ United States,5,6,PHP,2,2008-06-23 05:45:27+00:00,False,Unknown,93961
 United States,30,442,Rust,11,2024-05-06 23:51:05+00:00,True,Unknown,3100062
 United States,30,24,Shell,18,2008-11-23 16:49:18+00:00,False,Unknown,926072
 United States,30,1334,C,131,2010-01-08 10:39:45+00:00,False,"bitcoin, bitcoin-core",378355
-United States,1,9,JavaScript,0,2009-03-21 14:18:57+00:00,False,Unknown,2
 United States,30,1181,JavaScript,38,2020-11-18 13:59:03+00:00,False,Unknown,137606
 United States,10,755,Shell,1067,2022-06-25 17:03:09+00:00,False,"malware, self-attck, python, virus, base64, parrot, android-virus, instagram-hack-tool, instagram-hacking, instagram-bruteforcer, windows, ziplip, selfkiller, termux, attack, zip-crack, instagram-hack, gh05t, worldlist, brute-force, password, insta, instagram-bruteforce, password-manager, make, hacking, password-generator, zip, instagram-reporting, tor, gh05t-insta, ins-bruter, ins-brute, instagram-hack-account, zip-file, bruteforce-password-cracker, gh05t-hunter5, instagram-report, brute-force-attacks, new, instagram-bot, apk, virusforge, virus-applications, insta-hack, bash, hacking-tool, termux-tool, instagram, reporting, android-virus-application, kali-linux, password-cracking, insta-bruteforce",26509
 United States,15,174,Python,20,2022-10-07 22:51:21+00:00,False,Unknown,24200
@@ -5800,16 +5676,13 @@ Vietnam,30,889,Bicep,1,2019-12-07 12:12:32+00:00,True,Unknown,1755443
 Vietnam,30,3322,C,82,2010-04-22 04:01:49+00:00,True,Unknown,4268279
 Vietnam,30,1624,JavaScript,1776,2019-03-12 08:30:27+00:00,False,"rabbitmq, express, socket-io, nodejs, mysql, elasticsearch, aws, mongodb, redis, expressjs",20656286
 Vietnam,30,1379,HTML,243,2016-04-28 03:57:47+00:00,False,"seo-friendly, htmlcss, sass, css3, seo, html5, scss, prerender, react-seo, html, css, css-grid, frontend, spa-seo",120962
-Vietnam,2,1283,JavaScript,0,2017-09-14 09:20:00+00:00,False,Unknown,45878
 Vietnam,30,1763,JavaScript,6031,2013-04-21 06:15:55+00:00,False,Unknown,126482
 Vietnam,30,3066,JavaScript,366,2014-02-13 08:22:53+00:00,True,Unknown,226620
 Vietnam,30,1379,HTML,243,2016-04-28 03:57:47+00:00,False,"seo-friendly, htmlcss, sass, css3, seo, html5, scss, prerender, react-seo, html, css, css-grid, frontend, spa-seo",120962
-Vietnam,2,1283,JavaScript,0,2017-09-14 09:20:00+00:00,False,Unknown,45878
 Vietnam,30,4516,HTML,289,2020-10-04 10:31:31+00:00,False,"reactjs, css3, redux-thunk, responsive, html5, cinema, redux, material-ui, scss, html, clock, tic-tac-toe, css, movies, javascript, ui, frontend",633976
 Vietnam,30,3195,JavaScript,108,2019-04-30 07:09:48+00:00,False,Unknown,610303
 Vietnam,30,953,Logos,8609,2019-07-16 01:56:50+00:00,False,Unknown,728567
 Wales,30,5,Java,0,2009-06-27 17:36:32+00:00,False,Unknown,539200
-Wales,30,2036,Java,35,2019-09-10 00:23:54+00:00,False,"table, helloworld, multiplications, multiplication-table, tables, github-config, intelligence, github-page, artificial, github, github-pages, github-profile, hello-world, hello-world-github, world, multiplication, multiplication-tables, hello",44
 Wales,30,372,Python,2072,2009-05-19 09:24:55+00:00,True,"robotics, python, photography, divio, raspberry-pi, plotting, django-cms, hardware, simulation, documentation, camera",1518181
 Wales,1,4,HTML,0,2008-12-08 05:41:26+00:00,False,Unknown,892
 Wales,30,360,Java,36,2022-04-28 12:08:26+00:00,False,Unknown,280982
@@ -5818,12 +5691,10 @@ West Indies,30,34,Ruby,52,2008-06-28 18:27:24+00:00,False,Unknown,108706
 West Indies,4,4,JavaScript,2,2008-10-22 14:44:35+00:00,True,"firefox-webextension, nyaa-magnet-links",52495
 West Indies,30,1706,C#,346,2019-01-14 13:23:19+00:00,False,Unknown,54515
 West Indies,30,1083,C#,512,2018-05-13 20:55:27+00:00,False,"koikatsu, gui, character-maker, patcher, unity3d-plugin, koikatu, adult-content, unity3d, emotioncreators, 1room, mod, fpscounter, uncensor, english-translation, modpack, game-mod, translation, bepinex, plugin, fps-counter-plugin",337775
-Yemen,1,1863,HTML,0,2020-03-18 10:07:03+00:00,False,Unknown,451908
 Yemen,8,278,HTML,1,2022-07-17 09:25:07+00:00,True,"react, netlify",61092
 Yemen,30,5001,Go,42015,2018-02-08 07:28:34+00:00,False,"skyhook, google-bard, anything, chatbot, novelai, nsfw, dilithium, r34, cli, bing-ai, ios, stable-diffusion-v1-5, quantum-cryptography, google-colab, wps, bing, binggpt, pypi-package, anythingv3, google, gptchat, kyber, f222, cryptography, corelocation, rule34, revchatgpt, geolocation, sd-v1-5, stable-diffusion, image-generation, library, reverse-engineering, chatgpt, waifu-diffusion, edge, gpt, edgegpt, microsoft, gpt-35-turbo, colab, leaked, sd-v2-0, ai",706457
 Yemen,30,8690,HTML,461,2020-08-07 12:23:16+00:00,True,"programming, python, responsive, cpp, correlation, html5, digital-signal-processing, cisco-packet-tracer, vlan, java, firstandfollow, assembly-x86, prefix-tree, md5-hash, computer-network, assembly-language-programming, fft, config, competitive-programming, router, auto-correlation, acm, readme-profile, acm-programming, data-structures, css3, code, github-config, readme-badges, dhcp, prefix, cryptography, cross-correlation, infixtopostfix, caesar-cipher, dft, infix, assembly-language",92862
 Yemen,24,403,Python,107,2024-01-22 05:35:05+00:00,False,"adminfinder, passwordcracker, vulnerability-detection, hashcracker, cpanel-check, python, sqlinjection, geoip, md5hashcracker, md5, john-the-ripper, directory-bruteforce, open-redirect-detection, hashcat, termux, exploitation-framework, password, kali-scripts, linux, cybersecurity-tools, pythontool, lfi-exploitation, sql-scanner, md5-hash, python-tool, xss-detection, adminpanelfinder, cpanel-cracker, python-script, password-generator, vulnerability-scanners, proxy-checker, config, cpanel-checker, termux-hacking, hacking, sqli-scanner, ssti, admin-panel-finder-of-any-website, termux-api, sqlmap, anonymity, waymap, python3, github-config, cpanel, admin-login-finder, ipaddress, command-injection-scanner, xss-exploitation, cve-scanning, hash, pentest-tool, hash-hammer, command-line-tool, okadminfinder, hacking-tool, termux-tool, admin-panel-finder, command-injection, trixsec, website-hacking, cracker, scanner, admin-panel, dashboards-finder, cpanel-finder, automation, website-hacking-tool",13717
-Yemen,1,183,HTML,0,2023-06-29 05:45:54+00:00,False,Unknown,62
 Unknown,30,781,Python,30,2019-11-06 17:37:57+00:00,False,"timeseries-analysis, statistics, timeseries-forecasting, chess, ai, timeseries, prediction, elo-rating, microprediction",8751945
 Unknown,1,7,JavaScript,0,2009-03-21 13:53:25+00:00,True,Unknown,35856
 Unknown,30,2557,Swift,4332,2017-01-21 02:45:42+00:00,True,"log, swift",85471

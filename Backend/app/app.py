@@ -14,7 +14,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})  # Allow all origins for API routes
 
 # Resolve the path to the CSV file correctly using os.path
-csv_file_path = os.path.join(os.path.dirname(__file__), 'data', 'Iris.csv')
+csv_file_path = os.path.join(os.path.dirname(__file__), 'data', 'finalized_dataset.csv')
 
 # Check if the file exists before attempting to load it
 if os.path.exists(csv_file_path):

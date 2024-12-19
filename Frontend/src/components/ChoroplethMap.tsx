@@ -1,14 +1,18 @@
-import React, { useEffect, useRef, useMemo } from "react";
+import React from "react";
 import * as d3 from "d3";
 import { geoPath, geoNaturalEarth1 } from "d3-geo";
 import * as topojson from "topojson-client";
 import { useData } from "../hooks/useData";
 
-const ChoroplethMap = () => {
-  const mapRef = useRef<SVGSVGElement | null>(null);
-  const { data, isLoading, error } = useData();
+interface ChoroplethMapProps {
+  onCountrySelect: (country: string) => void;
+}
 
-  const countryTotalUsers = useMemo(() => {
+const ChoroplethMap: React.FC<ChoroplethMapProps> = ({ onCountrySelect }) => {
+  const { data } = useData();
+  const mapRef = React.useRef(null);
+
+  const countryTotalUsers = React.useMemo(() => {
     if (!data) return new Map();
     return data.reduce((acc, row) => {
       const country =
@@ -20,18 +24,34 @@ const ChoroplethMap = () => {
     }, new Map());
   }, [data]);
 
-  useEffect(() => {
-    if (!data || isLoading || error) return;
+  React.useEffect(() => {
+    if (!data) return;
 
     const width = 800;
     const height = 500;
 
     const svg = d3
       .select(mapRef.current)
-      .style("display", "block") // Fix white space
-      .style("margin", "0 auto") // Center the map
+      .style("display", "block")
+      .style("margin", "0 auto")
       .attr("width", width)
       .attr("height", height);
+
+    // Create tooltip
+    const tooltip = d3
+      .select("body")
+      .append("div")
+      .attr("class", "tooltip")
+      .style("position", "absolute")
+      .style("visibility", "hidden")
+      .style("background-color", "rgba(255, 255, 255, 0.9)")
+      .style("padding", "8px")
+      .style("border-radius", "4px")
+      .style("box-shadow", "0 2px 4px rgba(0,0,0,0.1)")
+      .style("font-size", "12px")
+      .style("color", "black")
+      .style("pointer-events", "none")
+      .style("z-index", "1000");
 
     const projection = geoNaturalEarth1()
       .scale(150)
@@ -51,75 +71,57 @@ const ChoroplethMap = () => {
         .scaleSequential(d3.interpolateBlues)
         .domain([0, maxUsers]);
 
-      // Clean-up existing content
       svg.selectAll("*").remove();
 
-      // Tooltip
-      const tooltip = d3
-        .select("body")
-        .append("div")
-        .style("position", "absolute")
-        .style("visibility", "hidden")
-        .style("background-color", "#fff")
-        .style("padding", "5px")
-        .style("border", "1px solid #000")
-        .style("border-radius", "5px")
-        .style("font-size", "12px")
-        .style("pointer-events", "none");
-
-      // Draw countries
+      // Draw countries with click interaction
       svg
         .append("g")
         .selectAll("path")
         .data(countries)
         .join("path")
         .attr("d", pathGenerator)
-        .attr("fill", (d: any) => {
-          const countryName = d.properties.name;
+        .attr("fill", (d) => {
+          const countryName = d.properties?.name;
           const userCount = countryTotalUsers.get(countryName) || 0;
-          return userCount ? colorScale(userCount) : "#d0d0d0"; // Set missing data countries to a light gray
+          return userCount ? colorScale(userCount) : "#c0c0c0";
         })
         .attr("stroke", "#333")
-        .on("mouseover", (event, d) => {
-          // Use more robust country name extraction
-          const countryName =
-            d.properties?.name ||
-            d.properties?.NAME ||
-            d.id ||
-            "Unknown Country";
-          const userCount =
-            countryTotalUsers.get(countryName) ||
-            countryTotalUsers.get(countryName.replace(/\s+/g, " ")) ||
-            "No data";
+        .style("cursor", "pointer")
+        .on("click", (event, d) => {
+          const countryName = d.properties?.name;
+          onCountrySelect(
+            countryName === "United States of America"
+              ? "United States"
+              : countryName
+          );
+        })
+        .on("mouseover", function (event, d) {
+          const countryName = d.properties?.name;
+          const userCount = countryTotalUsers.get(countryName) || 0;
 
-          // Ensure tooltip is visible and positioned correctly
-          tooltip
-            .style("visibility", "visible")
-            .style("opacity", 1)
-            .style("left", `${event.pageX + 20}px`)
-            .style("top", `${event.pageY + 20}px`)
-            .style("background-color", "rgba(255, 255, 255, 0.8)") // Semi-transparent background
-            .style("color", "#333") // Set text color to a darker shade
-            .style("padding", "10px") // Increase padding
-            .style("border-radius", "5px") // Add some rounded corners
-            .style("box-shadow", "0 2px 5px rgba(0, 0, 0, 0.1)") // Add a subtle shadow
-            .html(`
-              <strong>Country:</strong> ${countryName}<br/>
-              <strong>Count:</strong> ${userCount}
+          // Highlight the country
+          d3.select(this).style("opacity", 1).style("stroke-width", "2");
+
+          // Show tooltip
+          tooltip.style("visibility", "visible").html(`
+              <strong>${countryName}</strong><br/>
+              Users: ${userCount}
             `);
-
-          // console.log("Tooltip data:", { countryName, userCount });
         })
         .on("mousemove", (event) => {
           tooltip
-            .style("left", `${event.pageX + 10}px`)
-            .style("top", `${event.pageY + 10}px`);
+            .style("top", event.pageY - 10 + "px")
+            .style("left", event.pageX + 10 + "px");
         })
-        .on("mouseout", () => {
-          tooltip.style("visibility", "hidden").style("opacity", 0);
+        .on("mouseout", function () {
+          // Reset country highlight
+          d3.select(this).style("opacity", 1).style("stroke-width", "1");
+
+          // Hide tooltip
+          tooltip.style("visibility", "hidden");
         });
 
-      // Draw legend
+      // Add legend
       const legendWidth = 300;
       const legendHeight = 10;
       const legend = svg
@@ -184,12 +186,9 @@ const ChoroplethMap = () => {
 
     return () => {
       svg.selectAll("*").remove();
-      d3.select("div").remove(); // Remove tooltips
+      d3.selectAll(".tooltip").remove(); // Clean up tooltip
     };
-  }, [data, isLoading, error, countryTotalUsers]);
-
-  if (isLoading) return <div>Loading map...</div>;
-  if (error) return <div>Error loading map: {error.message}</div>;
+  }, [data, countryTotalUsers, onCountrySelect]);
 
   return <svg ref={mapRef}></svg>;
 };

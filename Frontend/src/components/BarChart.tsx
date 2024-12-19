@@ -7,9 +7,14 @@ import {
   Title,
   Tooltip,
   Legend,
+  ChartData,
+  ChartOptions,
 } from "chart.js";
-import { useEffect } from "react";
 import { useData } from "../hooks/useData";
+
+interface BarChartProps {
+  selectedCountry: string | null;
+}
 
 ChartJS.register(
   CategoryScale,
@@ -20,54 +25,61 @@ ChartJS.register(
   Legend
 );
 
-const BarChart = () => {
-  const { data, isLoading, error } = useData();
-
-  // Loading and error states
-  if (isLoading) return <p className="text-blue-500">Loading chart data...</p>;
-  if (error)
-    return <p className="text-red-500">Error loading data: {error.message}</p>;
-
+const BarChart: React.FC<BarChartProps> = ({ selectedCountry }) => {
+  const { data } = useData();
   // Check if data is valid
   if (!Array.isArray(data) || data.length === 0) {
     return <p className="text-red-500">No data available for the chart.</p>;
   }
 
-  // Filter and process data
-  const hireableCount = data.reduce(
+  // Filter data by selected country
+  const filteredData = selectedCountry
+    ? data.filter((d) => d.Country === selectedCountry)
+    : data;
+
+  // Calculate hireable and non-hireable counts
+  const hireableCount = filteredData.reduce(
     (acc: Record<string, number>, curr) => {
-      const hireableKey = curr["Hireable"] ? "Hireable" : "Non-Hireable"; // Convert boolean to meaningful strings
+      const hireableKey = curr.Hireable ? "Hireable" : "Non-Hireable";
       acc[hireableKey] = (acc[hireableKey] || 0) + 1;
       return acc;
     },
-    { Hireable: 0, "Non-Hireable": 0 } // Initialize counts
+    { Hireable: 0, "Non-Hireable": 0 }
   );
 
-  // Chart.js data and options
-  const chartData = {
-    labels: Object.keys(hireableCount),
+  // Prepare chart data
+  const chartData: ChartData<"bar"> = {
+    labels: Object.keys(hireableCount), // ['Hireable', 'Non-Hireable']
     datasets: [
       {
-        label: "Hireable Status",
-        data: Object.values(hireableCount),
-        backgroundColor: ["rgba(75, 192, 192, 0.6)", "rgba(255, 99, 132, 0.6)"], // Two colors for the bars
-        borderColor: ["rgba(75, 192, 192, 1)", "rgba(255, 99, 132, 1)"], // Border colors
+        label: `Hireable Status ${
+          selectedCountry ? `in ${selectedCountry}` : "(All Countries)"
+        }`,
+        data: Object.values(hireableCount), // [countHireable, countNonHireable]
+        backgroundColor: ["rgba(75, 192, 192, 0.6)", "rgba(255, 99, 132, 0.6)"],
+        borderColor: ["rgba(75, 192, 192, 1)", "rgba(255, 99, 132, 1)"],
         borderWidth: 1,
       },
     ],
   };
 
-  const options = {
+  // Chart options
+  const options: ChartOptions<"bar"> = {
     responsive: true,
     plugins: {
-      legend: { position: "top" as const },
-      title: { display: true, text: "Hireable vs Non-Hireable Users" },
+      legend: { position: "top" },
+      title: {
+        display: true,
+        text: `Hireable Distribution ${
+          selectedCountry ? `- ${selectedCountry}` : "(Global)"
+        }`,
+      },
     },
   };
 
-  // Render chart
+  // Render bar chart
   return (
-    <div className="w-[85vw] h-[85vh] mx-auto">
+    <div className="w-full h-[400px] mx-auto">
       <Bar data={chartData} options={options} />
     </div>
   );

@@ -14,8 +14,10 @@
     "start-all": "concurrently \"pnpm run dev\" \"pnpm run start-backend-macOS\""
   },
   "dependencies": {
+    "@types/topojson-client": "^3.1.5",
     "chart.js": "^4.4.7",
     "chartjs-chart-geo": "^4.3.4",
+    "chartjs-plugin-datalabels": "^2.2.0",
     "d3": "^7.9.0",
     "d3-geo": "^3.1.1",
     "d3-scale": "^4.0.2",
@@ -23,17 +25,20 @@
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
+    "react-modal": "^3.16.3",
     "react-simple-maps": "^3.0.0",
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
     "@tanstack/react-query": "^5.62.8",
+    "@types/chart.js": "^2.9.41",
     "@types/d3": "^7.4.3",
     "@types/d3-geo": "^3.1.0",
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "@types/react-modal": "^3.16.3",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "concurrently": "^9.1.0",
