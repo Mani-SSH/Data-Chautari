@@ -1,81 +1,201 @@
-import React from "react";
-import {
-  Chart,
-  ScatterController,
-  LinearScale,
-  Title,
-  PointElement,
-  Tooltip,
-  Legend,
-  CategoryScale,
-} from "chart.js";
-import { Scatter } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import ChartDataLabels from "chartjs-plugin-datalabels";
+import { useEffect, useMemo, useState } from "react";
+import { useData } from "../hooks/useData";
 
-// Register required Chart.js components
-Chart.register(ScatterController, LinearScale, Title, PointElement, Tooltip, Legend, CategoryScale);
+ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 
-type Props = {
-  data: { SepalLengthCm: number; SepalWidthCm: number; PetalLengthCm: number; PetalWidthCm: number; Species: string }[];
+interface DonutChartProps {
+  selectedCountry: string | null;
+}
+
+const fixedColors = [
+  "#FF6384", // Red
+  "#36A2EB", // Blue
+  "#FFCE56", // Yellow
+  "#4BC0C0", // Teal
+  "#9966FF", // Purple
+  "#FF9F40", // Orange
+  "#E7E9ED", // Grey
+];
+
+const generateFixedColors = (
+  labels: string[]
+): { backgroundColor: string[]; borderColor: string[] } => {
+  const backgroundColor = labels.map(
+    (_, index) => fixedColors[index % fixedColors.length]
+  );
+  const borderColor = labels.map(
+    (_, index) => fixedColors[index % fixedColors.length]
+  );
+
+  return { backgroundColor, borderColor };
 };
 
-const ScatterPlot: React.FC<Props> = ({ data }) => {
-  // Prepare the scatter plot data
-  const scatterData = {
+const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: "top" as const,
+    },
+    datalabels: {
+      color: "#fff",
+      font: {
+        size: 14,
+        weight: "bold" as const,
+      },
+      formatter: (value: number, context: any) => {
+        const total = context.chart.data.datasets[0].data.reduce(
+          (sum: number, val: number) => sum + val,
+          0
+        );
+        const percentage = ((value / total) * 100).toFixed(1);
+        return value > total * 0.05
+          ? `${context.chart.data.labels[context.dataIndex]} (${percentage}%)`
+          : "";
+      },
+    },
+    tooltip: {
+      callbacks: {
+        label: (tooltipItem: any) => {
+          return `${tooltipItem.label}: ${tooltipItem.raw}`;
+        },
+      },
+    },
+  },
+};
+
+const DonutChart: React.FC<DonutChartProps> = ({ selectedCountry }) => {
+  const { data, isLoading, error } = useData();
+  const [showOthersChart, setShowOthersChart] = useState(false);
+  const [othersData, setOthersData] = useState<Record<string, number> | null>(
+    null
+  );
+
+  const handleMainChartClick = (e: any, elements: any) => {
+    if (elements.length === 0) return; // Only handle clicks on segments for main chart
+
+    const elementIndex = elements[0].index;
+    const label = chartData.labels[elementIndex];
+
+    if (label === "Others") {
+      // Generate data for "Others" and show the chart
+      const othersSubset = filteredData?.reduce((acc, row) => {
+        const language = row["Most Used Language"];
+        if (language && !Object.keys(languageCount).includes(language)) {
+          acc[language] = (acc[language] || 0) + 1;
+        }
+        return acc;
+      }, {} as Record<string, number>);
+
+      setOthersData(othersSubset || null);
+      setShowOthersChart(true);
+    }
+  };
+
+  const handleOthersChartClick = (e: any, elements: any) => {
+    if (elements.length === 0) {
+      // Clicked outside the Others chart segments, return to main view
+      setShowOthersChart(false);
+      setOthersData(null);
+    }
+  };
+
+  const filteredData = selectedCountry
+    ? data?.filter((d) => d.Country === selectedCountry)
+    : data;
+
+  const languageCount: Record<string, number> = useMemo(() => {
+    const count: Record<string, number> = {};
+    filteredData?.forEach((row) => {
+      const language = row["Most Used Language"];
+      if (language) {
+        count[language] = (count[language] || 0) + 1;
+      }
+    });
+
+    const threshold = 50;
+    let othersCount = 0;
+
+    for (const [language, value] of Object.entries(count)) {
+      if (value < threshold) {
+        othersCount += value;
+        delete count[language];
+      }
+    }
+
+    if (othersCount > 0) {
+      count["Others"] = othersCount;
+    }
+
+    return count;
+  }, [filteredData]);
+
+  const chartColors = useMemo(
+    () => generateFixedColors(Object.keys(languageCount)),
+    [languageCount]
+  );
+
+  const chartData = {
+    labels: Object.keys(languageCount),
     datasets: [
       {
-        label: "Sepal Length vs Sepal Width",
-        data: data.map((d) => ({ x: d.SepalLengthCm, y: d.SepalWidthCm })), // Map data for Chart.js
-        backgroundColor: "rgba(70, 130, 180, 0.7)", // Steel blue color with some transparency
-        pointRadius: 5,
+        data: Object.values(languageCount),
+        backgroundColor: chartColors.backgroundColor,
+        borderColor: chartColors.borderColor,
+        borderWidth: 1,
       },
     ],
   };
 
-  // Define configuration options for the chart
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        display: true,
-        position: "top" as const, // Specify type explicitly
-      },
-      title: {
-        display: true,
-        text: "Scatter Plot: Sepal Length vs Sepal Width",
-      },
-      tooltip: {
-        callbacks: {
-          label: function (context: any) {
-            const { x, y } = context.raw;
-            return `Sepal Length: ${x}, Sepal Width: ${y}`;
-          },
-        },
-      },
-    },
-    scales: {
-      x: {
-        type: "linear" as const, // Explicitly set the type
-        title: {
-          display: true,
-          text: "Sepal Length (cm)",
-        },
-      },
-      y: {
-        type: "linear" as const, // Explicitly set the type
-        title: {
-          display: true,
-          text: "Sepal Width (cm)",
-        },
-      },
-    },
-  };
+  if (isLoading) return <p className="text-blue-500">Loading chart data...</p>;
+  if (error)
+    return <p className="text-red-500">Error loading data: {error.message}</p>;
 
   return (
-    <div>
-      <h2>Scatter Plot: Sepal Length vs Sepal Width</h2>
-      <Scatter data={scatterData} options={options} />
+    <div className="w-[80vw] h-[80vh] mx-auto">
+      {!showOthersChart ? (
+        <>
+          <h2 className="text-center text-xl">
+            {selectedCountry
+              ? `Most Used Languages in ${selectedCountry}`
+              : "Most Used Languages (Global)"}
+          </h2>
+          <Doughnut
+            data={chartData}
+            options={{
+              ...options,
+              onClick: handleMainChartClick,
+            }}
+          />
+        </>
+      ) : (
+        <>
+          <h2 className="text-center text-xl">Other Languages</h2>
+          {othersData && (
+            <Doughnut
+              data={{
+                labels: Object.keys(othersData),
+                datasets: [
+                  {
+                    data: Object.values(othersData),
+                    backgroundColor: generateFixedColors(
+                      Object.keys(othersData)
+                    ).backgroundColor,
+                  },
+                ],
+              }}
+              options={{
+                ...options,
+                onClick: handleOthersChartClick,
+              }}
+            />
+          )}
+        </>
+      )}
     </div>
   );
 };
 
-export default ScatterPlot;
+export default DonutChart;

@@ -2,6 +2,7 @@ import React from "react";
 import BarChart from "./BarChart";
 import ChoroplethMap from "./ChoroplethMap";
 import DonutChart from "./DonutChart";
+import LineChart from "./LineChart";
 import { useState } from "react";
 import { useData } from "../hooks/useData";
 
@@ -38,6 +39,10 @@ const Dashboard: React.FC = () => {
 
           <div className="bg-white rounded-lg p-6 shadow-lg">
             <DonutChart selectedCountry={selectedCountry} />
+          </div>
+
+          <div className="bg-white rounded-lg p-6 shadow-lg">
+            <LineChart />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useData } from "../hooks/useData";
 
 ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
@@ -10,27 +10,56 @@ interface DonutChartProps {
   selectedCountry: string | null;
 }
 
-const generateColors = (
-  count: number
+const fixedColors = [
+  "#FF6384", // Red
+  "#36A2EB", // Blue
+  "#FFCE56", // Yellow
+  "#4BC0C0", // Teal
+  "#9966FF", // Purple
+  "#FF9F40", // Orange
+  "#E7E9ED", // Grey
+];
+
+const generateFixedColors = (
+  labels: string[]
 ): { backgroundColor: string[]; borderColor: string[] } => {
-  const colors = [];
-  const borderColors = [];
-  for (let i = 0; i < count; i++) {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    colors.push(`rgba(${r}, ${g}, ${b}, 0.6)`);
-    borderColors.push(`rgba(${r}, ${g}, ${b}, 1)`);
-  }
-  return { backgroundColor: colors, borderColor: borderColors };
+  const backgroundColor = labels.map(
+    (_, index) => fixedColors[index % fixedColors.length]
+  );
+  const borderColor = labels.map(
+    (_, index) => fixedColors[index % fixedColors.length]
+  );
+
+  return { backgroundColor, borderColor };
 };
 
 const DonutChart: React.FC<DonutChartProps> = ({ selectedCountry }) => {
   const { data, isLoading, error } = useData();
+  const [showOthersChart, setShowOthersChart] = useState(false);
+  const [othersData, setOthersData] = useState<Record<string, number> | null>(
+    null
+  );
 
-  if (isLoading) return <p className="text-blue-500">Loading chart data...</p>;
-  if (error)
-    return <p className="text-red-500">Error loading data: {error.message}</p>;
+  const handleClick = (e: any, elements: any) => {
+    if (elements.length > 0) {
+      const elementIndex = elements[0].index;
+      const label = chartData.labels[elementIndex];
+
+      if (label === "Others") {
+        // Generate data for "Others" and show the chart
+        const othersSubset = filteredData?.reduce((acc, row) => {
+          const language = row["Most Used Language"];
+          if (language && !Object.keys(languageCount).includes(language)) {
+            acc[language] = (acc[language] || 0) + 1;
+          }
+          return acc;
+        }, {} as Record<string, number>);
+
+        setOthersData(othersSubset || null);
+        setShowOthersChart(true);
+      }
+    }
+  };
 
   const filteredData = selectedCountry
     ? data?.filter((d) => d.Country === selectedCountry)
@@ -62,7 +91,10 @@ const DonutChart: React.FC<DonutChartProps> = ({ selectedCountry }) => {
     return count;
   }, [filteredData]);
 
-  const chartColors = generateColors(Object.keys(languageCount).length);
+  const chartColors = useMemo(
+    () => generateFixedColors(Object.keys(languageCount)),
+    [languageCount]
+  );
 
   const chartData = {
     labels: Object.keys(languageCount),
@@ -75,6 +107,10 @@ const DonutChart: React.FC<DonutChartProps> = ({ selectedCountry }) => {
       },
     ],
   };
+
+  if (isLoading) return <p className="text-blue-500">Loading chart data...</p>;
+  if (error)
+    return <p className="text-red-500">Error loading data: {error.message}</p>;
 
   const options = {
     responsive: true,
@@ -112,12 +148,42 @@ const DonutChart: React.FC<DonutChartProps> = ({ selectedCountry }) => {
 
   return (
     <div className="w-[80vw] h-[80vh] mx-auto">
-      <h2 className="text-center text-xl">
-        {selectedCountry
-          ? `Most Used Languages in ${selectedCountry}`
-          : "Most Used Languages (Global)"}
-      </h2>
-      <Doughnut data={chartData} options={options} />
+      {!showOthersChart ? (
+        <>
+          <h2 className="text-center text-xl">
+            {selectedCountry
+              ? `Most Used Languages in ${selectedCountry}`
+              : "Most Used Languages (Global)"}
+          </h2>
+          <Doughnut
+            data={chartData}
+            options={{
+              ...options,
+              onClick: handleClick,
+            }}
+          />
+        </>
+      ) : (
+        <>
+          <h2 className="text-center text-xl">Other Languages</h2>
+          {othersData && (
+            <Doughnut
+              data={{
+                labels: Object.keys(othersData),
+                datasets: [
+                  {
+                    data: Object.values(othersData),
+                    backgroundColor: generateFixedColors(
+                      Object.keys(othersData)
+                    ).backgroundColor,
+                  },
+                ],
+              }}
+            />
+          )}
+          <button onClick={() => setShowOthersChart(false)}>Back</button>
+        </>
+      )}
     </div>
   );
 };
