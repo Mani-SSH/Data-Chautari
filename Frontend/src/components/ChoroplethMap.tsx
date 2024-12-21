@@ -5,16 +5,31 @@ import * as topojson from "topojson-client";
 import { useData } from "../hooks/useData";
 
 interface ChoroplethMapProps {
-  onCountrySelect: (country: string) => void;
+  onCountrySelect: (country: string | null) => void;
+  selectedYear: number | null;
+  selectedCountry: string | null;
 }
 
-const ChoroplethMap: React.FC<ChoroplethMapProps> = ({ onCountrySelect }) => {
+const ChoroplethMap: React.FC<ChoroplethMapProps> = ({
+  onCountrySelect,
+  selectedYear,
+  selectedCountry,
+}) => {
   const { data } = useData();
   const mapRef = React.useRef(null);
 
   const countryTotalUsers = React.useMemo(() => {
     if (!data) return new Map();
+
     return data.reduce((acc, row) => {
+      // Filter by selected year if provided
+      if (selectedYear) {
+        const creationDate = new Date(row["Account Created At"]);
+        if (creationDate.getFullYear() !== selectedYear) {
+          return acc;
+        }
+      }
+
       const country =
         row.Country === "United States"
           ? "United States of America"
@@ -22,7 +37,7 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({ onCountrySelect }) => {
       acc.set(country, (acc.get(country) || 0) + 1);
       return acc;
     }, new Map());
-  }, [data]);
+  }, [data, selectedYear]);
 
   React.useEffect(() => {
     if (!data) return;
@@ -102,11 +117,12 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({ onCountrySelect }) => {
           // Highlight the country
           d3.select(this).style("opacity", 1).style("stroke-width", "2");
 
-          // Show tooltip
+          // Show tooltip with year information if selected
+          const yearInfo = selectedYear ? ` (${selectedYear})` : "";
           tooltip.style("visibility", "visible").html(`
-              <strong>${countryName}</strong><br/>
-              Users: ${userCount}
-            `);
+            <strong>${countryName}${yearInfo}</strong><br/>
+            Users: ${userCount}
+          `);
         })
         .on("mousemove", (event) => {
           tooltip
@@ -114,10 +130,7 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({ onCountrySelect }) => {
             .style("left", event.pageX + 10 + "px");
         })
         .on("mouseout", function () {
-          // Reset country highlight
           d3.select(this).style("opacity", 1).style("stroke-width", "1");
-
-          // Hide tooltip
           tooltip.style("visibility", "hidden");
         });
 
@@ -160,13 +173,17 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({ onCountrySelect }) => {
         .attr("height", legendHeight)
         .style("fill", "url(#legend-gradient)");
 
+      const titleText = selectedYear
+        ? `Total Users (${selectedYear})`
+        : "Total Users";
+
       legend
         .append("text")
         .attr("x", legendWidth / 2)
         .attr("y", -5)
         .attr("text-anchor", "middle")
         .style("fill", "#fff")
-        .text("Total Users");
+        .text(titleText);
 
       legend
         .append("text")
@@ -186,11 +203,23 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({ onCountrySelect }) => {
 
     return () => {
       svg.selectAll("*").remove();
-      d3.selectAll(".tooltip").remove(); // Clean up tooltip
+      d3.selectAll(".tooltip").remove();
     };
-  }, [data, countryTotalUsers, onCountrySelect]);
+  }, [data, countryTotalUsers, onCountrySelect, selectedYear]);
 
-  return <svg ref={mapRef}></svg>;
+  return (
+    <div className="relative">
+      <svg ref={mapRef}></svg>
+      {selectedCountry && (
+        <button
+          onClick={() => onCountrySelect(null)}
+          className="absolute top-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          Reset Country
+        </button>
+      )}
+    </div>
+  );
 };
 
 export default ChoroplethMap;

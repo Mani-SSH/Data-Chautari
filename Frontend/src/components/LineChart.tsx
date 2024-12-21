@@ -10,6 +10,8 @@ import {
   Tooltip,
   Legend,
   ChartOptions,
+  ChartData,
+  ChartEvent,
 } from "chart.js";
 import { DataRow } from "../types/types";
 import { useData } from "../hooks/useData";
@@ -24,7 +26,15 @@ ChartJS.register(
   Legend
 );
 
-const options: ChartOptions<"line"> = {
+interface LineChartProps {
+  onYearSelect?: (year: number | null) => void;
+  selectedYear: number | null;
+}
+
+const options = (
+  onClick: (year: number | null) => void,
+  selectedYear: number | null
+): ChartOptions<"line"> => ({
   responsive: true,
   animation: {
     duration: 2000,
@@ -34,9 +44,18 @@ const options: ChartOptions<"line"> = {
     intersect: false,
     mode: "index",
   },
+  onClick: (event: ChartEvent, elements, chart) => {
+    // Cast the event to MouseEvent for type safety
+    const mouseEvent = event.native as MouseEvent;
+    if (elements && elements.length > 0) {
+      const dataIndex = elements[0].index;
+      const year = parseInt(chart.data.labels?.[dataIndex] as string);
+      onClick(year);
+    }
+  },
   plugins: {
     legend: {
-      display: false, // Hide legend since we only have one dataset
+      display: false,
     },
     tooltip: {
       enabled: true,
@@ -50,7 +69,6 @@ const options: ChartOptions<"line"> = {
           return `Year: ${tooltipItems[0].label}`;
         },
         label: function (context) {
-          // Pre-format the number to avoid doing it on each hover
           const value = context.parsed.y;
           if (value >= 1000000) {
             return `Total Users: ${(value / 1000000).toFixed(1)}M`;
@@ -79,7 +97,6 @@ const options: ChartOptions<"line"> = {
       ticks: {
         maxTicksLimit: 6,
         callback: function (value) {
-          // Pre-format the numbers for better performance
           const numValue = value as number;
           if (numValue >= 1000000) {
             return `${(numValue / 1000000).toFixed(1)}M`;
@@ -93,16 +110,23 @@ const options: ChartOptions<"line"> = {
   },
   elements: {
     point: {
-      radius: 0,
+      radius: (context) => {
+        const index = context.dataIndex;
+        const year = parseInt(context.chart.data.labels?.[index] as string);
+        return year === selectedYear ? 6 : 0;
+      },
       hoverRadius: 6,
     },
     line: {
       tension: 0.4,
     },
   },
-};
+});
 
-const LineChart = () => {
+const LineChart: React.FC<LineChartProps> = ({
+  onYearSelect = () => {},
+  selectedYear,
+}) => {
   const { data } = useData();
 
   const chartData = useMemo(() => {
@@ -119,7 +143,6 @@ const LineChart = () => {
       };
     }
 
-    // Pre-calculate yearly data
     const yearlyData = data.reduce((acc, item: DataRow) => {
       const dateStr = item["Account Created At"];
       const date = new Date(dateStr);
@@ -147,13 +170,8 @@ const LineChart = () => {
         {
           label: "Total Users",
           data: cumulativeCounts,
-          fill: {
-            target: "origin",
-            above: "rgba(75, 192, 192, 0.1)",
-          },
-          borderColor: "#4bc0c0",
-          borderWidth: 2,
-          backgroundColor: "#4bc0c0",
+          fill: false,
+          borderColor: "#4bc0c0", // Line color
           tension: 0.4,
         },
       ],
@@ -161,13 +179,9 @@ const LineChart = () => {
   }, [data]);
 
   return (
-    <div className="w-full p-4">
-      <h2 className="text-xl font-semibold mb-4 text-center">
-        Users Growth Over Time
-      </h2>
-      <div className="h-[400px]">
-        <Line data={chartData} options={options} />
-      </div>
+    <div>
+      <h2>Users Growth Over Time</h2>
+      <Line data={chartData} options={options(onYearSelect, selectedYear)} />
     </div>
   );
 };
