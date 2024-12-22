@@ -8,6 +8,7 @@ ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 
 interface DonutChartProps {
   selectedCountry: string | null;
+  onLanguageSelect: (language: string | null) => void;
 }
 
 const fixedColors = [
@@ -33,7 +34,10 @@ const generateFixedColors = (
   return { backgroundColor, borderColor };
 };
 
-const DonutChart: React.FC<DonutChartProps> = ({ selectedCountry }) => {
+const DonutChart: React.FC<DonutChartProps> = ({
+  selectedCountry,
+  onLanguageSelect,
+}) => {
   const { data, isLoading, error } = useData();
   const [showOthersChart, setShowOthersChart] = useState(false);
   const [othersData, setOthersData] = useState<Record<string, number> | null>(
@@ -57,7 +61,17 @@ const DonutChart: React.FC<DonutChartProps> = ({ selectedCountry }) => {
 
         setOthersData(othersSubset || null);
         setShowOthersChart(true);
+      } else {
+        onLanguageSelect(label);
       }
+    }
+  };
+
+  const handleOthersClick = (e: any, elements: any) => {
+    if (elements.length > 0) {
+      const elementIndex = elements[0].index;
+      const label = Object.keys(othersData!)[elementIndex];
+      onLanguageSelect(label);
     }
   };
 
@@ -178,6 +192,10 @@ const DonutChart: React.FC<DonutChartProps> = ({ selectedCountry }) => {
                     ).backgroundColor,
                   },
                 ],
+              }}
+              options={{
+                ...options,
+                onClick: handleOthersClick,
               }}
             />
           )}

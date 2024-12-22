@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BarChart from "./BarChart";
 import ChoroplethMap from "./ChoroplethMap";
 import DonutChart from "./DonutChart";
@@ -11,6 +11,7 @@ const Dashboard: React.FC = () => {
   const { data, isLoading, error } = useData();
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
 
   if (isLoading)
     return (
@@ -100,14 +101,17 @@ const Dashboard: React.FC = () => {
               User Distribution by Category
             </h2>
             <div className="w-full h-full overflow-hidden">
-              <DonutChart selectedCountry={selectedCountry} />
+              <DonutChart
+                selectedCountry={selectedCountry}
+                onLanguageSelect={setSelectedLanguage}
+              />
             </div>
           </div>
 
-          {/* Scatter Plot */}
+          {/* Histogram Chart */}
           <div className="bg-white rounded-lg p-8 shadow-xl">
-            <h2 className="text-xl font-semibold mb-6">Scatter Plot</h2>
-            <HistogramChart />
+            <h2 className="text-xl font-semibold mb-6">Histogram Chart</h2>
+            <HistogramChart selectedLanguage={selectedLanguage} />
           </div>
         </div>
       </div>

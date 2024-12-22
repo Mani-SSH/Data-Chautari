@@ -26,7 +26,13 @@ interface HistogramData {
   count: number;
 }
 
-const HistogramChart: React.FC = () => {
+interface HistogramChartProps {
+  selectedLanguage: string | null;
+}
+
+const HistogramChart: React.FC<HistogramChartProps> = ({
+  selectedLanguage,
+}) => {
   const chartRef = useRef<HTMLCanvasElement | null>(null);
   const chartInstanceRef = useRef<ChartJS | null>(null);
   const { data, isLoading, error } = useData();
@@ -47,7 +53,13 @@ const HistogramChart: React.FC = () => {
       { range: "28-30", min: 28, max: 30, count: 0 },
     ];
 
-    data.forEach((user: any) => {
+    const filteredData = selectedLanguage
+      ? data.filter(
+          (user: any) => user["Most Used Language"] === selectedLanguage
+        )
+      : data;
+
+    filteredData.forEach((user: any) => {
       const repoCount = user["Repositories Count"];
       const bin = bins.find((b) => repoCount >= b.min && repoCount <= b.max);
       if (bin) {
@@ -119,12 +131,16 @@ const HistogramChart: React.FC = () => {
     return () => {
       chartInstanceRef.current?.destroy();
     };
-  }, [data, isLoading, error]);
+  }, [data, isLoading, error, selectedLanguage]);
 
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Error loading data: {error.message}</p>;
 
-  return <canvas ref={chartRef} />;
+  return (
+    <div>
+      <canvas ref={chartRef} />
+    </div>
+  );
 };
 
 export default HistogramChart;
