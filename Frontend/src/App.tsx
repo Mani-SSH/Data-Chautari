@@ -1,8 +1,13 @@
 // App.tsx
-import Dashboard from './components/Dashboard';
+import React from "react";
+import Dashboard from "./components/Dashboard";
 
-function App() {
-  return <Dashboard />;
-}
+const App: React.FC = () => {
+  return (
+    <div className="App">
+      <Dashboard />
+    </div>
+  );
+};
 
 export default App;

@@ -179,7 +179,7 @@ const LineChart: React.FC<LineChartProps> = ({
   }, [data]);
 
   return (
-    <div>
+    <div className="w-full h-full">
       <h2>Users Growth Over Time</h2>
       <Line data={chartData} options={options(onYearSelect, selectedYear)} />
     </div>

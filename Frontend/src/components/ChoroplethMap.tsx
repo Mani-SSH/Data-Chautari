@@ -208,16 +208,8 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({
   }, [data, countryTotalUsers, onCountrySelect, selectedYear]);
 
   return (
-    <div className="relative">
+    <div className="relative w-full h-full">
       <svg ref={mapRef}></svg>
-      {selectedCountry && (
-        <button
-          onClick={() => onCountrySelect(null)}
-          className="absolute top-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          Reset Country
-        </button>
-      )}
     </div>
   );
 };

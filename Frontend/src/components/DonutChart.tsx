@@ -130,7 +130,7 @@ const DonutChart: React.FC<DonutChartProps> = ({
     responsive: true,
     plugins: {
       legend: {
-        position: "top" as const,
+        display: false, // Hide legend
       },
       datalabels: {
         color: "#fff", // White text
@@ -149,6 +149,7 @@ const DonutChart: React.FC<DonutChartProps> = ({
             ? `${context.chart.data.labels[context.dataIndex]} (${percentage}%)`
             : ""; // Hide small labels
         },
+        clip: true, // Ensure labels are clipped to fit inside the chart area
       },
       tooltip: {
         callbacks: {
@@ -161,7 +162,7 @@ const DonutChart: React.FC<DonutChartProps> = ({
   };
 
   return (
-    <div className="w-[80vw] h-[80vh] mx-auto">
+    <div className="w-full h-full mx-auto">
       {!showOthersChart ? (
         <>
           <h2 className="text-center text-xl">

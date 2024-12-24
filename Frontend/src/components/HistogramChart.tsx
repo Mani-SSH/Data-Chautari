@@ -137,7 +137,7 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
   if (error) return <p>Error loading data: {error.message}</p>;
 
   return (
-    <div>
+    <div className="w-full h-full">
       <canvas ref={chartRef} />
     </div>
   );

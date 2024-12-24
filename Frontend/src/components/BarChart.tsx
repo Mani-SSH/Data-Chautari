@@ -79,7 +79,7 @@ const BarChart: React.FC<BarChartProps> = ({ selectedCountry }) => {
 
   // Render bar chart
   return (
-    <div className="w-full h-[400px] mx-auto">
+    <div className="w-full h-full mx-auto">
       <Bar data={chartData} options={options} />
     </div>
   );
