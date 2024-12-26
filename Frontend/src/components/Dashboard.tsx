@@ -5,6 +5,8 @@ import DonutChart from "./DonutChart";
 import LineChart from "./LineChart";
 import HistogramChart from "./HistogramChart";
 import WordCloud from "./WordCloud"; // Ensure WordCloud is imported
+import Flashcard from "./Flashcard";
+import SelectedFilters from "./SelectedFilters";
 import { useState } from "react";
 import { useData } from "../hooks/useData";
 
@@ -13,6 +15,27 @@ const Dashboard: React.FC = () => {
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
+  const [totalUsers, setTotalUsers] = useState<number>(0); // Add this line
+
+  const handleYearSelect = (year: number | null, totalUsers: number) => {
+    setSelectedYear(year);
+    setTotalUsers(totalUsers); // Add this line
+  };
+
+  const handleResetYear = () => {
+    setSelectedYear(null);
+    setTotalUsers(data ? data.length : 0); // Reset total users to the overall count
+  };
+
+  const handleResetCountry = () => {
+    setSelectedCountry(null);
+    setTotalUsers(data ? data.length : 0); // Reset total users to the overall count
+  };
+
+  const handleResetLanguage = () => {
+    setSelectedLanguage(null);
+    setTotalUsers(data ? data.length : 0); // Reset total users to the overall count
+  };
 
   if (isLoading)
     return (
@@ -46,77 +69,68 @@ const Dashboard: React.FC = () => {
             <img src="/logo.svg" alt="Logo" className="h-10" />
             GitHub Users Dashboard
           </h1>
-          <p className="text-gray-400">
+          <p className="text-gray-300">
             Visualize GitHub user data over time, by country, and by various
             categories.
           </p>
         </header>
 
         {/* Selected Filters Section */}
-        <div className="flex gap-4 max-w-7xl mx-auto mb-4">
-          {selectedYear && (
-            <div className="flex items-center gap-2">
-              <span className="text-white">Year: {selectedYear}</span>
-              <button
-                onClick={() => setSelectedYear(null)}
-                className="px-5 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Reset Year
-              </button>
-            </div>
-          )}
-          {selectedCountry && (
-            <div className="flex items-center gap-2">
-              <span className="text-white">Country: {selectedCountry}</span>
-              <button
-                onClick={() => setSelectedCountry(null)}
-                className="px-5 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Reset Country
-              </button>
-            </div>
-          )}
-          {selectedLanguage && (
-            <div className="flex items-center gap-2">
-              <span className="text-white">Language: {selectedLanguage}</span>
-              <button
-                onClick={() => setSelectedLanguage(null)}
-                className="px-5 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Reset Language
-              </button>
-            </div>
-          )}
-        </div>
+        <SelectedFilters
+          selectedYear={selectedYear}
+          selectedCountry={selectedCountry}
+          selectedLanguage={selectedLanguage}
+          onResetYear={handleResetYear} // Modify this line
+          onResetCountry={handleResetCountry} // Modify this line
+          onResetLanguage={handleResetLanguage} // Modify this line
+        />
       </div>
 
       {/* Add padding to avoid content being hidden behind fixed elements */}
       <div className="pt-40 max-w-full mx-auto">
-        {/* Choropleth Map */}
-        <div className="bg-white rounded-lg p-8 shadow-xl mb-10 w-full">
-          <h2 className="text-xl font-semibold mb-6">Users by Country</h2>
-          <ChoroplethMap
-            onCountrySelect={setSelectedCountry}
-            selectedYear={selectedYear}
-            selectedCountry={selectedCountry}
-          />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          {/* Flashcard */}
+          <div className="col-span-1">
+            <Flashcard
+              title="User Details"
+              field="totalUsersField"
+              bgColor="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75"
+              totalUsers={totalUsers} // Add this line
+              selectedCountry={selectedCountry} // Add this line
+              selectedYear={selectedYear} // Add this line
+              selectedLanguage={selectedLanguage} // Add this line
+            />
+          </div>
+
+          {/* Choropleth Map */}
+          <div className="col-span-2 bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
+            <h2 className="text-xl font-semibold mb-6 text-gray-300">
+              Users by Country
+            </h2>
+            <ChoroplethMap
+              onCountrySelect={setSelectedCountry}
+              selectedYear={selectedYear}
+              selectedCountry={selectedCountry}
+              onTotalUsersChange={setTotalUsers} // Add this line
+            />
+          </div>
         </div>
 
         {/* Dashboard Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 w-full">
           {/* Line Chart */}
-          <div className="bg-white rounded-lg p-8 shadow-xl w-full">
-            <h2 className="text-xl font-semibold mb-6">
+          <div className="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
+            <h2 className="text-xl font-semibold mb-6 text-gray-300">
               Cumulative Users Over Time
             </h2>
             <LineChart
-              onYearSelect={setSelectedYear}
+              onYearSelect={handleYearSelect} // Modify this line
               selectedYear={selectedYear}
             />
           </div>
           {/* Bar Chart */}
-          <div className="bg-white rounded-lg p-8 shadow-xl w-full">
-            <h2 className="text-xl font-semibold mb-6">
+          <div className="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
+            <h2 className="text-xl font-semibold mb-6 text-gray-300">
               Yearly Growth by Country
             </h2>
             <div className="w-full h-full">
@@ -125,8 +139,8 @@ const Dashboard: React.FC = () => {
           </div>
 
           {/* Donut Chart */}
-          <div className="bg-white rounded-lg p-8 shadow-xl w-full">
-            <h2 className="text-xl font-semibold mb-6">
+          <div className="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
+            <h2 className="text-xl font-semibold mb-6 text-gray-300">
               User Distribution by Category
             </h2>
             <div className="w-full h-full overflow-hidden">
@@ -138,15 +152,19 @@ const Dashboard: React.FC = () => {
           </div>
 
           {/* Histogram Chart */}
-          <div className="bg-white rounded-lg p-8 shadow-xl w-full">
-            <h2 className="text-xl font-semibold mb-6">Histogram Chart</h2>
+          <div className="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
+            <h2 className="text-xl font-semibold mb-6 text-gray-300">
+              Histogram Chart
+            </h2>
             <HistogramChart selectedLanguage={selectedLanguage} />
           </div>
         </div>
 
         {/* Word Cloud */}
-        <div className="bg-black rounded-lg p-8 shadow-xl mt-10 w-full">
-          <h2 className="text-xl font-semibold mb-6">Word Cloud</h2>
+        <div className="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl mt-10 w-full">
+          <h2 className="text-xl font-semibold mb-6 text-gray-300">
+            Word Cloud
+          </h2>
           <div className="w-full h-[900px]">
             {" "}
             {/* Increase height */}

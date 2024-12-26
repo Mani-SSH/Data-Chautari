@@ -88,6 +88,9 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
       plugins: {
         legend: {
           display: false,
+          labels: {
+            color: "#e5e7eb", // Off-white color for legend labels
+          },
         },
         tooltip: {
           enabled: true,
@@ -104,16 +107,21 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
           title: {
             display: true,
             text: "Repositories Count Range",
+            color: "#e5e7eb", // Off-white color for x-axis title
+          },
+          ticks: {
+            color: "#e5e7eb", // Off-white color for x-axis labels
           },
         },
         y: {
           title: {
             display: true,
             text: "Count",
+            color: "#e5e7eb", // Off-white color for y-axis title
           },
-          // ticks: {
-          //   beginAtZero: true,
-          // },
+          ticks: {
+            color: "#e5e7eb", // Off-white color for y-axis labels
+          },
         },
       },
     };

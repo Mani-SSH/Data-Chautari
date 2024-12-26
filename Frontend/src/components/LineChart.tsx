@@ -27,12 +27,12 @@ ChartJS.register(
 );
 
 interface LineChartProps {
-  onYearSelect?: (year: number | null) => void;
+  onYearSelect?: (year: number | null, totalUsers: number) => void; // Modify this line
   selectedYear: number | null;
 }
 
 const options = (
-  onClick: (year: number | null) => void,
+  onClick: (year: number | null, totalUsers: number) => void, // Modify this line
   selectedYear: number | null
 ): ChartOptions<"line"> => ({
   responsive: true,
@@ -50,7 +50,8 @@ const options = (
     if (elements && elements.length > 0) {
       const dataIndex = elements[0].index;
       const year = parseInt(chart.data.labels?.[dataIndex] as string);
-      onClick(year);
+      const totalUsers = chart.data.datasets[0].data[dataIndex] as number; // Get total users for the selected year
+      onClick(year, totalUsers); // Pass total users to the callback
     }
   },
   plugins: {
@@ -85,6 +86,9 @@ const options = (
       grid: {
         display: false,
       },
+      ticks: {
+        color: "#e5e7eb", // Off-white color for x-axis labels
+      },
     },
     y: {
       type: "linear",
@@ -92,9 +96,10 @@ const options = (
       position: "left",
       beginAtZero: true,
       grid: {
-        color: "rgba(0, 0, 0, 0.1)",
+        color: "rgba(1, 1, 1, 1)",
       },
       ticks: {
+        color: "#e5e7eb", // Off-white color for y-axis labels
         maxTicksLimit: 6,
         callback: function (value) {
           const numValue = value as number;
@@ -137,7 +142,7 @@ const LineChart: React.FC<LineChartProps> = ({
           {
             label: "Total Users",
             data: [],
-            borderColor: "#4bc0c0",
+            borderColor: "#e5e7eb",
           },
         ],
       };
@@ -180,7 +185,7 @@ const LineChart: React.FC<LineChartProps> = ({
 
   return (
     <div className="w-full h-full">
-      <h2>Users Growth Over Time</h2>
+      <h2 className="text-gray-300">Users Growth Over Time</h2>
       <Line data={chartData} options={options(onYearSelect, selectedYear)} />
     </div>
   );

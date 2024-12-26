@@ -8,12 +8,14 @@ interface ChoroplethMapProps {
   onCountrySelect: (country: string | null) => void;
   selectedYear: number | null;
   selectedCountry: string | null;
+  onTotalUsersChange: (totalUsers: number) => void; // Add this line
 }
 
 const ChoroplethMap: React.FC<ChoroplethMapProps> = ({
   onCountrySelect,
   selectedYear,
   selectedCountry,
+  onTotalUsersChange, // Add this line
 }) => {
   const { data } = useData();
   const mapRef = React.useRef(null);
@@ -38,6 +40,25 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({
       return acc;
     }, new Map());
   }, [data, selectedYear]);
+
+  const totalUsers = React.useMemo(() => {
+    if (!data) return 0;
+
+    return data.reduce((acc, row) => {
+      // Filter by selected year if provided
+      if (selectedYear) {
+        const creationDate = new Date(row["Account Created At"]);
+        if (creationDate.getFullYear() !== selectedYear) {
+          return acc;
+        }
+      }
+      return acc + 1;
+    }, 0);
+  }, [data, selectedYear]);
+
+  React.useEffect(() => {
+    onTotalUsersChange(totalUsers); // Add this line to update total users in Dashboard
+  }, [totalUsers, onTotalUsersChange]);
 
   React.useEffect(() => {
     if (!data) return;
@@ -104,11 +125,13 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({
         .style("cursor", "pointer")
         .on("click", (event, d) => {
           const countryName = d.properties?.name;
+          const userCount = countryTotalUsers.get(countryName) || 0;
           onCountrySelect(
             countryName === "United States of America"
               ? "United States"
               : countryName
           );
+          onTotalUsersChange(userCount || totalUsers); // Update total users state
         })
         .on("mouseover", function (event, d) {
           const countryName = d.properties?.name;
@@ -141,7 +164,7 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({
         .append("g")
         .attr(
           "transform",
-          `translate(${width - legendWidth - 20}, ${height - 40})`
+          `translate(${width - legendWidth - 5}, ${height - 500})`
         );
 
       const legendScale = d3
@@ -205,7 +228,7 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({
       svg.selectAll("*").remove();
       d3.selectAll(".tooltip").remove();
     };
-  }, [data, countryTotalUsers, onCountrySelect, selectedYear]);
+  }, [data, countryTotalUsers, onCountrySelect, selectedYear, totalUsers]);
 
   return (
     <div className="relative w-full h-full">

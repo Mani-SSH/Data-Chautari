@@ -131,6 +131,9 @@ const DonutChart: React.FC<DonutChartProps> = ({
     plugins: {
       legend: {
         display: false, // Hide legend
+        labels: {
+          color: "#e5e7eb", // Off-white color for legend labels
+        },
       },
       datalabels: {
         color: "#fff", // White text

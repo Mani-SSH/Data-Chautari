@@ -75,6 +75,35 @@ const BarChart: React.FC<BarChartProps> = ({ selectedCountry }) => {
         }`,
       },
     },
+    scales: {
+      x: {
+        grid: {
+          display: false,
+        },
+        ticks: {
+          color: "#e5e7eb", // Off-white color for x-axis labels
+        },
+      },
+      y: {
+        beginAtZero: true,
+        grid: {
+          color: "rgba(1, 1, 1, 1)",
+        },
+        ticks: {
+          color: "#e5e7eb", // Off-white color for y-axis labels
+          maxTicksLimit: 6,
+          callback: function (value) {
+            const numValue = value as number;
+            if (numValue >= 1000000) {
+              return `${(numValue / 1000000).toFixed(1)}M`;
+            } else if (numValue >= 1000) {
+              return `${(numValue / 1000).toFixed(1)}K`;
+            }
+            return numValue;
+          },
+        },
+      },
+    },
   };
 
   // Render bar chart
