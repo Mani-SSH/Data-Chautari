@@ -1,40 +1,42 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import BarChart from "./BarChart";
 import ChoroplethMap from "./ChoroplethMap";
 import DonutChart from "./DonutChart";
 import LineChart from "./LineChart";
 import HistogramChart from "./HistogramChart";
-import WordCloud from "./WordCloud"; // Ensure WordCloud is imported
+import WordCloud from "./WordCloud";
 import Flashcard from "./Flashcard";
 import SelectedFilters from "./SelectedFilters";
-import { useState } from "react";
+import ArcProgressCard from "./ArcProgressCard"; // Add this line
 import { useData } from "../hooks/useData";
+import CountUp from "react-countup";
+import Typewriter from "typewriter-effect"; // Add this line
 
 const Dashboard: React.FC = () => {
   const { data, isLoading, error } = useData();
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
-  const [totalUsers, setTotalUsers] = useState<number>(0); // Add this line
+  const [totalUsers, setTotalUsers] = useState<number>(0);
 
   const handleYearSelect = (year: number | null, totalUsers: number) => {
     setSelectedYear(year);
-    setTotalUsers(totalUsers); // Add this line
+    setTotalUsers(totalUsers);
   };
 
   const handleResetYear = () => {
     setSelectedYear(null);
-    setTotalUsers(data ? data.length : 0); // Reset total users to the overall count
+    setTotalUsers(data ? data.length : 0);
   };
 
   const handleResetCountry = () => {
     setSelectedCountry(null);
-    setTotalUsers(data ? data.length : 0); // Reset total users to the overall count
+    setTotalUsers(data ? data.length : 0);
   };
 
   const handleResetLanguage = () => {
     setSelectedLanguage(null);
-    setTotalUsers(data ? data.length : 0); // Reset total users to the overall count
+    setTotalUsers(data ? data.length : 0);
   };
 
   if (isLoading)
@@ -80,9 +82,9 @@ const Dashboard: React.FC = () => {
           selectedYear={selectedYear}
           selectedCountry={selectedCountry}
           selectedLanguage={selectedLanguage}
-          onResetYear={handleResetYear} // Modify this line
-          onResetCountry={handleResetCountry} // Modify this line
-          onResetLanguage={handleResetLanguage} // Modify this line
+          onResetYear={handleResetYear}
+          onResetCountry={handleResetCountry}
+          onResetLanguage={handleResetLanguage}
         />
       </div>
 
@@ -90,20 +92,47 @@ const Dashboard: React.FC = () => {
       <div className="pt-40 max-w-full mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {/* Flashcard */}
-          <div className="col-span-1">
+          <div className="col-span-1 md:col-span-1 flex flex-col justify-between">
             <Flashcard
               title="User Details"
-              field="totalUsersField"
               bgColor="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75"
-              totalUsers={totalUsers} // Add this line
-              selectedCountry={selectedCountry} // Add this line
-              selectedYear={selectedYear} // Add this line
-              selectedLanguage={selectedLanguage} // Add this line
+              totalUsers={<CountUp end={totalUsers} duration={2} />}
+              selectedCountry={
+                selectedCountry ? (
+                  <Typewriter
+                    options={{
+                      strings: [selectedCountry],
+                      autoStart: true,
+                      loop: false,
+                      deleteSpeed: 99999999,
+                      cursor: "", // Hide cursor
+                    }}
+                  />
+                ) : null
+              }
+              selectedYear={
+                selectedYear ? (
+                  <Typewriter
+                    options={{
+                      strings: [selectedYear.toString()],
+                      autoStart: true,
+                      loop: false,
+                      deleteSpeed: 99999999,
+                      cursor: "", // Hide cursor
+                    }}
+                  />
+                ) : null
+              }
+            />
+            <ArcProgressCard
+              title="Progress"
+              percentage={(totalUsers / (data ? data.length : 1)) * 100}
+              bgColor="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 mt-6"
             />
           </div>
 
           {/* Choropleth Map */}
-          <div className="col-span-2 bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
+          <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
             <h2 className="text-xl font-semibold mb-6 text-gray-300">
               Users by Country
             </h2>
@@ -111,7 +140,7 @@ const Dashboard: React.FC = () => {
               onCountrySelect={setSelectedCountry}
               selectedYear={selectedYear}
               selectedCountry={selectedCountry}
-              onTotalUsersChange={setTotalUsers} // Add this line
+              onTotalUsersChange={setTotalUsers}
             />
           </div>
         </div>
@@ -124,7 +153,7 @@ const Dashboard: React.FC = () => {
               Cumulative Users Over Time
             </h2>
             <LineChart
-              onYearSelect={handleYearSelect} // Modify this line
+              onYearSelect={handleYearSelect}
               selectedYear={selectedYear}
             />
           </div>

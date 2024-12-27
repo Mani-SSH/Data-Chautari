@@ -71,12 +71,14 @@ const options = (
         },
         label: function (context) {
           const value = context.parsed.y;
-          if (value >= 1000000) {
-            return `Total Users: ${(value / 1000000).toFixed(1)}M`;
-          } else if (value >= 1000) {
-            return `Total Users: ${(value / 1000).toFixed(1)}K`;
-          }
-          return `Total Users: ${value}`;
+          const year = context.label;
+          const formattedValue =
+            value >= 1000000
+              ? `${(value / 1000000).toFixed(1)}M`
+              : value >= 1000
+              ? `${(value / 1000).toFixed(1)}K`
+              : value;
+          return `Year: ${year}, Total Users: ${formattedValue}`;
         },
       },
     },
@@ -121,9 +123,12 @@ const options = (
         return year === selectedYear ? 6 : 0;
       },
       hoverRadius: 6,
+      pointStyle: "circle",
+      backgroundColor: "#e5e7eb", // Off-white color for point labels
     },
     line: {
       tension: 0.4,
+      borderColor: "#e5e7eb", // Off-white color for the line
     },
   },
 });
@@ -176,7 +181,7 @@ const LineChart: React.FC<LineChartProps> = ({
           label: "Total Users",
           data: cumulativeCounts,
           fill: false,
-          borderColor: "#4bc0c0", // Line color
+          borderColor: "#e5e7eb", // Off-white color for the line
           tension: 0.4,
         },
       ],

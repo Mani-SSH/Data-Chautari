@@ -116,7 +116,7 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
         y: {
           title: {
             display: true,
-            text: "Count",
+            text: "Followers Count",
             color: "#e5e7eb", // Off-white color for y-axis title
           },
           ticks: {

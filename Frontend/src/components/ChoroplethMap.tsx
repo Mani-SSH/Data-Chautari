@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import * as d3 from "d3";
 import { geoPath, geoNaturalEarth1 } from "d3-geo";
 import * as topojson from "topojson-client";
@@ -15,12 +15,12 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({
   onCountrySelect,
   selectedYear,
   selectedCountry,
-  onTotalUsersChange, // Add this line
+  onTotalUsersChange,
 }) => {
   const { data } = useData();
-  const mapRef = React.useRef(null);
+  const mapRef = useRef(null);
 
-  const countryTotalUsers = React.useMemo(() => {
+  const countryTotalUsers = useMemo(() => {
     if (!data) return new Map();
 
     return data.reduce((acc, row) => {
@@ -56,8 +56,8 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({
     }, 0);
   }, [data, selectedYear]);
 
-  React.useEffect(() => {
-    onTotalUsersChange(totalUsers); // Add this line to update total users in Dashboard
+  useEffect(() => {
+    onTotalUsersChange(totalUsers);
   }, [totalUsers, onTotalUsersChange]);
 
   React.useEffect(() => {
@@ -131,7 +131,7 @@ const ChoroplethMap: React.FC<ChoroplethMapProps> = ({
               ? "United States"
               : countryName
           );
-          onTotalUsersChange(userCount || totalUsers); // Update total users state
+          onTotalUsersChange(userCount || 0); // Update total users state
         })
         .on("mouseover", function (event, d) {
           const countryName = d.properties?.name;
