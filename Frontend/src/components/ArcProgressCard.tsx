@@ -18,22 +18,32 @@ const ArcProgressCard: React.FC<ArcProgressCardProps> = ({
 }) => {
   return (
     <div className={`p-6 rounded-lg shadow-lg ${bgColor} text-white`}>
-      <h2 className="text-3xl font-extrabold mb-4">{title}</h2>
-      <div className="flex justify-center items-center">
-        <div style={{ width: 200, height: 200 }}>
-          <CircularProgressbarWithChildren
-            value={percentage}
-            styles={buildStyles({
-              pathColor: "#3e98c7", // Set a distinct color for the arc
-              trailColor: bgColor, // Match the trail color with the background color
-            })}
-          >
-            <div className="text-4xl font-bold">{`${Math.round(
-              percentage
-            )}%`}</div>
-          </CircularProgressbarWithChildren>
+      <div className="flex justify-left items-left">
+        <div className="relative" style={{ width: 200, height: 180 }}>
+          {/* Container with half the height for semi-circle */}
+          <div className="absolute" style={{ width: 400, height: 300 }}>
+            <CircularProgressbarWithChildren
+              value={percentage}
+              circleRatio={0.5} // Make it a semi-circle
+              styles={buildStyles({
+                rotation: 0.75, // Rotate to make the semi-circle face up
+                strokeLinecap: 'round', // Rounded line endings
+                pathColor: "rgb(62, 152, 199)", // Modern blue color
+                trailColor: 'rgba(255, 255, 255, 0.1)', // Subtle trail
+                pathTransitionDuration: 0.5, // Animation duration
+              })}
+            >
+              <div className="relative "> {/* Adjust text position */}
+                <div className="text-6xl font-bold text-gray-100 " style={{ fontFamily: 'Digital-7, monospace' }}>{`${Math.round(
+                  percentage
+                )} %`}</div>
+                
+              </div>
+            </CircularProgressbarWithChildren>
+          </div>
         </div>
       </div>
+      <h2 className="text-2xl ml-28 mb-24 font-mono  -mt-14">{title}</h2>
     </div>
   );
 };

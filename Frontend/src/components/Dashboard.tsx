@@ -12,8 +12,6 @@ import LineChart from "./LineChart";
 import SelectedFilters from "./SelectedFilters";
 import WordCloud from "./WordCloud";
 
-
-
 const Dashboard: React.FC = () => {
   const { data, isLoading, error } = useData();
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
@@ -43,15 +41,15 @@ const Dashboard: React.FC = () => {
 
   if (isLoading)
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-900">
-        <div className="text-white text-lg">Loading dashboard...</div>
+      <div className="flex items-center justify-center min-h-screen bg-gray-950">
+        <div className="text-gray-200 text-lg font-inter">Loading dashboard...</div>
       </div>
     );
 
   if (error)
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-900">
-        <div className="text-red-500 text-lg">
+      <div className="flex items-center justify-center min-h-screen bg-gray-950">
+        <div className="text-red-400 text-lg font-inter">
           Error loading data: {error.message}
         </div>
       </div>
@@ -59,27 +57,25 @@ const Dashboard: React.FC = () => {
 
   if (!data)
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-900">
-        <div className="text-gray-500 text-lg">No data available</div>
+      <div className="flex items-center justify-center min-h-screen bg-gray-950">
+        <div className="text-gray-400 text-lg font-inter">No data available</div>
       </div>
     );
 
   return (
-    <div className="p-6 bg-gradient-to-br from-gray-800 to-gray-900 min-h-screen font-poppins">
+    <div className="p-6 bg-gradient-to-br from-gray-950 to-gray-900 min-h-screen font-inter">
       {/* Header and Toolbar */}
-      <div className="mb-10 bg-gray-800 p-6 rounded-lg fixed top-0 left-0 right-0 z-10 shadow-lg w-full">
-        <header className="mb-4 max-w-7xl mx-auto">
-          <h1 className="font-sans text-5xl font-extrabold text-white mb-2 flex items-center gap-3 font-open-sans">
-            {/* <img src="/logo.svg" alt="Logo" className="h-10" /> */}
+      <div className="mb-10 bg-gray-900 p-8 rounded-xl fixed top-0 left-0 right-0 z-10 shadow-2xl w-full border border-gray-800">
+        <header className="mb-6 max-w-7xl mx-auto">
+          <h1 className="font-mono text-5xl font-black text-gray-100 mb-3 flex items-center gap-3">
             GitHub Users Dashboard
           </h1>
-          <p className="text-gray-300 font-light">
+          <p className="text-gray-400 font-light tracking-wide">
             Visualize GitHub user data over time, by country, and by various
             categories.
           </p>
         </header>
 
-        {/* Selected Filters Section */}
         <SelectedFilters
           selectedYear={selectedYear}
           selectedCountry={selectedCountry}
@@ -90,14 +86,13 @@ const Dashboard: React.FC = () => {
         />
       </div>
 
-      {/* Add padding to avoid content being hidden behind fixed elements */}
-      <div className="pt-40 max-w-full mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-          {/* Flashcard */}
-          <div className="col-span-1 md:col-span-1 flex flex-col justify-between">
+      <div className="pt-48 max-w-full mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {/* Flashcard Section */}
+          <div className="col-span-1 md:col-span-1 flex flex-col gap-4 font-inter">
             <Flashcard
-              title="User Details"
-              bgColor="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75"
+              title="Users Count"
+              bgColor="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90"
               totalUsers={<CountUp end={totalUsers} duration={2} />}
               selectedCountry={
                 selectedCountry ? (
@@ -107,7 +102,7 @@ const Dashboard: React.FC = () => {
                       autoStart: true,
                       loop: false,
                       deleteSpeed: 99999999,
-                      cursor: "", // Hide cursor
+                      cursor: "",
                     }}
                   />
                 ) : null
@@ -120,23 +115,23 @@ const Dashboard: React.FC = () => {
                       autoStart: true,
                       loop: false,
                       deleteSpeed: 99999999,
-                      cursor: "", // Hide cursor
+                      cursor: "",
                     }}
                   />
                 ) : null
               }
             />
             <ArcProgressCard
-              title="Progress"
+              title="Github Users"
               percentage={(totalUsers / (data ? data.length : 1)) * 100}
-              bgColor="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 mt-6"
+              bgColor="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90"
             />
           </div>
 
           {/* Choropleth Map */}
-          <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
-            <h2 className="text-xl font-semibold mb-6 text-gray-300">
-              Users by Country
+          <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+            <h2 className="text-2xl font-bold mb-6 text-gray-200 font-mono">
+              Choropleth Map
             </h2>
             <ChoroplethMap
               onCountrySelect={setSelectedCountry}
@@ -147,22 +142,23 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
 
-        {/* Dashboard Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 w-full">
+        {/* Charts Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 w-full">
           {/* Line Chart */}
-          <div className="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
-            <h2 className="text-xl font-semibold mb-6 text-gray-300">
-              Cumulative Users Over Time
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+            <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
+              Line Chart
             </h2>
             <LineChart
               onYearSelect={handleYearSelect}
               selectedYear={selectedYear}
             />
           </div>
+
           {/* Bar Chart */}
-          <div className="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
-            <h2 className="text-xl font-semibold mb-6 text-gray-300">
-              Yearly Growth by Country
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+            <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
+              Bar Chart
             </h2>
             <div className="w-full h-full">
               <BarChart selectedCountry={selectedCountry} />
@@ -170,9 +166,9 @@ const Dashboard: React.FC = () => {
           </div>
 
           {/* Donut Chart */}
-          <div className="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
-            <h2 className="text-xl font-semibold mb-6 text-gray-300">
-              User Distribution by Category
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+            <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
+              Donut Chart
             </h2>
             <div className="w-full h-full overflow-hidden">
               <DonutChart
@@ -183,8 +179,8 @@ const Dashboard: React.FC = () => {
           </div>
 
           {/* Histogram Chart */}
-          <div className="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl w-full">
-            <h2 className="text-xl font-semibold mb-6 text-gray-300">
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+            <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
               Histogram Chart
             </h2>
             <HistogramChart selectedLanguage={selectedLanguage} />
@@ -192,16 +188,14 @@ const Dashboard: React.FC = () => {
         </div>
 
         {/* Word Cloud */}
-        <div className="bg-gradient-to-br from-gray-700 to-gray-800 bg-opacity-75 rounded-lg p-8 shadow-xl mt-10 w-full">
-          <h2 className="text-xl font-semibold mb-6 text-gray-300">
+        {/* <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl mt-8 w-full border border-gray-800"> */}
+          <h2 className="text-xl font-semibold mt-9 mb-6 text-gray-200 font-mono">
             Word Cloud
           </h2>
           <div className="w-full h-[900px]">
-            {" "}
-            {/* Increase height */}
             <WordCloud country={selectedCountry} selectedYear={selectedYear} />
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );

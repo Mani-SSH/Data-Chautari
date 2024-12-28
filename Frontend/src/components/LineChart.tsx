@@ -1,20 +1,19 @@
+import {
+  CategoryScale,
+  ChartEvent,
+  Chart as ChartJS,
+  ChartOptions,
+  Legend,
+  LinearScale,
+  LineElement,
+  PointElement,
+  Title,
+  Tooltip
+} from "chart.js";
 import React, { useMemo } from "react";
 import { Line } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-  ChartOptions,
-  ChartData,
-  ChartEvent,
-} from "chart.js";
-import { DataRow } from "../types/types";
 import { useData } from "../hooks/useData";
+import { DataRow } from "../types/types";
 
 ChartJS.register(
   CategoryScale,
@@ -190,7 +189,7 @@ const LineChart: React.FC<LineChartProps> = ({
 
   return (
     <div className="w-full h-full">
-      <h2 className="text-gray-300">Users Growth Over Time</h2>
+      <h2 className="text-gray-500 text-xs mb-5">Users Growth Over Time</h2>
       <Line data={chartData} options={options(onYearSelect, selectedYear)} />
     </div>
   );

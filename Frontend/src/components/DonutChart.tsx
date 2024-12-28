@@ -1,7 +1,7 @@
-import { Doughnut } from "react-chartjs-2";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
+import { Doughnut } from "react-chartjs-2";
 import { useData } from "../hooks/useData";
 
 ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
@@ -168,7 +168,7 @@ const DonutChart: React.FC<DonutChartProps> = ({
     <div className="w-full h-full mx-auto">
       {!showOthersChart ? (
         <>
-          <h2 className="text-center text-xl">
+          <h2 className="text-center text-xs mb-5">
             {selectedCountry
               ? `Most Used Languages in ${selectedCountry}`
               : "Most Used Languages (Global)"}
@@ -183,7 +183,7 @@ const DonutChart: React.FC<DonutChartProps> = ({
         </>
       ) : (
         <>
-          <h2 className="text-center text-xl">Other Languages</h2>
+          <h2 className="text-center text-xs mb-5">Other Languages</h2>
           {othersData && (
             <Doughnut
               data={{
