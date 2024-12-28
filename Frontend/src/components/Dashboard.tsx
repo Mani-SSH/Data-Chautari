@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import CountUp from "react-countup";
+import Typewriter from "typewriter-effect";
+import { useData } from "../hooks/useData";
+import ArcProgressCard from "./ArcProgressCard";
 import BarChart from "./BarChart";
 import ChoroplethMap from "./ChoroplethMap";
 import DonutChart from "./DonutChart";
-import LineChart from "./LineChart";
-import HistogramChart from "./HistogramChart";
-import WordCloud from "./WordCloud";
 import Flashcard from "./Flashcard";
+import HistogramChart from "./HistogramChart";
+import LineChart from "./LineChart";
 import SelectedFilters from "./SelectedFilters";
-import ArcProgressCard from "./ArcProgressCard"; // Add this line
-import { useData } from "../hooks/useData";
-import CountUp from "react-countup";
-import Typewriter from "typewriter-effect"; // Add this line
+import WordCloud from "./WordCloud";
+
+
 
 const Dashboard: React.FC = () => {
   const { data, isLoading, error } = useData();
@@ -63,15 +65,15 @@ const Dashboard: React.FC = () => {
     );
 
   return (
-    <div className="p-6 bg-gradient-to-br from-gray-800 to-gray-900 min-h-screen">
+    <div className="p-6 bg-gradient-to-br from-gray-800 to-gray-900 min-h-screen font-poppins">
       {/* Header and Toolbar */}
       <div className="mb-10 bg-gray-800 p-6 rounded-lg fixed top-0 left-0 right-0 z-10 shadow-lg w-full">
         <header className="mb-4 max-w-7xl mx-auto">
-          <h1 className="text-5xl font-extrabold text-white mb-2 flex items-center gap-3">
-            <img src="/logo.svg" alt="Logo" className="h-10" />
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-2 flex items-center gap-3 font-open-sans">
+            {/* <img src="/logo.svg" alt="Logo" className="h-10" /> */}
             GitHub Users Dashboard
           </h1>
-          <p className="text-gray-300">
+          <p className="text-gray-300 font-light">
             Visualize GitHub user data over time, by country, and by various
             categories.
           </p>
