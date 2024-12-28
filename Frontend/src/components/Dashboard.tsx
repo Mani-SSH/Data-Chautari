@@ -65,137 +65,133 @@ const Dashboard: React.FC = () => {
   return (
     <div className="p-6 bg-gradient-to-br from-gray-950 to-gray-900 min-h-screen font-inter">
       {/* Header and Toolbar */}
-      <div className="mb-10 bg-gray-900 p-8 rounded-xl fixed top-0 left-0 right-0 z-10 shadow-2xl w-full border border-gray-800">
-        <header className="mb-6 max-w-7xl mx-auto">
-          <h1 className="font-mono text-5xl font-black text-gray-100 mb-3 flex items-center gap-3">
-            GitHub Users Dashboard
-          </h1>
-          <p className="text-gray-400 font-light tracking-wide">
-            Visualize GitHub user data over time, by country, and by various
-            categories.
-          </p>
-        </header>
+      <div className="mb-4 bg-gray-900 p-4 rounded-xl fixed top-0 left-0 right-0 z-10 shadow-2xl w-full border border-gray-800">
+      <header className="mb-4 max-w-7xl mx-auto">
+        <h1 className="font-mono text-5xl font-black text-gray-100 mb-3 flex items-center gap-3">
+        GitHub Users Dashboard
+        </h1>
+        <p className="text-gray-400 font-light tracking-wide">
+        Visualize GitHub user data over time, by country, and by various
+        categories.
+        </p>
+      </header>
 
-        <SelectedFilters
-          selectedYear={selectedYear}
-          selectedCountry={selectedCountry}
-          selectedLanguage={selectedLanguage}
-          onResetYear={handleResetYear}
-          onResetCountry={handleResetCountry}
-          onResetLanguage={handleResetLanguage}
-        />
+      <SelectedFilters
+        selectedYear={selectedYear}
+        selectedCountry={selectedCountry}
+        selectedLanguage={selectedLanguage}
+        onResetYear={handleResetYear}
+        onResetCountry={handleResetCountry}
+        onResetLanguage={handleResetLanguage}
+      />
       </div>
 
-      <div className="pt-48 max-w-full mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {/* Flashcard Section */}
-          <div className="col-span-1 md:col-span-1 flex flex-col gap-4 font-inter">
-            <Flashcard
-              title="Users Count"
-              bgColor="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90"
-              totalUsers={<CountUp end={totalUsers} duration={2} />}
-              selectedCountry={
-                selectedCountry ? (
-                  <Typewriter
-                    options={{
-                      strings: [selectedCountry],
-                      autoStart: true,
-                      loop: false,
-                      deleteSpeed: 99999999,
-                      cursor: "",
-                    }}
-                  />
-                ) : null
-              }
-              selectedYear={
-                selectedYear ? (
-                  <Typewriter
-                    options={{
-                      strings: [selectedYear.toString()],
-                      autoStart: true,
-                      loop: false,
-                      deleteSpeed: 99999999,
-                      cursor: "",
-                    }}
-                  />
-                ) : null
-              }
+      <div className="pt-32 max-w-full mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+        {/* Flashcard Section */}
+        <div className="col-span-1 md:col-span-1 flex flex-col gap-4 font-inter">
+        <Flashcard
+          title="Users Count"
+          bgColor="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90"
+          totalUsers={<CountUp end={totalUsers} duration={2} />}
+          selectedCountry={
+          selectedCountry ? (
+            <Typewriter
+            options={{
+              strings: [selectedCountry],
+              autoStart: true,
+              loop: false,
+              deleteSpeed: 99999999,
+              cursor: "",
+            }}
             />
-            <ArcProgressCard
-              title="Github Users"
-              percentage={(totalUsers / (data ? data.length : 1)) * 100}
-              bgColor="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90"
+          ) : null
+          }
+          selectedYear={
+          selectedYear ? (
+            <Typewriter
+            options={{
+              strings: [selectedYear.toString()],
+              autoStart: true,
+              loop: false,
+              deleteSpeed: 99999999,
+              cursor: "",
+            }}
             />
-          </div>
-
-          {/* Choropleth Map */}
-          <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
-            <h2 className="text-2xl font-bold mb-6 text-gray-200 font-mono">
-              Choropleth Map
-            </h2>
-            <ChoroplethMap
-              onCountrySelect={setSelectedCountry}
-              selectedYear={selectedYear}
-              selectedCountry={selectedCountry}
-              onTotalUsersChange={setTotalUsers}
-            />
-          </div>
+          ) : null
+          }
+        />
+        <ArcProgressCard
+          title="Github Users"
+          percentage={(totalUsers / (data ? data.length : 1)) * 100}
+          bgColor="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90"
+        />
         </div>
 
-        {/* Charts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 w-full">
-          {/* Line Chart */}
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
-            <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
-              Line Chart
-            </h2>
-            <LineChart
-              onYearSelect={handleYearSelect}
-              selectedYear={selectedYear}
-            />
-          </div>
+        {/* Choropleth Map */}
+        <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+        <h2 className="text-2xl font-bold mb-6 text-gray-200 font-mono">
+          Choropleth Map
+        </h2>
+        <ChoroplethMap
+          onCountrySelect={setSelectedCountry}
+          selectedYear={selectedYear}
+          selectedCountry={selectedCountry}
+          onTotalUsersChange={setTotalUsers}
+        />
+        </div>
+      </div>
 
-          {/* Bar Chart */}
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
-            <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
-              Bar Chart
-            </h2>
-            <div className="w-full h-full">
-              <BarChart selectedCountry={selectedCountry} />
-            </div>
-          </div>
-
-          {/* Donut Chart */}
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
-            <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
-              Donut Chart
-            </h2>
-            <div className="w-full h-full overflow-hidden">
-              <DonutChart
-                selectedCountry={selectedCountry}
-                onLanguageSelect={setSelectedLanguage}
-              />
-            </div>
-          </div>
-
-          {/* Histogram Chart */}
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
-            <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
-              Histogram Chart
-            </h2>
-            <HistogramChart selectedLanguage={selectedLanguage} />
-          </div>
+      {/* Charts Grid */}
+      <div className="grid grid-cols-1 -mt-8 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full">
+        {/* Line Chart */}
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+        <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
+          Line Chart
+        </h2>
+        <LineChart
+          onYearSelect={handleYearSelect}
+          selectedYear={selectedYear}
+        />
         </div>
 
-        {/* Word Cloud */}
-        {/* <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl mt-8 w-full border border-gray-800"> */}
-          <h2 className="text-xl font-semibold mt-9 mb-6 text-gray-200 font-mono">
-            Word Cloud
-          </h2>
-          <div className="w-full h-[900px]">
-            <WordCloud country={selectedCountry} selectedYear={selectedYear} />
-          </div>
-        {/* </div> */}
+        {/* Bar Chart */}
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+        <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
+          Bar Chart
+        </h2>
+        <div className="w-full h-full">
+          <BarChart selectedCountry={selectedCountry} />
+        </div>
+        </div>
+
+        {/* Donut Chart */}
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+        <h2 className="text-xl font-semibold mb-4 text-gray-200 font-mono">
+          Donut Chart
+        </h2>
+        <div className="w-full h-full overflow-hidden transform scale-95">
+          <DonutChart
+          selectedCountry={selectedCountry}
+          onLanguageSelect={setSelectedLanguage}
+          />
+        </div>
+        </div>
+
+        {/* Histogram Chart */}
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+        <h2 className="text-xl font-semibold mb-4 text-gray-200 font-mono">
+          Histogram Chart
+        </h2>
+        <HistogramChart selectedLanguage={selectedLanguage} />
+        </div>
+      </div>
+
+      {/* Word Cloud */}
+      <div className="w-full h-[600px] mt-8 mb-8">
+      
+        <WordCloud country={selectedCountry} selectedYear={selectedYear} />
+      </div>
       </div>
     </div>
   );

@@ -84,6 +84,9 @@ function WordCloud({ country, selectedYear }) {
 
   return (
     <div className="w-full h-[600px] bg-gray-900 rounded-lg p-4">
+      <h2 className="text-xl font-semibold mt-4 mb-4 text-gray-200 font-mono">
+              Word Cloud
+            </h2>
       <Canvas camera={{ position: [0, 0, 60], fov: 75 }}>
         <ambientLight intensity={1} />
         <Suspense fallback={null}>
