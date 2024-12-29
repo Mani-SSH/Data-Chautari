@@ -1,15 +1,15 @@
-import React, { useEffect, useRef } from "react";
 import {
-  Chart as ChartJS,
   BarController,
   BarElement,
-  LinearScale,
   CategoryScale,
-  Tooltip,
-  Legend,
-  ChartOptions,
   ChartData,
+  Chart as ChartJS,
+  ChartOptions,
+  Legend,
+  LinearScale,
+  Tooltip,
 } from "chart.js";
+import React, { useEffect, useRef } from "react";
 import { useData } from "../hooks/useData";
 
 ChartJS.register(
@@ -51,7 +51,7 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
       { range: "22-24", min: 22, max: 24, count: 0 },
       { range: "25-27", min: 25, max: 27, count: 0 },
       { range: "28-30", min: 28, max: 30, count: 0 },
-    ];
+    ].reverse();
 
     const filteredData = selectedLanguage
       ? data.filter(
@@ -76,52 +76,92 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
       labels: transformedData.map((d) => d.range),
       datasets: [
         {
-          label: "Repositories Count",
+          label: "Followers Count",
           data: transformedData.map((d) => d.count),
           backgroundColor: "rgba(75, 192, 192, 0.6)",
+          borderRadius: 4,
+          borderSkipped: false,
+          barThickness: 30, // Increased bar height
         },
       ],
     };
 
     const chartOptions: ChartOptions<"bar"> = {
+      indexAxis: 'y',
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: {
           display: false,
-          labels: {
-            color: "#e5e7eb", // Off-white color for legend labels
-          },
         },
         tooltip: {
           enabled: true,
           callbacks: {
             label: (context) => {
               const value = context.raw as number;
-              return `Count: ${value}`;
+              return `Followers: ${value}`;
             },
           },
+          backgroundColor: 'rgba(17, 24, 39, 0.9)',
+          titleColor: '#e5e7eb',
+          bodyColor: '#e5e7eb',
+          padding: 20,
+          cornerRadius: 4,
         },
       },
       scales: {
         x: {
-          title: {
-            display: true,
-            text: "Repositories Count Range",
-            color: "#e5e7eb", // Off-white color for x-axis title
-          },
-          ticks: {
-            color: "#e5e7eb", // Off-white color for x-axis labels
-          },
-        },
-        y: {
+          position: 'top', // Move x-axis to top
           title: {
             display: true,
             text: "Followers Count",
-            color: "#e5e7eb", // Off-white color for y-axis title
+            color: "#e5e7eb",
+            font: {
+              size: 12,
+              weight: '500',
+            },
+            padding: { bottom: 20 },
           },
           ticks: {
-            color: "#e5e7eb", // Off-white color for y-axis labels
+            color: "#e5e7eb",
+            font: {
+              size: 11,
+            },
           },
+          grid: {
+            color: "rgba(229, 231, 235, 0.1)",
+          },
+        },
+        y: {
+          position: 'left',
+          title: {
+            display: true,
+            text: "Repo Count Range",
+            color: "#e5e7eb",
+            font: {
+              size: 12,
+              weight: '500',
+            },
+            padding: { bottom: 10 },
+          },
+          ticks: {
+            color: "#e5e7eb",
+            font: {
+              size: 11,
+            },
+            padding: 8,
+          },
+          grid: {
+            display: false,
+          },
+        },
+      },
+      layout: {
+        padding: {
+          left: 20,
+          right: 20,
+          top: 0, // Increased top padding for the repositioned x-axis
+          bottom: 0,
         },
       },
     };
@@ -145,7 +185,7 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
   if (error) return <p>Error loading data: {error.message}</p>;
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-[500px]"> {/* Increased container height */}
       <canvas ref={chartRef} />
     </div>
   );

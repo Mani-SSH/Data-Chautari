@@ -8,12 +8,14 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start-backend-windows": "cd ../Backend && call .venv\\Scripts\\activate && python ./app/app.py",
+    "start-backend-windows": "cd ../Backend && python ./app/app.py",
     "start-backend-macOS": "cd ../Backend && python3 ./app/app.py",
     "start": "concurrently \"pnpm run dev\" \"pnpm run start-backend-windows\"",
     "start-all": "concurrently \"pnpm run dev\" \"pnpm run start-backend-macOS\""
   },
   "dependencies": {
+    "@react-three/drei": "^9.120.4",
+    "@react-three/fiber": "^8.17.10",
     "@types/topojson-client": "^3.1.5",
     "chart.js": "^4.4.7",
     "chartjs-chart-geo": "^4.3.4",
@@ -23,6 +25,7 @@
     "d3-geo": "^3.1.1",
     "d3-scale": "^4.0.2",
     "geojson": "^0.5.0",
+    "random-words": "^2.0.1",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-circular-progressbar": "^2.1.0",
@@ -30,6 +33,7 @@
     "react-dom": "^18.3.1",
     "react-modal": "^3.16.3",
     "react-simple-maps": "^3.0.0",
+    "three": "^0.171.0",
     "topojson-client": "^3.1.0",
     "typewriter-effect": "^2.21.0"
   },

@@ -21,11 +21,11 @@ const Flashcard: React.FC<FlashcardProps> = ({
 }) => {
   return (
     <div className={`p-6 rounded-lg shadow-lg ${bgColor} text-white`}>
-      <h2 className="text-3xl font-extrabold mb-4">{title}</h2>
-      <div className="text-8xl font-bold mb-2">{totalUsers}</div>
+      <h2 className="text-2xl text-left font-bold font-mono mb-4 ">{title}</h2>
+      <div className="text-8xl font-bold mb-2" style={{ fontFamily: 'Digital-7, monospace' }}>{totalUsers}</div>
       <div className="text-lg text-gray-300">
-        <p className="text-5xl font-bold mb-2">{selectedCountry || "World"}</p>
-        <p className="text-5xl font-bold mb-1">{selectedYear || "N/A"}</p>
+        <p className="text-2xl font-bold mb-2 font-mono">{selectedCountry || "World"}</p>
+        <p className="text-2xl font-bold mb-1 font-mono">{selectedYear || "..."}</p>
       </div>
     </div>
   );
