@@ -3,8 +3,11 @@ import pandas as pd
 import time
 import random  # To introduce randomness
 from concurrent.futures import ThreadPoolExecutor
+from dotenv import load_dotenv
+import os
 
-TOKEN = """GITHUB_TOKEN""" # Add your GitHub token here
+load_dotenv()
+TOKEN = os.getenv("GITHUB_TOKEN") # Add your GitHub token here
 HEADERS = {"Authorization": f"token {TOKEN}"}
 
 # Fetch users globally with filters
