@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-TOKEN = os.getenv("GITHUB_TOKEN") # Add your GitHub token here
+#TOKEN = os.getenv("GITHUB_TOKEN") # Add your GitHub token here
 HEADERS = {"Authorization": f"token {TOKEN}"}
 
 # Fetch users globally with filters
