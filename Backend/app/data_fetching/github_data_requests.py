@@ -4,7 +4,7 @@ import time
 import random  # To introduce randomness
 from concurrent.futures import ThreadPoolExecutor
 
-TOKEN = "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" # Add your GitHub token here
+TOKEN = """GITHUB_TOKEN""" # Add your GitHub token here
 HEADERS = {"Authorization": f"token {TOKEN}"}
 
 # Fetch users globally with filters
