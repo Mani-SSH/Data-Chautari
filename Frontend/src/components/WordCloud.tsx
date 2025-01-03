@@ -4,7 +4,25 @@ import { Suspense, useMemo, useState } from 'react';
 import * as THREE from 'three';
 import { useData } from "../hooks/useData";
 
-function Word({ text, position, value, maxValue }) {
+
+interface Word {
+  text: string;
+  value: number;
+}
+
+interface WordProps {
+  text: string;
+  position: THREE.Vector3;
+  value: number;
+  maxValue: number;
+}
+
+interface WordCloudProps {
+  country?: string;
+  selectedYear?: number;
+}
+
+const Word: React.FC<WordProps> = ({ text, position, value, maxValue }) => {
   const [hovered, setHovered] = useState(false);
   const fontSize = (value / maxValue) * 5 + 1;
   
@@ -39,27 +57,48 @@ function Word({ text, position, value, maxValue }) {
       )}
     </group>
   );
-}
+};
 
-function WordCloud({ country, selectedYear }) {
+const WordCloud: React.FC<WordCloudProps> = ({ country, selectedYear }) => {
   const { data } = useData();
   
   const words = useMemo(() => {
     if (!data) return [];
-    const topics = new Map();
+    let topics = new Map<string, number>();
     
     data.filter(entry => {
       return (!country || entry.Country === country) && 
              (!selectedYear || new Date(entry["Account Created At"]).getFullYear() === selectedYear);
     }).forEach(entry => {
       try {
-        JSON.parse(entry["Unique Topics"].replace(/'/g, '"'))
-          .forEach(topic => {
-            if (topic && topic.toLowerCase() !== "unknown") {
-              topics.set(topic, (topics.get(topic) || 0) + 1);
-            }
-          });
-      } catch (e) {}
+        // Get and sanitize the input
+        const rawTopics = (entry["Unique Topics"] || '[]') as unknown as string;
+        const formattedTopics = rawTopics.replace(/'/g, '"');
+      
+        // Parse the topics safely
+        let parsedTopics: string[] = [];
+        try {
+          parsedTopics = JSON.parse(formattedTopics) as string[];
+        } catch (parseError) {
+          console.warn("Failed to parse JSON, using empty array:", parseError);
+          parsedTopics = [];
+        }
+      
+        // Ensure topics map is initialized
+        if (!topics) {
+          topics = new Map<string, number>();
+        }
+      
+        // Process topics
+        parsedTopics.forEach(topic => {
+          if (topic?.toLowerCase() !== "unknown") {
+            topics.set(topic, (topics.get(topic) ?? 0) + 1);
+          }
+        });
+      } catch (error) {
+        console.error("Unexpected error while processing topics:", error);
+      }
+      
     });
 
     return Array.from(topics.entries())
@@ -85,8 +124,11 @@ function WordCloud({ country, selectedYear }) {
   return (
     <div className="w-full h-[600px] bg-gray-900 rounded-lg p-4">
       <h2 className="text-xl font-semibold mt-4 mb-4 text-gray-200 font-mono">
-              Word Cloud
-            </h2>
+        Word Cloud
+      </h2>
+      <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+                This word cloud shows the most common words in GitHub user bios.
+              </p>
       <Canvas camera={{ position: [0, 0, 60], fov: 75 }}>
         <ambientLight intensity={1} />
         <Suspense fallback={null}>
@@ -104,6 +146,6 @@ function WordCloud({ country, selectedYear }) {
       </Canvas>
     </div>
   );
-}
+};
 
 export default WordCloud;

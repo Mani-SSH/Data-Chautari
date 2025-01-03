@@ -1,15 +1,15 @@
-import { Bar } from "react-chartjs-2";
 import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
   BarElement,
+  CategoryScale,
+  ChartData,
+  Chart as ChartJS,
+  ChartOptions,
+  Legend,
+  LinearScale,
   Title,
   Tooltip,
-  Legend,
-  ChartData,
-  ChartOptions,
 } from "chart.js";
+import { Bar } from "react-chartjs-2";
 import { useData } from "../hooks/useData";
 
 interface BarChartProps {
@@ -67,9 +67,10 @@ const BarChart: React.FC<BarChartProps> = ({ selectedCountry }) => {
   const options: ChartOptions<"bar"> = {
     responsive: true,
     plugins: {
-      legend: { position: "top" },
+      legend: { position: "top", align: "end" },
       title: {
         display: true,
+        align: "start" as const,
         text: `Hireable Distribution ${
           selectedCountry ? `- ${selectedCountry}` : "(Global)"
         }`,

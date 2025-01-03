@@ -9,7 +9,9 @@ import DonutChart from "./DonutChart";
 import Flashcard from "./Flashcard";
 import HistogramChart from "./HistogramChart";
 import LineChart from "./LineChart";
+import RankingChart from './RankingChart';
 import SelectedFilters from "./SelectedFilters";
+import TrendChart from "./TrendChart";
 import WordCloud from "./WordCloud";
 
 const Dashboard: React.FC = () => {
@@ -133,6 +135,9 @@ const Dashboard: React.FC = () => {
         <h2 className="text-2xl font-bold mb-6 text-gray-200 font-mono">
           Choropleth Map
         </h2>
+        <p className="-mt-4 mb-2 text-gray-400 text-sm font-light tracking-wide">
+          This map shows the distribution of GitHub users by country.
+        </p>
         <ChoroplethMap
           onCountrySelect={setSelectedCountry}
           selectedYear={selectedYear}
@@ -149,6 +154,9 @@ const Dashboard: React.FC = () => {
         <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
           Line Chart
         </h2>
+        <p className="-mt-4 mb-2 text-gray-400 text-sm font-light tracking-wide">
+          This chart shows the trend of GitHub users over the years.
+        </p>
         <LineChart
           onYearSelect={handleYearSelect}
           selectedYear={selectedYear}
@@ -160,6 +168,9 @@ const Dashboard: React.FC = () => {
         <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
           Bar Chart
         </h2>
+        <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+          This chart shows the distribution of GitHub users by country.
+        </p>
         <div className="w-full h-full">
           <BarChart selectedCountry={selectedCountry} />
         </div>
@@ -170,6 +181,9 @@ const Dashboard: React.FC = () => {
         <h2 className="text-xl font-semibold mb-4 text-gray-200 font-mono">
           Donut Chart
         </h2>
+        <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+          This chart shows the distribution of GitHub users by programming language.
+        </p>
         <div className="w-full h-full overflow-hidden transform scale-95">
           <DonutChart
           selectedCountry={selectedCountry}
@@ -183,14 +197,42 @@ const Dashboard: React.FC = () => {
         <h2 className="text-xl font-semibold mb-4 text-gray-200 font-mono">
           Histogram Chart
         </h2>
+        <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+          This chart shows the distribution of GitHub users by activity.
+        </p>
         <HistogramChart selectedLanguage={selectedLanguage} />
+        </div>
+      </div>
+      
+      {/* Charts Grid 2*/}
+      <div className="grid grid-cols-1 mt-4 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full">
+        {/* Ranking Chart */}
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+          <h2 className="text-xl font-semibold mb-4 text-gray-200 font-mono">
+            Top Five Most Used Languages
+          </h2>
+          <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+            This chart shows the top five most used programming languages.
+          </p>
+          <RankingChart selectedYear={selectedYear} onLanguageSelect={setSelectedLanguage} />
+        </div>
+
+        {/* Trend Chart */}
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-8 shadow-2xl border border-gray-800">
+          <h2 className="text-xl font-semibold mb-4 text-gray-200 font-mono">
+            Trends over the Years
+          </h2>
+          <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+            This chart shows the trends of GitHub users over the years.
+          </p>
+          <TrendChart selectedLanguage={selectedLanguage} />
         </div>
       </div>
 
       {/* Word Cloud */}
       <div className="w-full h-[600px] mt-8 mb-8">
-      
-        <WordCloud country={selectedCountry} selectedYear={selectedYear} />
+        
+        <WordCloud country={selectedCountry ?? undefined} selectedYear={selectedYear ?? undefined} />
       </div>
       </div>
     </div>
