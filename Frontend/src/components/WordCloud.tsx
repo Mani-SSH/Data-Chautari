@@ -126,7 +126,7 @@ const WordCloud: React.FC<WordCloudProps> = ({ country, selectedYear }) => {
       <h2 className="text-xl font-semibold mt-4 mb-4 text-gray-200 font-mono">
         Word Cloud
       </h2>
-      <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+      <p className="-mt-3 mb-2 text-gray-400 text-sm font-light font-mono tracking-wide">
                 This word cloud shows the most common words in GitHub user bios.
               </p>
       <Canvas camera={{ position: [0, 0, 60], fov: 75 }}>

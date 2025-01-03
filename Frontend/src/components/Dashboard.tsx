@@ -135,7 +135,7 @@ const Dashboard: React.FC = () => {
         <h2 className="text-2xl font-bold mb-6 text-gray-200 font-mono">
           Choropleth Map
         </h2>
-        <p className="-mt-4 mb-2 text-gray-400 text-sm font-light tracking-wide">
+        <p className="-mt-4 mb-2 text-gray-400 text-sm font-light font-mono tracking-wide">
           This map shows the distribution of GitHub users by country.
         </p>
         <ChoroplethMap
@@ -154,7 +154,7 @@ const Dashboard: React.FC = () => {
         <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
           Line Chart
         </h2>
-        <p className="-mt-4 mb-2 text-gray-400 text-sm font-light tracking-wide">
+        <p className="-mt-4 mb-2 text-gray-400 text-sm font-light font-mono tracking-wide">
           This chart shows the trend of GitHub users over the years.
         </p>
         <LineChart
@@ -168,7 +168,7 @@ const Dashboard: React.FC = () => {
         <h2 className="text-xl font-semibold mb-6 text-gray-200 font-mono">
           Bar Chart
         </h2>
-        <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+        <p className="-mt-3 mb-2 text-gray-400 text-sm font-light  tracking-wide">
           This chart shows the distribution of GitHub users by country.
         </p>
         <div className="w-full h-full">
@@ -181,7 +181,7 @@ const Dashboard: React.FC = () => {
         <h2 className="text-xl font-semibold mb-4 text-gray-200 font-mono">
           Donut Chart
         </h2>
-        <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+        <p className="-mt-3 mb-2 text-gray-400 text-sm font-light font-mono tracking-wide">
           This chart shows the distribution of GitHub users by programming language.
         </p>
         <div className="w-full h-full overflow-hidden transform scale-95">
@@ -197,7 +197,7 @@ const Dashboard: React.FC = () => {
         <h2 className="text-xl font-semibold mb-4 text-gray-200 font-mono">
           Histogram Chart
         </h2>
-        <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+        <p className="-mt-3 mb-16 text-gray-400 text-sm font-light font-mono tracking-wide">
           This chart shows the distribution of GitHub users by activity.
         </p>
         <HistogramChart selectedLanguage={selectedLanguage} />
@@ -211,7 +211,7 @@ const Dashboard: React.FC = () => {
           <h2 className="text-xl font-semibold mb-4 text-gray-200 font-mono">
             Top Five Most Used Languages
           </h2>
-          <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+          <p className="-mt-3 mb-2 text-gray-400 text-sm font-light font-mono tracking-wide">
             This chart shows the top five most used programming languages.
           </p>
           <RankingChart selectedYear={selectedYear} onLanguageSelect={setSelectedLanguage} />
@@ -222,7 +222,7 @@ const Dashboard: React.FC = () => {
           <h2 className="text-xl font-semibold mb-4 text-gray-200 font-mono">
             Trends over the Years
           </h2>
-          <p className="-mt-3 mb-2 text-gray-400 text-sm font-light tracking-wide">
+          <p className="-mt-3 mb-2 text-gray-400 text-sm font-light font-mono tracking-wide">
             This chart shows the trends of GitHub users over the years.
           </p>
           <TrendChart selectedLanguage={selectedLanguage} />
