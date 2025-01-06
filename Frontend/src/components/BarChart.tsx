@@ -67,6 +67,9 @@ const BarChart: React.FC<BarChartProps> = ({ selectedCountry }) => {
   const options: ChartOptions<"bar"> = {
     responsive: true,
     plugins: {
+      datalabels: {
+        color:'#ffffff'
+      },
       legend: { position: "top", align: "end" },
       title: {
         display: true,

@@ -35,6 +35,7 @@ const options = (
   selectedYear: number | null
 ): ChartOptions<"line"> => ({
   responsive: true,
+  color: "#e5e7eb",
   animation: {
     duration: 2000,
     easing: "easeInOutQuart",
@@ -54,6 +55,9 @@ const options = (
     }
   },
   plugins: {
+    datalabels:{
+      display: false
+    },
     legend: {
       display: false,
     },
