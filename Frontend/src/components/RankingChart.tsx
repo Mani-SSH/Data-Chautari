@@ -1,16 +1,15 @@
+import {
+  BarElement,
+  CategoryScale,
+  Chart as ChartJS,
+  ChartOptions,
+  Legend,
+  LinearScale,
+  Title,
+  Tooltip
+} from "chart.js";
 import React, { useMemo } from "react";
 import { Bar } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-  ChartOptions,
-  ChartData,
-} from "chart.js";
 import { useData } from "../hooks/useData";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
@@ -85,6 +84,9 @@ const RankingChart: React.FC<RankingChartProps> = ({
       }
     },
     plugins: {
+      datalabels: {
+        color:'#ffffff'
+      },
       legend: { display: false },
       title: {
         display: true,

@@ -1,13 +1,13 @@
 import {
-    CategoryScale,
-    Chart as ChartJS,
-    ChartOptions,
-    Legend,
-    LinearScale,
-    LineElement,
-    PointElement,
-    Title,
-    Tooltip,
+  CategoryScale,
+  Chart as ChartJS,
+  ChartOptions,
+  Legend,
+  LinearScale,
+  LineElement,
+  PointElement,
+  Title,
+  Tooltip,
 } from "chart.js";
 import React, { useMemo } from "react";
 import { Line } from "react-chartjs-2";
@@ -45,7 +45,6 @@ const TrendChart: React.FC<TrendChartProps> = ({ selectedLanguage }) => {
 
     let languageToShow = selectedLanguage;
 
-    // If no language is selected, determine the most used language
     if (!selectedLanguage) {
       const languageCounts = data.reduce((acc: Record<string, number>, curr) => {
         const language = curr["Most Used Language"];
@@ -56,36 +55,52 @@ const TrendChart: React.FC<TrendChartProps> = ({ selectedLanguage }) => {
       }, {});
 
       languageToShow = Object.entries(languageCounts)
-        .sort((a, b) => b[1] - a[1])[0]?.[0] || null; // Get the most used language
+        .sort((a, b) => b[1] - a[1])[0]?.[0] || null;
     }
 
-    // Filter data for the determined or selected language
-    const languageData = data.filter(
-      (item) => item["Most Used Language"] === languageToShow
-    );
-
-    const yearlyCounts = languageData.reduce((acc: Record<number, number>, curr) => {
+    const yearlyData = data.reduce((acc: Record<number, any[]>, curr) => {
       const year = new Date(curr["Account Created At"]).getFullYear();
-      acc[year] = (acc[year] || 0) + 1;
+      if (!acc[year]) acc[year] = [];
+      acc[year].push(curr);
       return acc;
     }, {});
 
-    const sortedYears = Object.keys(yearlyCounts)
+    const yearlyNormalizedCounts = Object.entries(yearlyData).reduce(
+      (acc: Record<number, number>, [year, yearUsers]) => {
+        const totalUsersInYear = yearUsers.length;
+        const languageUsersInYear = yearUsers.filter(
+          user => user["Most Used Language"] === languageToShow
+        ).length;
+        
+        acc[Number(year)] = languageUsersInYear / totalUsersInYear;
+        return acc;
+      },
+      {}
+    );
+
+    const sortedYears = Object.keys(yearlyData)
       .map(Number)
       .sort((a, b) => a - b);
 
-    const counts = sortedYears.map((year) => yearlyCounts[year]);
+    const normalizedCounts = sortedYears.map(
+      year => yearlyNormalizedCounts[year] || 0
+    );
 
     return {
       labels: sortedYears,
       datasets: [
         {
-          label: `Trend for ${languageToShow}`,
-          data: counts,
+          label: `${languageToShow} Adoption Rate`,
+          data: normalizedCounts,
           borderColor: "rgba(75, 192, 192, 1)",
           backgroundColor: "rgba(75, 192, 192, 0.6)",
           fill: false,
           tension: 0.4,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          datalabels: {
+            display: false
+          }
         },
       ],
     };
@@ -94,24 +109,80 @@ const TrendChart: React.FC<TrendChartProps> = ({ selectedLanguage }) => {
   const options: ChartOptions<"line"> = {
     responsive: true,
     plugins: {
-      legend: { position: "top" },
+      datalabels: {
+        display: false
+      },
+      legend: { 
+        position: "top",
+        labels: {
+          color: "#e5e7eb",
+          font: {
+            size: 14
+          }
+        }
+      },
       title: {
         display: true,
         text: selectedLanguage
-          ? `Year-wise Trend for ${selectedLanguage}`
-          : "Year-wise Trend for Most Used Language",
+          ? `${selectedLanguage} Adoption Rate Over Time`
+          : "Language Adoption Rate Over Time",
+        color: "#e5e7eb",
+        font: {
+          size: 16
+        }
       },
+      tooltip: {
+        callbacks: {
+          label: (context) => {
+            const percentage = (context.parsed.y * 100).toFixed(0);
+            return `Adoption Rate: ${percentage}%`;
+          }
+        }
+      }
     },
     scales: {
       x: {
-        grid: { display: false },
-        ticks: { color: "#e5e7eb" },
+        grid: { 
+          display: false
+        },
+        ticks: { 
+          color: "#e5e7eb",
+          font: {
+            size: 12
+          }
+        },
+        title: {
+          display: true,
+          text: "Year",
+          color: "#e5e7eb",
+          font: {
+            size: 14
+          }
+        }
       },
       y: {
-        grid: { color: "rgba(1, 1, 1, 1)" },
-        ticks: { color: "#e5e7eb" },
+        grid: { 
+          color: "#2d374850"
+        },
+        ticks: { 
+          color: "#e5e7eb",
+          callback: (value) => `${(Number(value) * 100)}%`,
+          font: {
+            size: 12
+          }
+        },
+        min: 0,
+        max: 1,
+        title: {
+          display: true,
+          text: "Adoption Rate",
+          color: "#e5e7eb",
+          font: {
+            size: 14
+          }
+        }
       },
-    },
+    }
   };
 
   return (

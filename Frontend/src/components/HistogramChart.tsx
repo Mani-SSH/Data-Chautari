@@ -91,6 +91,9 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
+        datalabels: {
+          color:'#ffffff'
+        },
         legend: {
           display: false,
         },
