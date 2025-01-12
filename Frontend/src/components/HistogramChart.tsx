@@ -87,12 +87,12 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
     };
 
     const chartOptions: ChartOptions<"bar"> = {
-      indexAxis: 'y',
+      indexAxis: "y",
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
         datalabels: {
-          color:'#ffffff'
+          color: "#ffffff",
         },
         legend: {
           display: false,
@@ -105,23 +105,23 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
               return `Followers: ${value}`;
             },
           },
-          backgroundColor: 'rgba(17, 24, 39, 0.9)',
-          titleColor: '#e5e7eb',
-          bodyColor: '#e5e7eb',
+          backgroundColor: "rgba(17, 24, 39, 0.9)",
+          titleColor: "#e5e7eb",
+          bodyColor: "#e5e7eb",
           padding: 20,
           cornerRadius: 4,
         },
       },
       scales: {
         x: {
-          position: 'top', // Move x-axis to top
+          position: "top", // Move x-axis to top
           title: {
             display: true,
             text: "Followers Count",
             color: "#e5e7eb",
             font: {
               size: 12,
-              weight: '500',
+              weight: 500,
             },
             padding: { bottom: 20 },
           },
@@ -136,14 +136,14 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
           },
         },
         y: {
-          position: 'left',
+          position: "left",
           title: {
             display: true,
             text: "Repo Count Range",
             color: "#e5e7eb",
             font: {
               size: 12,
-              weight: '500',
+              weight: 500,
             },
             padding: { bottom: 10 },
           },
@@ -188,7 +188,9 @@ const HistogramChart: React.FC<HistogramChartProps> = ({
   if (error) return <p>Error loading data: {error.message}</p>;
 
   return (
-    <div className="w-full h-[500px]"> {/* Increased container height */}
+    <div className="w-full h-[500px]">
+      {" "}
+      {/* Increased container height */}
       <canvas ref={chartRef} />
     </div>
   );
